@@ -32,8 +32,8 @@ a {
 .inner {
   position: relative;
   display: block;
-  max-width: 1300px;
   width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
 }
 h2.title {
