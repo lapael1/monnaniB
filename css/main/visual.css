@@ -1,0 +1,77 @@
+@charset "utf-8";
+.visual {
+  padding-top: 100px;
+  width: 100%;
+  aspect-ratio: 1920/700;
+}
+.main-banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* padding-top: 100px; */
+  display: block;
+  position: relative;
+}
+.main-banner > img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-banner button {
+  border: none;
+  font-size: 1.77vw;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  width: 19.2%;
+  height: 12.7%;
+  border-radius: 30px;
+  right: 5.5%;
+  bottom: 30.4%;
+}
+.main-banner > p {
+  position: absolute;
+  bottom: 20.2%;
+  right: 5.5%;
+  font-size: 1.77vw;
+  font-weight: 700;
+}
+.main-banner > a {
+  position: absolute;
+  bottom: 13.5%;
+  right: 5.5%;
+  font-size: 1.25vw;
+}
+.main-banner ul {
+  display: flex;
+  align-items: end;
+}
+.main-banner a p {
+  /* position: relative; */
+  display: inline;
+  margin-right: 1vw;
+}
+.main-banner a img {
+  width: 2.25vw;
+  justify-content: end;
+}
+.main-banner list-style {
+  height: auto;
+}
+.visual1 button {
+  background-color: #ff6741;
+}
+.visual2 {
+  color: white;
+}
+.visual2 button {
+  background-color: #62c975;
+}
+.visual2 p {
+  color: white;
+}
+@media screen and (max-width:768px){
+  .visual{
+    padding-top: 90px;
+  }
+}

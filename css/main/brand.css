@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* 기본 스타일 */
+.introduction {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 100px;
+}
+.introduction2 {
+  display: block;
+  position: relative;
+  background-color: #fff9ea;
+  margin-top: 100px;
+}
+.introduction-wrap,
+.introduction-wrap2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.introduction img,
+.introduction2 img {
+  border-radius: 10%;
+  max-width: 100%;
+}
+.intro-left,
+.intro2-left {
+  margin-right: 50px;
+  flex: 1;
+}
+.intro-right,
+.intro2-right {
+  flex: 1;
+}
+.intro-right h3,
+.intro2-left h3 {
+  margin-top: 30px;
+}
+.intro-right .p1,
+.intro2-left .p4 {
+  margin-top: 30px;
+}
+.intro-right .p2,
+.intro2-left .p5 {
+  margin-top: 30px;
+}
+.intro-right .p3 {
+  margin-top: 30px;
+}
+.introduction h1,
+.introduction2 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.introduction h3::after,
+.introduction2 h3::after {
+  content: "";
+  display: block;
+  width: 100%; /* h3의 너비에 맞게 설정 */
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ff6741;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: -1;
+}
+.introduction h3,
+.introduction2 h3 {
+  display: inline-block;
+  font-size: 30px;
+}
+.introduction p,
+.introduction2 p {
+  font-size: 21px;
+  line-height: 150%;
+}
+.intro2-right,
+.intro2-left {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* 반응형 스타일 */
+/* 태블릿 및 작은 화면 */
+@media (max-width: 1024px) {
+  .introduction .inner,
+  .introduction2 .inner {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .introduction-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .introduction-wrap2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction h1,
+  .introduction2 h1 {
+    font-size: 35px;
+  }
+  .introduction h3,
+  .introduction2 h3 {
+    font-size: 28px;
+  }
+  .introduction p,
+  .introduction2 p {
+    font-size: 18px;
+  }
+  .intro-left,
+  .intro2-left {
+    margin-right: 0;
+  }
+  .intro-right {
+    margin-top: 30px;
+  }
+  .intro2-left {
+    margin-top: 0;
+  }
+}
+
+/* 모바일 화면 대응 */
+@media (max-width: 768px) {
+  .introduction .inner,
+  .introduction2 .inner {
+    position: relative;
+    display: block;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .introduction h1,
+  .introduction2 h1 {
+    font-size: 30px;
+  }
+  .introduction h3,
+  .introduction2 h3 {
+    font-size: 25px;
+  }
+  .introduction p,
+  .introduction2 p {
+    font-size: 16px;
+  }
+  .introduction-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction-wrap2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .intro-left,
+  .intro2-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .intro-right {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .intro2-right {
+    margin-bottom: 20px;
+  }
+  .introduction p,
+  .introduction2 p {
+    padding: 0px 10px;
+  }
+  .introduction img,
+  .introduction2 img {
+    padding: 0px 10px;
+  }
+  .introduction2 {
+    margin-top: 20px;
+  }
+  .intro-right h3,
+  .intro2-left h3 {
+    margin-top: 20px;
+  }
+  .intro-right .p1,
+  .intro2-left .p4 {
+    margin-top: 20px;
+  }
+  .intro-right .p2,
+  .intro2-left .p5 {
+    margin-top: 20px;
+  }
+  .intro-right .p3 {
+    margin-top: 20px;
+  }
+  /* .introduction img, .introduction2 img {
+    width: 80%;
+    margin: 0 auto;
+  } */
+}
+
+/* 작은 모바일 화면 대응 */
+@media (max-width: 480px) {
+  .introduction h1,
+  .introduction2 h1 {
+    font-size: 25px;
+  }
+  .introduction h3,
+  .introduction2 h3 {
+    font-size: 20px;
+  }
+  .introduction p,
+  .introduction2 p {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+  .introduction img,
+  .introduction2 img {
+    width: 100%;
+    padding: 0px 10px;
+  }
+}

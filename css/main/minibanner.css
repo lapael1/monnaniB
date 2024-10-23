@@ -1,0 +1,94 @@
+@charset "utf-8";
+.minibanner {
+  width: 100%;
+  /* height: auto; */
+  padding: 40px 10px;
+}
+.banner-inner {
+  position: relative;
+  /* display: block; */
+  width: 100%;
+  max-width: 1280px;
+  margin: 10px auto;
+}
+.sw-banner {
+  position: relative;
+  border-radius: 20px;
+}
+.sw-banner a img {
+  width: 100%;
+  border-radius: 20px;
+  /* height: auto; */
+}
+.banner_mo {
+  display: none;
+}
+
+/* 비주얼 콘트롤러 */
+.banner-control {
+  /* width: 200px; */
+  position: absolute;
+  /* display: inside; */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.banner-play {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../../images/banner/visualPlay.png") no-repeat;
+  border: none;
+  background-position: 0 0;
+  cursor: pointer;
+  /* float: left; */
+  /* top: 50px; */
+}
+.banner-play.active {
+  background-position: 0 -30px;
+}
+.banner-pg {
+  /* position: relative; */
+  display: block;
+  width: 80px !important;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 5px;
+  letter-spacing: -1.5px;
+}
+.swiper-pagination-current,
+.swiper-pagination-total {
+  color: #fff;
+}
+
+/* 반응형 */
+@media screen and (max-width: 800px) {
+  .banner_pc {
+    display: none;
+  }
+  .banner_mo {
+    display: block;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner-control {
+    /* width: 200px; */
+    position: absolute;
+    /* display: inside; */
+    bottom: 4px;
+    right: 15px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+}

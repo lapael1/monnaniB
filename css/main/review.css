@@ -1,0 +1,219 @@
+@charset "utf-8";
+.review{
+  position: relative;
+  display: block;
+}
+.review .title{
+  margin-top: 50px;
+  line-height: 130%;
+}
+.review h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+.review p{
+  font-size: 26px;
+}
+.reviewimgs{
+  max-width: 440px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.star{
+  max-width: 187px;
+  /* max-height: 47px;
+  height: 100%; */
+  width: 100%;
+}
+.product-review-wrap, .customer-review-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.reviews{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 적용 */
+  /* padding: 20px; */
+  max-width: 480px;
+  width: 100%;
+  padding: 30px 30px 60px;
+  border-radius: 20px;
+}
+/* .reviews li{
+  width: 100%;
+} */
+p.review-txt{
+  font-size: 32px;
+}
+.review-txt {
+  overflow: hidden;
+}
+.customer-review{
+  margin-bottom: 50px;
+}
+/* 기본 상태의 이미지 */
+.review-txt a img {
+  transition: filter 0.5s ease; /* 전환 효과 */
+  vertical-align: top;
+}
+
+/* 마우스를 올렸을 때 밝기 조절 */
+.review-txt a:hover img {
+  filter: brightness(0.8); /* 밝기를 70%로 줄여 색을 더 짙게 표현 */
+}
+@media screen and (max-width : 860px) {
+  /* 기존 스타일들 */
+  .review h3 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .review p {
+    font-size: 24px;
+  }
+  p.review-txt {
+    font-size: 24px;
+  }
+  .review-txt a img{
+    max-width: 50px;
+    width: 100%;
+  }
+  
+  /* star 요소의 크기 조정 */
+  .star {
+    max-width: 150px; /* 원하는 크기로 조정 */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  /* 기존 스타일들 */
+  .title-wrap{
+    margin-bottom: 20px;
+  }
+  h2.title{
+    margin-top: 50px;
+  }
+  .review h3 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .review p {
+    font-size: 20px;
+  }
+  .reviews {
+    padding: 20px 20px 50px;
+  }
+  .product-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+    margin-bottom: 50px;
+    gap: 50px;
+    padding: 0px 10px;
+  }
+  .customer-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column-reverse;
+    gap: 50px;
+    padding: 0px 10px;
+  }
+  .customer-review{
+    margin-bottom: 0;
+
+  }
+  p.review-txt{
+    font-size: 26px;
+  }
+  /* star 요소의 크기 조정 */
+  .star {
+    max-width: 120px; /* 원하는 크기로 조정 */
+    width: 100%;
+  }
+  .review-txt a img{
+    max-width: 45px;
+    width: 100%;
+    vertical-align:sub;
+  }
+}
+
+@media screen and (max-width : 484px){
+  .reviews {
+    padding: 15px 15px 25px;
+  }
+  .review h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .review p {
+    font-size: 17px;
+  }
+  
+  .product-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+    margin-bottom: 50px;
+    gap: 40px;
+  }
+  .customer-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  p.review-txt{
+    font-size: 20px;
+  }
+  .star {
+    max-width: 120px; /* 원하는 크기로 조정 */
+    width: 100%;
+  }
+  .review-txt a img{
+    max-width: 40px;
+    width: 100%;
+    vertical-align:sub;
+  }
+}
+
+@media screen and (max-width : 320px){
+  .reviews {
+    padding: 10px 10px 20px;
+  }
+  .review h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .review p {
+    font-size: 15px;
+  }
+  
+  .product-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+    margin-bottom: 50px;
+    gap: 40px;
+  }
+  .customer-review-wrap{
+    display: flex;
+    align-items: center;
+  flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  p.review-txt{
+    font-size: 20px;
+  }
+  .star {
+    max-width: 100px; /* 원하는 크기로 조정 */
+    width: 100%;
+  }
+  .review-txt a img{
+    max-width: 35px;
+    width: 100%;
+    vertical-align:sub;
+  }
+}

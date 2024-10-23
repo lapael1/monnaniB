@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon//site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/login/login.css" />
+    <script src="js/login/header.js"></script>
+    <script src="js/login/login.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrap">
+          <div class="inner">
+            <a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo" /></a>
+            <div id="header-close" class="header-close">
+              <img src="images/icons/icon_menu.png" alt="menu" id="menu-icon" />
+            </div>
+            <div class="header-toggle">
+              <ul class="header-nav" id="header-nav">
+                <li><a href="">브랜드</a></li>
+                <li><a href="">정기배송</a></li>
+                <li><a href="">제품구매</a></li>
+                <li><a href="">커뮤니티</a></li>
+                <li><a href="">갤러리</a></li>
+                <li><a href="">문의하기</a></li>
+              </ul>
+              <ul class="header-login" id="header-login">
+                <li id="login-button"><a href="login.html">로그인</a></li>
+                <li id="signup-button"><a href="signup.html">회원가입</a></li>
+                <li style="display: none" id="login-display" class="login-display">
+                  <ul>
+                    <li id="name-display">
+                      <!-- 이름 출력 -->
+                    </li>
+                    <li id="logout">로그아웃</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="inner">
+        <form id="login-form">
+          <h2>로그인</h2>
+          <input type="text" placeholder="아이디" id="login-id" name="login-id" />
+
+          <input type="password" placeholder="비밀번호" id="login-pw" name="login-pw" />
+
+          <button type="submit" class="main-login">로그인</button>
+          <ul class="login-check">
+            <li>
+              <label class="id-save"> <input type="checkbox" id="id-save" />아이디 저장 </label>
+            </li>
+            <li>
+              <label class="login-save"> <input type="checkbox" id="login-save" />자동 로그인 </label>
+            </li>
+          </ul>
+
+          <div class="hr"></div>
+          <button class="naver-login"><img src="images/icons/icon_naver.svg" alt="naver" />네이버로 로그인</button>
+
+          <button class="kakao-login"><img src="images/icons/icon_kakao.svg" alt="kakao" />카카오로 로그인</button>
+
+          <p>아직 회원이 아니세요?</p>
+          <button id="signup">회원가입</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

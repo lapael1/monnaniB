@@ -1,0 +1,278 @@
+@charset "utf-8";
+.footer {
+  background-color: #fdf4ee;
+}
+.footer-wrap {
+  width: 100%;
+  height: auto;
+}
+.footer-wrap img {
+  width: 250px;
+  padding-left: 10px;
+}
+.footer-wrap hr {
+  border: 0;
+  height: 1px;
+  background: #d9d9d9;
+}
+.footer h3 {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  margin-left: 26px;
+}
+.number {
+  font-weight: bold;
+  color: #ff6741;
+  font-size: 25px;
+}
+/* cs(고객센터) */
+.cs-call {
+  display: flex;
+  align-items: center;
+}
+.footer-cs {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+/* cs (요일,시간) */
+.cs {
+  display: flex;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.cs-time {
+  margin-left: 20px;
+}
+.cs p {
+  padding: 5px;
+}
+
+/* cs(sns) */
+.cs-sns {
+  margin-right: 15px;
+  display: flex;
+  gap: 10px;
+}
+.cs-circle:hover {
+  fill: #ff6741;
+  transition: all 0.2s;
+}
+
+/* cs(name) */
+.footer hr {
+  color: black;
+  margin: 5px 5px;
+}
+.cs-name p,
+.cs-name span {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* white-space: no-wrap; */
+}
+.cs-name {
+  margin: 10px 15px;
+}
+.cs-mb {
+  display: none;
+}
+.name-mail {
+  color: #ff6741;
+}
+/* cs-copy */
+.cs-copy {
+  display: flex;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  /* justify-content: space-between; */
+  margin-left: 10px;
+  gap: 35px;
+}
+.cs-time-br {
+  display: none;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1090px) {
+  .cs-name p,
+  .cs-name span {
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    white-space: no-wrap;
+  }
+  .cs-mb {
+    display: none;
+  }
+  .cs-copy {
+    display: flex;
+    padding: 20px 10px;
+    font-size: 19px;
+    font-weight: 600;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  .cs-name p,
+  .cs-name span {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    white-space: no-wrap;
+  }
+  .cs-mb {
+    display: none;
+  }
+  .cs-copy {
+    display: flex;
+    padding: 20px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  .footer h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 26px;
+  }
+  .number {
+    font-weight: bold;
+    color: #ff6741;
+    font-size: 20px;
+  }
+  .cs {
+    display: flex;
+    font-size: 17px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .cs-name p,
+  .cs-name span {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+  .cs-mb {
+    display: none;
+  }
+  .cs-copy {
+    display: flex;
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .cs-name {
+    display: none;
+  }
+  .cs-copy {
+    /* display: flex; */
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    /* justify-content: space-between; */
+    margin-left: 10px;
+    gap: 35px;
+  }
+  .cs-mb {
+    display: block;
+    margin: 10px;
+    padding: 0 10px;
+  }
+  .cs-mb p {
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 550;
+    margin-bottom: 5px;
+  }
+  .cs-mb span {
+    color: #ff6741;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+  .cs-copy {
+    display: flex;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 550;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cs-copy {
+    display: block;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: 550;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .footer-cs {
+    flex-direction: column;
+  }
+  .cs {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .cs-sns {
+    padding: 5px 10px;
+  }
+  .cs-sns svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cs p {
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .cs-name p {
+    font-size: 14px;
+  }
+  .cs-name span {
+    font-size: 14px;
+  }
+  .cs-copy {
+    font-size: 14px;
+    white-space: normal;
+  }
+  .cs-sns svg {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+  }
+}

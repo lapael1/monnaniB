@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+
+    <!-- 파비콘 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon//site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/signup/signup.css" />
+    <!-- js -->
+     <script src="js/signup/header.js"></script>
+    <script src="js/signup/signup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-wrap">
+          <div class="inner">
+            <a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo" /></a>
+            <div id="header-close" class="header-close">
+              <img src="images/icons/icon_menu.png" alt="menu" id="menu-icon" />
+            </div>
+            <div class="header-toggle">
+              <ul class="header-nav" id="header-nav">
+                <li><a href="">브랜드</a></li>
+                <li><a href="">정기배송</a></li>
+                <li><a href="">제품구매</a></li>
+                <li><a href="">커뮤니티</a></li>
+                <li><a href="">갤러리</a></li>
+                <li><a href="">문의하기</a></li>
+              </ul>
+              <ul class="header-login" id="header-login">
+                <li id="login-button"><a href="login.html">로그인</a></li>
+                <li id="signup-button"><a href="signup.html">회원가입</a></li>
+                <li style="display: none" id="login-display" class="login-display">
+                  <ul>
+                    <li id="name-display">
+                      <!-- 이름 출력 -->
+                    </li>
+                    <li id="logout">로그아웃</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="inner">
+        <form id="signup-form">
+          <h2>회원가입</h2>
+          <p>아이디</p>
+          <input type="text" id="signup-id" name="signup-id" required />
+          <p>비밀번호</p>
+          <input type="password" id="signup-pw" name="signup-pw" required />
+          <p>비밀번호 확인</p>
+          <input type="password" id="signup-pw-chk" name="signup-pw" required />
+          <p>이름</p>
+          <input type="text" id="signup-name" name="signup-name" required />
+          <p>이메일</p>
+          <input type="email" id="signup-email" name="signup-email" required />
+          <p>휴대전화번호</p>
+          <input type="text" id="signup-phone" name="signup-phone" required />
+<br />
+
+          <!-- 전체 동의 -->
+          <label> <input type="checkbox" id="agree-all" /> 전체 동의 </label>
+          
+
+          <!-- 개별 동의 항목들 -->
+          <label>
+            <input
+              type="checkbox"
+              class="agree-item"
+              name="terms-of-service"
+              required
+            />
+            서비스 이용약관 동의 (필수)
+          </label>
+        
+
+          <label>
+            <input
+              type="checkbox"
+              class="agree-item"
+              name="privacy-policy"
+              required
+            />
+            개인정보 처리방침 동의 (필수)
+          </label>
+          
+
+          <label>
+            <input type="checkbox" class="agree-item" name="marketing-agree" />
+            마케팅 정보 수신 동의 (선택)
+          </label>
+          <br />
+          <button>가입하기</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

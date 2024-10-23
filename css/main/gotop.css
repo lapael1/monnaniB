@@ -1,0 +1,95 @@
+@charset "utf-8";
+.gotop {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 9999;
+
+  border: none;
+  cursor: pointer;
+  animation: updown 1.5s infinite;
+}
+
+.gotop img {
+  width: 90px;
+  height: 90px;
+}
+
+/* 문의하기 섹션 (처음에 숨김) */
+.faq-section {
+  display: none; /* 처음에는 숨김 */
+  position: fixed;
+  right: 20px;
+  bottom: 180px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999 ;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.topbtn{
+  position: fixed;
+  z-index: 9999;
+ 
+  border: none;
+  cursor: pointer;
+  right: 20px;
+  bottom: 20px;
+}
+
+.topbtn img{
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width : 768px) {
+  .gotop img{
+    width: 75px;
+    height: 75px;
+  }
+    
+    
+  
+  .topbtn img{
+    width: 45px;
+    height: 45px;
+  }
+}
+@media screen and (max-width : 480px) {
+
+  .gotop img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .topbtn img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width : 320px) {
+
+  .gotop img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .topbtn img{
+    width: 40px;
+    height: 40px;
+}
+}

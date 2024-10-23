@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* 메인페이지 갤러리 */
+.gallery {
+  width: 100%;
+  height: auto;
+  background-color: #fff9ea;
+}
+.gallery h2 {
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.gallery-inner {
+  width: 100%;
+  height: auto;
+}
+.gallery-inner ul {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* padding: 50px 30px; */
+  flex-wrap: wrap;
+  /* text-align: center; */
+  gap: 10px;
+}
+.gallery-inner ul li {
+  width: calc(100% / 4 - 10px);
+  /* background-color: blueviolet; */
+}
+.gallery-inner p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.img-wrap {
+  width: 100%;
+  /* background-color: rgb(226, 43, 174); */
+  overflow: hidden;
+}
+.img-wrap > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.img-wrap > img:hover {
+  transform: scale(1.1);
+}
+
+/* 갤러리 더보기 버튼 */
+.galbtn-wrap {
+  /* width: 100%; */
+  background-color: #fff;
+  padding: 10px 10px;
+}
+.galbtn {
+  display: flex; /* 플렉스 박스로 변경 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  min-width: 375px;
+  min-height: 70px;
+  background-color: #f5f5f7;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto; /* 부모 요소에서 가로 방향으로 중앙 정렬 */
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.galbtn:hover {
+  background-color: #ebebeb;
+}
+.galbtn a {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  display: block; /* a 태그를 블록 요소로 설정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+/* 갤러리 상세페이지 */
+.gallery-visual {
+  position: relative;
+  text-align: center;
+}
+.gallery-visual img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.gallery-visual h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 48px;
+}
+
+.gallery-cate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 30px 20px;
+}
+.gallery-item {
+  width: 100%;
+  height: 142px;
+  /* background-color: #bc1dd1; */
+  margin: 10px;
+  /* padding: 35px; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  gap: 20px;
+}
+.gallery-item-img {
+  width: 30%;
+  height: 100%;
+  background-color: #957010;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-description {
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* 부모 요소가 어느 정도의 높이를 가질지 설정 */
+  padding: 39px 20px;
+  width: 70%;
+  gap: 10px;
+}
+.gallery-description p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center; /* 가로 가운데 정렬 (필요 시) */
+  white-space: normal;
+}
+
+/* 갤러리 탭버튼(이미지 변경) */
+
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .gallery h2 {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .gallery-inner ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .gallery-inner p {
+    text-align: center;
+  }
+
+  .img-wrap {
+    width: 100%;
+    /* background-color: rgb(226, 43, 174); */
+    overflow: hidden;
+  }
+  .img-wrap > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+  }
+  .img-wrap > img:hover {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 950px) {
+  .img-wrap ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .gallery h2 {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .gallery-inner p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gallery-inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 50px 30px; */
+  }
+  .gallery-inner p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .gallery-inner ul li {
+    width: calc(100% / 2 - 30px);
+    /* background-color: blueviolet; */
+  }
+}
+@media screen and (max-width: 689px) {
+  .gallery-inner ul {
+    width: 70%;
+    margin: auto;
+  }
+  .gallery-inner ul li {
+    width: calc(100% / 1 - 40px);
+    /* background-color: blueviolet; */
+    margin: 10px;
+  }
+  .gallery-inner p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  /* 갤러리 더보기 버튼 */
+  .galbtn-wrap {
+    /* width: 100%; */
+    background-color: #fff;
+    padding: 10px 10px;
+  }
+  .galbtn {
+    display: flex; /* 플렉스 박스로 변경 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    min-width: 250px;
+    min-height: 60px;
+    background-color: #f5f5f7;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto; /* 부모 요소에서 가로 방향으로 중앙 정렬 */
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .galbtn:hover {
+    background-color: #ebebeb;
+  }
+  .galbtn a {
+    font-size: 21px;
+    color: #333;
+    font-weight: 500;
+    padding: 10px;
+    display: block; /* a 태그를 블록 요소로 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+  }
+}
