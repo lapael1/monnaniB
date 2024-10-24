@@ -15,13 +15,16 @@
   display: block;
   position: relative;
   margin: auto;
-  margin: 20px 20px;
+  /* margin: 20px 20px; */
+}
+.today-inner {
+  margin: 50px 20px;
 }
 .today-wrap {
   display: flex;
   align-items: center;
-
   justify-content: space-evenly;
+  width: 100%;
 }
 .today-right {
   display: flex;
@@ -68,21 +71,27 @@
   color: #6d6d6d;
 }
 .today-img {
-  margin-top: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: aqua;
+}
+.today-img img {
+  width: 100%;
 }
 /* today-time (특가 시간)*/
 .timer_area {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
   background: hsla(0, 0%, 9%, 0.1);
-  width: 135px;
+  width: 125px;
   border-radius: 10px;
 }
 
-
 /* 필터를 사용해 이미지 색상을 변경 */
 .timer_area img {
-  filter: sepia(1) saturate(8) hue-rotate(90deg); /* 필터로 색상 변경 */
+  /* filter: sepia(1) saturate(8) hue-rotate(90deg);  */
+  /* 필터로 색상 변경 */
   width: 20px;
   height: 20px;
 }
@@ -159,7 +168,7 @@
   font-family: "Uiyeun";
   font-size: 34px;
 }
-.seasonimg img{
+.seasonimg img {
   width: 100%;
 }
 
@@ -275,3 +284,98 @@
   }
 }
 
+/* 특가 상품 반응형 */
+@media screen and (max-width: 900px) {
+  .today-sale {
+    font-size: 26px;
+  }
+  .today-item {
+    font-size: 24px;
+  }
+  .salepercent {
+    font-size: 36px;
+    font-weight: bold;
+    color: red;
+  }
+  .saleprice {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .won {
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: baseline;
+  }
+  .notsaleprice {
+    font-size: 30px;
+    color: #b5b5b5;
+    text-decoration: line-through;
+  }
+  .today-notice {
+    display: flex;
+    gap: 5px;
+  }
+  .today-notice p {
+    color: #6d6d6d;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .today-left {
+    margin-right: 10px;
+  }
+  .today-sale {
+    font-size: 24px;
+  }
+  .today-item {
+    font-size: 22px;
+  }
+  .salepercent {
+    font-size: 33px;
+    font-weight: bold;
+    color: red;
+  }
+  .saleprice {
+    font-size: 33px;
+    font-weight: bold;
+  }
+  .won {
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: baseline;
+  }
+  .notsaleprice {
+    font-size: 28px;
+    color: #b5b5b5;
+    text-decoration: line-through;
+  }
+  .today-notice {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .today-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+  }
+  .today-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .today-img {
+    margin-top: 20px;
+    width: 100%;
+    background-color: aqua;
+  }
+  .today-img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -85,7 +85,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-    
+
           <!-- 고정된 닫기 버튼 및 '오늘 하루 열지 않음' -->
           <div class="close-wrap">
             <label><input type="checkbox" id="notToday" /><span class="notToday">오늘 하루 열지 않음</span></label>
@@ -205,41 +205,44 @@
       <!-- today 영역 -->
       <section class="today">
         <div class="inner">
-          <!-- 타이틀 -->
-          <div class="title-wrap">
-            <h2 class="title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">오늘이 아니면 못사요</h2>
-            <p class="title-sub">매일 달라지는 초특가 상품을 만나보세요. 1년 중 오늘만 이 가격이에요.</p>
-          </div>
-          <!-- 메인 -->
-          <div class="today-wrap">
-            <div class="today-left">
-              <!-- 시간타임 -->
-              <div class="timer_area">
-                <div>
-                  <img src="images/time-svgrepo.svg" alt="타임" />
-                </div>
-                <span id="timer365">07:37:45</span>
-              </div>
-              <!-- 사진 -->
-              <a href="#">
-                <img src="images/tangerine.png" alt="상품" class="today-img" />
-              </a>
+          <div class="today-inner">
+            <!-- 타이틀 -->
+            <div class="title-wrap">
+              <h2 class="title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">오늘이 아니면 못사요</h2>
+              <p class="title-sub">매일 달라지는 초특가 상품을 만나보세요. 1년 중 오늘만 이 가격이에요.</p>
             </div>
-
-            <div class="today-right">
-              <!-- 텍스트 -->
-              <p class="today-sale">오늘의 특가 상품</p>
-              <!-- 구분선 -->
-
-              <p class="today-item">몬나니농장 노지감귤(2kg)</p>
-              <div class="today-saleprice" style="display: inline-flex; align-items: baseline">
-                <span class="salepercent">33%</span> <span class="saleprice">15,900</span>
-                <p class="won">원</p>
+            <!-- 메인 -->
+            <div class="today-wrap">
+              <div class="today-left">
+                <!-- 타임 세일 시간 -->
+                <div class="timer_area">
+                  <div>
+                    <img src="images/time-svgrepo.svg" alt="타임" />
+                  </div>
+                  <span id="timer365">07:37:45</span>
+                </div>
+                <!-- 사진 -->
+                <div class="today-img">
+                  <img src="images/tangerine.png" alt="상품" />
+                </div>
               </div>
-              <span class="notsaleprice">23,000원</span>
-              <div class="today-notice">
-                <img src="images/notice.png" alt="" />
-                <p class="today-noticetxt">최대 구매 수량 1개</p>
+
+              <div class="today-right">
+                <!-- 텍스트 -->
+                <p class="today-sale">오늘의 특가 상품</p>
+                <hr />
+                <!-- 구분선 -->
+
+                <p class="today-item">몬나니농장 노지감귤(2kg)</p>
+                <div class="today-saleprice" style="display: inline-flex; align-items: baseline">
+                  <span class="salepercent">33%</span> <span class="saleprice">15,900</span>
+                  <p class="won">원</p>
+                </div>
+                <span class="notsaleprice">23,000원</span>
+                <div class="today-notice">
+                  <img src="images/notice.png" alt="" />
+                  <p class="today-noticetxt">최대 구매 수량 1개</p>
+                </div>
               </div>
             </div>
           </div>
@@ -541,7 +544,10 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-
+      <!-- 구출하기 버튼 -->
+      <button class="buybtn">
+        <a href="#">구출하러가기</a>
+      </button>
       <script>
         var swiper = new Swiper(".swiper-container", {
           slidesPerView: 2, // 기본 한 번에 보이는 슬라이드 개수
@@ -564,7 +570,7 @@
           },
         });
       </script>
-      
+
       <!-- recommend영역 -->
       <section class="recommend">
         <!-- 타이틀 -->
@@ -640,7 +646,10 @@
           </div>
         </div>
       </section>
-
+      <!-- 구출하기 버튼 -->
+      <button class="buybtn">
+        <a href="#">구출하러가기</a>
+      </button>
       <!-- farmswiper 영역 -->
       <section class="farmswiper">
         <!-- title -->
@@ -1032,15 +1041,28 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+    // 타임세일 시간
     function updateTimer() {
       const timerElement = document.getElementById("timer365");
       const now = new Date();
-      const hours = String(now.getHours()).padStart(2, "0");
-      const minutes = String(now.getMinutes()).padStart(2, "0");
-      const seconds = String(now.getSeconds()).padStart(2, "0");
+
+      // 내일 00:00:00 시각 계산
+      const tomorrow = new Date();
+      tomorrow.setDate(now.getDate() + 1);
+      tomorrow.setHours(0, 0, 0, 0);
+
+      // 남은 시간 계산 (밀리초 단위)
+      const timeDifference = tomorrow - now;
+
+      // 밀리초를 시, 분, 초로 변환
+      const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, "0");
+      const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
+      const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, "0");
+
       timerElement.textContent = `${hours}:${minutes}:${seconds}`;
     }
 
-    setInterval(updateTimer, 1000); // 매초마다 시간 업데이트
+    // 매 초마다 업데이트
+    setInterval(updateTimer, 1000);
   </script>
 </html>

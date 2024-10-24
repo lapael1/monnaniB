@@ -13,14 +13,13 @@ window.addEventListener("load", function () {
         visual2.setAttribute("src", "images/visual2-mobile.png");
       } else {
         // 1024px 이상일 때 원래 이미지로 복구
+
         visual1.setAttribute("src", "images/visual1.png");
         visual2.setAttribute("src", "images/visual2.png");
       }
     }
-  
     // 페이지 로드 시 호출
     window.onload = updateImages;
-  
     // 화면 크기 조정 시마다 호출
     window.onresize = updateImages;
   });
