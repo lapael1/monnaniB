@@ -54,39 +54,34 @@ function counter(element, max) {
  * 모든 숫자 요소에 애니메이션 적용
  */
 
-function startAnimations() {
-  // 구출한 농산물 애니메이션
-  const rescuedProduceElement = document.getElementById("rescued-produce");
-  animateValue(rescuedProduceElement, 0, 2226227, 2000);
+window.addEventListener("load", function () {
+  // 두 번째 JS 파일의 기능
+  function startAnimations() {
+    const rescuedProduceElement = document.getElementById("rescued-produce");
+    animateValue(rescuedProduceElement, 0, 2226227, 2000);
 
-  // 아낀 물의 양 애니메이션
-  const savedWaterElement = document.getElementById("saved-water");
-  animateValue(savedWaterElement, 0, 44970, 2000);
+    const savedWaterElement = document.getElementById("saved-water");
+    animateValue(savedWaterElement, 0, 44970, 2000);
 
-  // 아낀 플라스틱 수 애니메이션
-  const savedPlasticElement = document.getElementById("saved-plastic");
-  animateValue(savedPlasticElement, 0, 1149335, 2000);
+    const savedPlasticElement = document.getElementById("saved-plastic");
+    animateValue(savedPlasticElement, 0, 1149335, 2000);
 
-  // 절감한 탄소 애니메이션
-  const reducedCarbonElement = document.getElementById("reduced-carbon");
-  animateValue(reducedCarbonElement, 0, 1331061, 2000);
+    const reducedCarbonElement = document.getElementById("reduced-carbon");
+    animateValue(reducedCarbonElement, 0, 1331061, 2000);
 
-  // 추가적으로 counter 함수 적용 예시
-  const counterElement1 = document.getElementById("rescued-produce");
-  counter(counterElement1, 2226227);
+    const counterElement1 = document.getElementById("rescued-produce");
+    counter(counterElement1, 2226227);
 
-  const counterElement2 = document.getElementById("saved-water");
-  counter(counterElement2, 44970);
+    const counterElement2 = document.getElementById("saved-water");
+    counter(counterElement2, 44970);
 
-  const counterElement3 = document.getElementById("saved-plastic");
-  counter(counterElement3, 1149335);
+    const counterElement3 = document.getElementById("saved-plastic");
+    counter(counterElement3, 1149335);
 
-  const counterElement4 = document.getElementById("reduced-carbon");
-  counter(counterElement4, 1331061);
-}
+    const counterElement4 = document.getElementById("reduced-carbon");
+    counter(counterElement4, 1331061);
+  }
 
-window.onload = function () {
   startAnimations();
-  // 애니메이션을 10초 간격으로 반복 실행
   setInterval(startAnimations, 10000);
-};
+});
