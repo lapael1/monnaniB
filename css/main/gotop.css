@@ -57,8 +57,12 @@
 
 @media screen and (max-width : 768px) {
   .gotop img{
-    width: 75px;
-    height: 75px;
+    width:60px;
+    height: 60px;
+  }
+  .gotop{
+    bottom: 70px
+
   }
     
     
@@ -71,8 +75,12 @@
 @media screen and (max-width : 480px) {
 
   .gotop img {
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
+  }
+  .gotop{
+    bottom: 70px
+
   }
   
   .topbtn img{
@@ -84,8 +92,8 @@
 @media screen and (max-width : 320px) {
 
   .gotop img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   
   .topbtn img{
