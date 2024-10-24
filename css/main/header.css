@@ -86,7 +86,7 @@
   color: #ff6741;
   cursor: pointer;
 }
-#cart-menu{
+#cart-menu {
   height: 100%;
   width: 30px;
   position: absolute;
@@ -94,13 +94,13 @@
   text-align: center;
   align-content: center;
 }
-#cart-menu img{
-  height: 40%;
+#cart-menu img {
+  height: 35%;
   cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
-  #cart-menu img{
-    height: 50%;
+  #cart-menu img {
+    height: 40%;
     cursor: pointer;
   }
   .header .header-wrap {
@@ -176,8 +176,8 @@
     text-align: center;
   }
   .header-close img {
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
   }
   .header-logo img {
     height: 70%;
@@ -196,12 +196,12 @@
     border-radius: 10px;
     margin: 20px;
   }
-  #cart-menu{
-    right: 130px;
+  #cart-menu {
+    right: 75px;
   }
 }
 @media screen and (max-width: 768px) {
   .header .header-wrap {
-    height: 80px;
+    height: 70px;
   }
 }
