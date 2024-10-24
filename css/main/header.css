@@ -86,8 +86,26 @@
   color: #ff6741;
   cursor: pointer;
 }
-
+#cart-menu{
+  height: 100%;
+  width: 30px;
+  position: absolute;
+  right: 240px;
+  text-align: center;
+  align-content: center;
+}
+#cart-menu img{
+  height: 40%;
+  cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
+  #cart-menu img{
+    height: 50%;
+    cursor: pointer;
+  }
+  .header .header-wrap {
+    height: 90px;
+  }
   .header-logo {
     display: block;
   }
@@ -178,9 +196,12 @@
     border-radius: 10px;
     margin: 20px;
   }
+  #cart-menu{
+    right: 130px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header .header-wrap {
-    height: 90px;
+    height: 80px;
   }
 }
