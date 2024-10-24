@@ -117,7 +117,7 @@
     <!-- 전체 wrap -->
     <div class="wrap">
       <!-- header -->
-       테스트 진혁
+      테스트 진혁
       <header class="header">
         <div class="header-wrap">
           <div class="inner">
@@ -204,11 +204,19 @@
           <!-- 메인 -->
           <div class="today-wrap">
             <div class="today-left">
+              <!-- 시간타임 -->
+              <div class="timer_area">
+                <div>
+                  <img src="images/time-svgrepo.svg" alt="타임" />
+                </div>
+                <span id="timer365">07:37:45</span>
+              </div>
               <!-- 사진 -->
               <a href="#">
-                <img src="images/tangerine.png" alt="" />
+                <img src="images/tangerine.png" alt="상품" class="today-img" />
               </a>
             </div>
+
             <div class="today-right">
               <!-- 텍스트 -->
               <p class="today-sale">오늘의 특가 상품</p>
@@ -732,7 +740,7 @@
           </div>
         </div>
       </section>
-     
+
       <!-- count영역 -->
       <section class="count">
         <div class="title-wrap">
@@ -922,7 +930,6 @@
       </section>
 
       <!-- footer영역 -->
-      <!-- 테스트 정은테스트 테스트 -->
       <footer class="footer">
         <div class="inner">
           <div class="footer-wrap">
@@ -1009,5 +1016,15 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+    function updateTimer() {
+      const timerElement = document.getElementById("timer365");
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+      timerElement.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateTimer, 1000); // 매초마다 시간 업데이트
   </script>
 </html>

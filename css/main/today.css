@@ -1,82 +1,102 @@
 @charset "utf-8";
 @font-face {
-  font-family: 'Uiyeun';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff') format('woff');
+  font-family: "Uiyeun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Uiyeun.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'HakgyoansimDunggeunmisoTTF-B';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+  font-family: "HakgyoansimDunggeunmisoTTF-B";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
-.today{
+.today {
   display: block;
   position: relative;
   margin: auto;
-
+  margin: 20px 20px;
 }
-.today-wrap{
+.today-wrap {
   display: flex;
   align-items: center;
-  
+
   justify-content: space-evenly;
 }
-.today-right{
+.today-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
-.today-sale{
+.today-sale {
   font-size: 30px;
 }
-.today-item{
+.today-item {
   font-size: 28px;
 }
-.today-saleprice{
+.today-saleprice {
   display: flex;
   gap: 10px;
 }
-.today-notice{
+.today-notice {
   display: flex;
 }
-.salepercent{
+.salepercent {
   font-size: 40px;
   font-weight: bold;
   color: red;
 }
-.saleprice{
+.saleprice {
   font-size: 40px;
   font-weight: bold;
 }
-.won{
+.won {
   font-size: 24px;
   font-weight: bold;
-  vertical-align: baseline
-
+  vertical-align: baseline;
 }
-.notsaleprice{
+.notsaleprice {
   font-size: 32px;
   color: #b5b5b5;
   text-decoration: line-through;
 }
-.today-notice{
+.today-notice {
   display: flex;
   gap: 5px;
 }
-.today-notice p{
+.today-notice p {
   color: #6d6d6d;
+}
+.today-img {
+  margin-top: 10px;
+}
+/* today-time (특가 시간)*/
+.timer_area {
+  display: flex;
+  align-items: center;
+  background: hsla(0, 0%, 9%, 0.1);
+  width: 135px;
+  border-radius: 10px;
 }
 
 
+/* 필터를 사용해 이미지 색상을 변경 */
+.timer_area img {
+  filter: sepia(1) saturate(8) hue-rotate(90deg); /* 필터로 색상 변경 */
+  width: 20px;
+  height: 20px;
+}
+
+#timer365 {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #333;
+}
 /* season */
 .season {
   position: relative; /* 부모 요소를 기준으로 내비게이션 버튼 위치 */
   display: block;
 }
-
 
 .season-wrap {
   position: relative;
@@ -85,44 +105,44 @@
   background-color: #f5f5f5;
 }
 
-.season-fruit, .season-veg {
+.season-fruit,
+.season-veg {
   display: flex;
   justify-content: space-between;
   background-color: #f5f5f5;
   padding: 30px 50px 0px 50px;
 }
-.season-intro{
+.season-intro {
   background-color: #f5f5f5;
 }
-.swipertitlewrap{
+.swipertitlewrap {
   padding: 10px 15px;
 }
-.season-intro{
-  padding: 0px 50px 50px 50px
+.season-intro {
+  padding: 0px 50px 50px 50px;
 }
-.fruititle{
+.fruititle {
   text-align: center;
-  background-color: #FFf;
+  background-color: #fff;
   padding: 7px 10px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 550;
 }
-.vegtitle{
+.vegtitle {
   text-align: center;
-  background-color: #FFf;
+  background-color: #fff;
   padding: 7px 10px;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 550;
 }
-.seasontxt{
+.seasontxt {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 .fruitxt {
-  
   font-size: 24px;
   font-weight: bold;
 }
@@ -135,16 +155,15 @@
   font-size: 20px;
   color: #6d6d6d;
 }
-.season-intro li{
- font-family: 'Uiyeun';
- font-size: 34px;
+.season-intro li {
+  font-family: "Uiyeun";
+  font-size: 34px;
 }
-
 
 .seasonprice {
   font-size: 20px;
 }
-.swiperwrap{
+.swiperwrap {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
@@ -167,11 +186,11 @@
   top: 64%;
   transform: translateY(-50%);
   z-index: 10; /* 다른 요소 위로 나오도록 설정 */
- background-color: #FFf;
-width: 50px;
- height: 50px;
- border-radius: 50%;
- border: 1px solid #ccc;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
 }
 
 .season .swiper-button-next {
@@ -185,7 +204,7 @@ width: 50px;
 .season .swiper-button-next::after,
 .season .swiper-button-prev::after {
   font-size: 22px;
-  color: #FF6741;
+  color: #ff6741;
 }
 .seasonimg {
   position: relative; /* 가상 요소의 위치를 기준으로 함 */
@@ -194,7 +213,7 @@ width: 50px;
 }
 
 .seasonimg::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px; /* 그림자를 이미지 바로 밑에 배치 */
   left: 0; /* 왼쪽에서 시작 */
