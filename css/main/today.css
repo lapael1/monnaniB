@@ -73,10 +73,14 @@
 .today-img {
   margin-top: 20px;
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .today-img img {
   width: 100%;
+}
+.today-notice-img {
+  width: 20px;
+  height: 20px;
 }
 /* today-time (특가 시간)*/
 .timer_area {
@@ -102,6 +106,19 @@
   color: #333;
 }
 
+/* 장바구니 이미지 */
+.bag-shopping {
+  width: 20px;
+  height: 20px;
+}
+.bag-button {
+  /* background: #fff; */
+  border-radius: 20px;
+  border: #333;
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+}
 
 /* 특가 상품 반응형 */
 @media screen and (max-width: 900px) {
