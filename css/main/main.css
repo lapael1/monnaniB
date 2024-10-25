@@ -12,6 +12,7 @@
 @import url(gallery.css);
 @import url(footer.css);
 @import url(gotop.css);
+@import url(season.css);
 /* 폰트 */
 
 /* 공통 */
@@ -38,6 +39,14 @@ a {
 }
 h2.title {
   line-height: 130%;
+}
+p .title-sub{
+  font-size: 20px;
+    color: #aaa;
+}
+.season .title-sub{
+  font-size: 20px;
+    color: #aaa;
 }
 /* 구출하기 버튼 */
 .buybtn {
@@ -241,6 +250,7 @@ span.notToday{
   h2.title {
     font-size: 26px;
   }
+ 
   .buybtn,
   .galbtn {
     min-width: 230px;
