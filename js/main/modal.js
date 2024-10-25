@@ -3,6 +3,10 @@ window.addEventListener("load", function () {
   const swModal = new Swiper(".sw-modal", {
     slidesPerView: 1, // 한 번에 하나의 슬라이드만 보여줌
     loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
    
     navigation: {
       nextEl: '.swiper-button-next', // 다음 슬라이드 버튼
