@@ -61,6 +61,7 @@
   <body>
     <div class="container">
       <div class="inner">
+        <!-- 1번째 페이지 -->
         <div class="delivery1">
           <div class="plan-title">
             <ul>
@@ -97,6 +98,8 @@
           </div>
           <button><p>다음</p></button>
         </div>
+
+        <!-- 2번째 페이지 -->
         <div class="delivery2">
           <div class="plan-title">
             <ul>
@@ -135,10 +138,30 @@
           <div class="delivery-request">
             <h3>배송 요청사항</h3>
             <select name="request" id="request">
-                <option >집 앞에 두고 가주세요</option>
-                <option >경비실에 맡겨 주세요</option>
+              <option value="leave-at-door">집 앞에 두고 가주세요</option>
+              <option value="leave-at-security">
+                경비실에 맡기고 가주세요
+              </option>
+              <option value="call-before-delivery">
+                배송 전에 연락 주세요
+              </option>
+              <option value="no-contact">비대면으로 배송해주세요</option>
+              <option value="specific-location">
+                특정 장소에 두고 가주세요 (기타)
+              </option>
             </select>
           </div>
+          <div class="delivery-day">
+            <ul>
+              <li><button>월</button></li>
+              <li><button>화</button></li>
+              <li><button>수</button></li>
+              <li><button>목</button></li>
+              <li><button>금</button></li>
+              <li><button>토</button></li>
+            </ul>
+          </div>
+          <button><p>다음</p></button>
         </div>
       </div>
     </div>
