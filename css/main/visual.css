@@ -65,7 +65,7 @@
   color: white;
 }
 .visual2 button {
-  background-color: #62c975;
+  background-color: #1FBF6A;
 }
 .visual2 p {
   color: white;
@@ -109,4 +109,48 @@
   .visual {
     padding-top: 70px;
   }
+}
+@media screen and (max-width : 480px){
+  .visual{
+    aspect-ratio: 1/1.4;
+  }
+.main-banner button {
+  border: none;
+  font-size: 6vw;
+  font-weight: 700;
+  color: white;
+  
+  position: absolute;
+  width: 65%;
+  height: 11%;
+  border-radius: 15px;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 40%;
+}
+.main-banner > p {
+  position: absolute;
+  bottom: 25%;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 4.5vw;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.main-banner > a {
+  position: absolute;
+  bottom: 15%;
+  transform: translateX(50%);
+  right: 50%;
+  font-size: 5vw;
+  white-space: nowrap;
+  font-weight: 700;
+}
+.main-banner a img {
+  width: 7vw;
+  justify-content: end;
+}
+.visual2 p{
+  color: black;
+}
 }
