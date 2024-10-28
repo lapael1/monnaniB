@@ -181,7 +181,7 @@
   padding: 40px 20px;
 }
 .bbsBody img {
-  width: 100%;
+  width: 80%;
 }
 .bbsSubject h3,
 .bbsSubject p {
@@ -200,12 +200,15 @@
   padding: 40px 20px;
   border-bottom: 1px solid #ddd;
 }
-.bbsBtn ul {
+.bbs-de {
+  text-align: center;
+}
+.bbsBtn {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 10px;
 }
-.bbsBtn ul li {
+.bbsBtn button {
   width: 100px;
   height: 40px;
   border: 1px solid #ddd;
@@ -308,6 +311,10 @@
   .gallery-item-img {
     height: 30vw;
   }
+  .bbs-de {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 689px) {
@@ -358,6 +365,9 @@
     display: block; /* a 태그를 블록 요소로 설정 */
     text-align: center; /* 텍스트 중앙 정렬 */
   }
+  .bbs-de {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 600px) {
   .gallery-wh {
@@ -374,6 +384,9 @@
   }
   .gallery-item-img {
     height: 50vw;
+  }
+  .bbs-de {
+    font-size: 14px;
   }
 }
 
@@ -392,5 +405,8 @@
   }
   .gallery-item-img {
     height: 50vw;
+  }
+  .bbs-de {
+    font-size: 12px;
   }
 }
