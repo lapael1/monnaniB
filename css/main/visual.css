@@ -29,6 +29,9 @@
   right: 5.5%;
   bottom: 30.4%;
 }
+.main-banner button a{
+  color: #fff;
+}
 .main-banner > p {
   position: absolute;
   bottom: 20.2%;
@@ -60,19 +63,32 @@
 }
 .visual1 button {
   background-color: #ff6741;
+  cursor: pointer;
+}
+.visual1 button:hover{
+  background-color: #e2360a;
 }
 .visual2 {
   color: white;
 }
 .visual2 button {
-  background-color: #1FBF6A;
+  background-color: #62c975;
+ cursor: pointer;
+}
+.visual2 button:hover{
+  background-color: #43AE56;
 }
 .visual2 p {
   color: white;
 }
+@media screen and (max-width:1180px){
+  .visual{
+    padding-top: 90px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .visual {
-    padding-top: 90px;
+    
     aspect-ratio: 1920/900;
   }
   .main-banner button {
