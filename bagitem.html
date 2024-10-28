@@ -28,6 +28,7 @@
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/main/bagtime.css" />
     <!-- swiper css 적용 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- js -->
@@ -98,7 +99,199 @@
         </div>
       </header>
       <!-- 제품 상세페이지 -->
-      
+      <div class="product_detail_sec01">
+        <div class="lef_gallery">
+          <div class="timer-area" style="display: flex">
+            <lottie-player src="/resources/images/timer.json" background="transparent" style="width: 18px; height: 18px" speed="1" loop="" autoplay=""></lottie-player>
+            <span class="detail-timer-text">특가 종료까지</span>
+            <span id="timer365">07:04:29</span>
+          </div>
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <div class="gallery_img slick-initialized slick-slider">
+            <div class="slick-list draggable">
+              <div class="slick-track" style="opacity: 1; width: 480px">
+                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 480px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1">
+                  <img src="https://attach.choroc.com/web/goods/1/img1/028205_20240823155251.jpg" alt="양송이크림 스파게티(664g/2인분)" onerror="this.src='/resources/images/common/produnct_img_default.png'" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  gallery_img : e -->
+          <div class="gallery_thum slick-initialized slick-slider slick-vertical">
+            <div class="slick-list" style="height: 581px">
+              <div class="slick-track" style="opacity: 1; height: 83px; transform: translate3d(0px, 0px, 0px)">
+                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 60px">
+                  <div class="gallery_thum_img">
+                    <img src="https://attach.choroc.com/web/goods/1/img5/028205_20240823155251.jpg" alt="양송이크림 스파게티(664g/2인분)" onerror="this.src='/resources/images/common/produnct_img_default.png'" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  gallery_thum : e -->
+          <div class="food_mark"></div>
+
+          <!--  //food_mark : e -->
+        </div>
+
+        <!--  //lef_gallery : e -->
+
+        <input type="hidden" id="wishItemInfo" data-goods-cd="WG028205" data-order-type-divd="1" data-sell-divd="1" />
+        <input type="hidden" id="saleStatus" value="0" />
+
+        <div class="rit_prod_info">
+          <h3 class="prod_tit02">양송이크림 스파게티(664g/2인분)</h3>
+
+          <div class="customer_price">
+            <div class="dc_price">
+              <p class="sale_txt_red">35%</p>
+              <p class="money_txt_st01">
+                <strong> 6,400 </strong>
+                <span>원</span>
+              </p>
+            </div>
+            <p class="normal_price02">9,900원</p>
+            <!--  //dc_price : e -->
+            <div class="dc_info">
+              <p>100 g 당 964원</p>
+              <p>할인액 <span class="text-red"> 3,500원</span></p>
+            </div>
+
+            <!--  //dc_info : e -->
+
+            <div class="star_rating">
+              <div class="star_rating_img">
+                <img src="/resources/images/sub/icon_star_f.svg" alt="평점" />
+
+                <img src="/resources/images/sub/icon_star_f.svg" alt="평점" />
+
+                <img src="/resources/images/sub/icon_star_f.svg" alt="평점" />
+
+                <img src="/resources/images/sub/icon_star_f.svg" alt="평점" />
+
+                <img src="/resources/images/sub/icon_star_f.svg" alt="평점" />
+              </div>
+              <!--  star_rating_img : e -->
+
+              <strong class="star_rating_num">5.0</strong>
+              <div class="product_rating">
+                <a href="javascript:void(0);" id="reviewCnt">11</a>
+                <span>건의 상품평이 있습니다.</span>
+              </div>
+
+              <!--  product_rating : e -->
+            </div>
+          </div>
+
+          <div class="prod_info_line">
+            <dl>
+              <dt>상품구분</dt>
+              <dd>
+                <div class="delivery_txt">
+                  <span>냉장</span>
+                </div>
+              </dd>
+            </dl>
+            <dl>
+              <dt>배송구분</dt>
+              <dd>
+                <div class="delivery_txt">
+                  <span>초록마을</span>
+                </div>
+              </dd>
+            </dl>
+
+            <dl>
+              <dt>원산지</dt>
+              <dd>상품설명 참조</dd>
+            </dl>
+          </div>
+          <!--  prod_info_line : e -->
+          <div class="prod_delivery_info">
+            <dl class="mt10">
+              <dt>안전관리시스템</dt>
+              <dd class="deli_info_txt">
+                <ul class="safety_system">
+                  <li>
+                    <img src="/resources/images/sub/icon_system_02.svg" alt="제조물책임 PL보험가입" />
+                    <span>제조물책임 <br />PL보험가입</span>
+                  </li>
+                </ul>
+                <!--  //safety_system : e -->
+              </dd>
+            </dl>
+          </div>
+
+          <div class="multi_event">
+            <div class="multi_event_txt">
+              <!-- 상품 할인 -->
+              <a href="/onSale?divd=0">
+                <p>10-28(월) ~ 10-28(월) 할인행사</p>
+                <br />
+              </a>
+            </div>
+          </div>
+
+          <!--  prod_delivery_info : e -->
+          <div class="check_num">
+            <div class="product_num">
+              <input
+                type="hidden"
+                name="goodsInfo"
+                data-goods-nm="양송이크림 스파게티(664g/2인분)"
+                data-stock-qty="9999"
+                data-evt-type="01"
+                data-dc-flg="1"
+                data-dc-amt-rate="35"
+                data-org-price="9900"
+                data-dc-price="6400"
+                data-limit-divd="10"
+                data-affor-yn="N"
+                data-min-qty="1"
+                data-unit-qty="1"
+                data-limit-qty="1"
+                data-sell-rate="1.0"
+              />
+              <a href="javascript:void(0);" class="btn_minus"></a>
+              <input type="text" name="goodsQty" value="1" maxlength="3" data-unit-qty="1" />
+              <a href="javascript:void(0);" class="btn_plus"></a>
+            </div>
+            <!--  product_num : e -->
+            <div class="rit_dc_price">
+              <!-- 2020-10-28 수정 -->
+              <div class="total_dc_price" id="dc-div" style="">총 할인액 : <span class="color_red" id="dc-price">3,500원</span></div>
+              <!--  total_dc_price : e -->
+              <div class="check_price">
+                <strong id="goods-price">6,400</strong>
+                <span>원</span>
+              </div>
+              <!--  check_price : e -->
+            </div>
+            <!--  //rit_dc_price : e -->
+          </div>
+          <!--  check_num : e -->
+          <div class="bott_btnBox">
+            <a href="javascript:void(0);" class="btn_like">좋아요</a>
+
+            <a href="javascript:void(0);" class="btn_share">공유</a>
+            <div class="share_sns" style="display: none">
+              <a href="javascript:void(0);" class="btn_facebook">
+                <img src="/resources/images/sub/icon_facebook.svg" alt="facebook" />
+              </a>
+              <a href="javascript:void(0);" class="btn_twitter">
+                <img src="/resources/images/sub/icon_twitter.svg" alt="twitter" />
+              </a>
+              <a href="javascript:void(0);" class="btn_url">
+                <img src="/resources/images/sub/icon_url.svg" alt="url" />
+              </a>
+            </div>
+            <!--  share_sns : e -->
+
+            <a href="javascript:void(0);" class="btn_resale btn-cart">장바구니</a>
+          </div>
+          <!--  bott_btnBox : e -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
