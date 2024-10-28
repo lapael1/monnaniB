@@ -62,32 +62,34 @@ window.addEventListener("load", function () {
     },
   });
 
-  // 모든 슬라이드에서 마우스 오버 효과 적용
   document.querySelectorAll(".sw-farmswiper .swiper-slide").forEach(function (slide) {
     slide.addEventListener("mouseover", function () {
       const produceImg = slide.querySelector(".produce-img");
       const recipeOverlay = slide.querySelector(".recipe-overlay");
-
-      // 마우스 오버 시 기본 이미지를 숨기고 hover 이미지를 보이게 처리
+  
+      // 마우스 오버 시 기본 이미지 숨기고 hover 이미지 표시
       if (produceImg) {
         produceImg.style.opacity = "0"; // 기본 이미지 숨기기
       }
       if (recipeOverlay) {
         recipeOverlay.style.opacity = "1"; // hover 이미지 보이기
+        recipeOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // hover 배경 어둡게
       }
     });
-
+  
     slide.addEventListener("mouseout", function () {
       const produceImg = slide.querySelector(".produce-img");
       const recipeOverlay = slide.querySelector(".recipe-overlay");
-
-      // 마우스가 떠났을 때 기본 상태로 복귀
+  
+      // 마우스가 떠났을 때 기본 이미지와 hover 이미지 초기 상태로 복귀
       if (produceImg) {
         produceImg.style.opacity = "1"; // 기본 이미지 다시 보이기
       }
       if (recipeOverlay) {
-        recipeOverlay.style.opacity = "0"; // hover 이미지 다시 숨기기
+        recipeOverlay.style.opacity = "0"; // hover 이미지 숨기기
+        recipeOverlay.style.backgroundColor = "transparent"; // 배경 투명으로 복귀
       }
     });
   });
+  
 });

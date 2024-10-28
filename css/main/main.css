@@ -42,11 +42,11 @@ h2.title {
 }
 p .title-sub{
   font-size: 20px;
-    color: #aaa;
+    color: #6d6d6d;
 }
-.season .title-sub{
+.season .title-sub, .today .title-sub{
   font-size: 20px;
-    color: #aaa;
+    color: #6d6d6d;
 }
 /* 구출하기 버튼 */
 .buybtn {
