@@ -178,6 +178,10 @@
 .bbsBody {
   width: 100%;
   box-sizing: border-box;
+  padding: 40px 20px;
+}
+.bbsBody img {
+  width: 100%;
 }
 .bbsSubject h3,
 .bbsSubject p {
