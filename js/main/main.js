@@ -26,5 +26,24 @@ $(document).ready(function () {
     },
     speed: 1500,
   });
+  $(document).ready(function () {
+    // bbtn-container를 클릭했을 때
+    $(".visualbtn1").click(function () {
+      // 해당 링크로 이동
+      window.location.href = "delivery.html";
+    });
+    $(".visualbtn2").click(function () {
+      // 해당 링크로 이동
+      window.location.href = "faq.html";
+    });
+    $("#buybtntag").click(function () {
+      // 해당 링크로 이동
+      window.location.href = "purchase.html";
+    });
+    $(".buybtn").click(function () {
+      // 해당 링크로 이동
+      window.location.href = "purchase.html";
+    });
+  });
 });
 
