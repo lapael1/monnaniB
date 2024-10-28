@@ -20,11 +20,15 @@
 .today-inner {
   margin: 50px 20px;
 }
+.title-wrap {
+  margin-bottom: 50px;
+}
 .today-wrap {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 100px;
 }
 .today-right {
   display: flex;
@@ -65,6 +69,8 @@
 }
 .today-notice {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 5px;
 }
 .today-notice p {
@@ -86,8 +92,8 @@
 .timer_area {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-end;
-  background: hsla(0, 0%, 9%, 0.1);
+  align-items: center;
+  background: #3fbb79;
   width: 125px;
   border-radius: 10px;
 }
@@ -103,20 +109,20 @@
 #timer365 {
   font-size: 20px;
   margin-left: 10px;
-  color: #333;
+  color: #fff;
 }
 
 /* 장바구니 이미지 */
 .bag-shopping {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 .bag-button {
   /* background: #fff; */
   border-radius: 20px;
   border: #333;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-left: 40px;
 }
 
@@ -146,13 +152,6 @@
     font-size: 30px;
     color: #b5b5b5;
     text-decoration: line-through;
-  }
-  .today-notice {
-    display: flex;
-    gap: 5px;
-  }
-  .today-notice p {
-    color: #6d6d6d;
   }
 }
 
@@ -213,5 +212,23 @@
   .today-img img {
     width: 100%;
     max-width: 300px;
+  }
+  #timer365 {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #333;
+  }
+  .timer_area {
+    align-items: center;
+  }
+  .today-notice {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .title-sub {
+    white-space: normal;
   }
 }

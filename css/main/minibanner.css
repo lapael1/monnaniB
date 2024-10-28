@@ -3,6 +3,7 @@
   width: 100%;
   /* height: auto; */
   padding: 40px 10px;
+  margin-top: 70px;
 }
 .banner-inner {
   position: relative;
@@ -53,7 +54,7 @@
 .banner-pg {
   /* position: relative; */
   display: block;
-  width: 80px !important;
+  width: 50px !important;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50px;
@@ -78,6 +79,25 @@
     display: block;
     border-radius: 20px;
   }
+  .minibanner {
+    width: 100%;
+    /* height: auto; */
+    padding: 25px 10px;
+  }
+  .banner-pg {
+    /* position: relative; */
+    display: block;
+    width: 40px !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+    letter-spacing: -1.5px;
+  }
 }
 @media screen and (max-width: 450px) {
   .banner-control {
@@ -90,5 +110,22 @@
     display: flex;
     align-items: center;
     color: #fff;
+  }
+  .banner-pg {
+    /* position: relative; */
+    display: block;
+    width: 35px !important;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+    letter-spacing: -1.5px;
+  }
+  .swiper-pagination-fraction span {
+    font-size: 14px;
   }
 }
