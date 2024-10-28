@@ -49,7 +49,7 @@ p .title-sub{
     color: #6d6d6d;
 }
 /* 구출하기 버튼 */
-.buybtn {
+.buybtn, #buybtntag {
   display: flex; /* 플렉스 박스로 변경 */
   justify-content: center; /* 수평 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
@@ -62,7 +62,7 @@ p .title-sub{
   margin-top: 3%;
   cursor: pointer;
 }
-.buybtn a {
+.buybtn a, #buybtntag a {
   font-size: 30px;
   color: #fff;
   font-weight: bold;
@@ -72,6 +72,9 @@ p .title-sub{
   cursor: pointer;
 }
 .buybtn:hover {
+  background-color: #e2360a;
+}
+#buybtntag:hover{
   background-color: #e2360a;
 }
 /* 모달창 */
@@ -218,12 +221,12 @@ span.notToday{
     font-size: 30px;
     margin-top: 50px;
   }
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 260px;
     min-height: 40px;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 24px;
     padding: 8px;
@@ -253,13 +256,13 @@ span.notToday{
     font-size: 26px;
   }
  
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 230px;
     min-height: 30px;
     margin-top: 7%;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 20px;
     padding: 7px;
@@ -304,13 +307,13 @@ span.notToday{
   h2.title {
     font-size: 24px;
   }
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 200px;
     min-height: 30px;
     margin-top: 7%;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 18px;
     padding: 6px;
@@ -320,13 +323,13 @@ span.notToday{
   h2.title {
     font-size: 22px;
   }
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 180px;
     min-height: 30px;
     margin-top: 6%;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 17px;
     padding: 6px;
@@ -337,13 +340,13 @@ span.notToday{
   h2.title {
     font-size: 19px;
   }
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 175px;
     min-height: 28px;
     margin-top: 5%;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 16px;
     padding: 6px;
@@ -353,13 +356,13 @@ span.notToday{
   h2.title {
     font-size: 18px;
   }
-  .buybtn,
+  .buybtn, #buybtntag,
   .galbtn {
     min-width: 172px;
     min-height: 25px;
     margin-top: 5%;
   }
-  .buybtn a,
+  .buybtn a, #buybtntag a,
   .galbtn a {
     font-size: 15px;
     padding: 5px;

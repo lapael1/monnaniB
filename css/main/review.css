@@ -53,13 +53,13 @@ p.review-txt{
   margin-bottom: 50px;
 }
 /* 기본 상태의 이미지 */
-.review-txt a img {
+.review-txt img {
   transition: filter 0.5s ease; /* 전환 효과 */
   vertical-align: top;
 }
 
 /* 마우스를 올렸을 때 밝기 조절 */
-.review-txt a:hover img {
+.review-txt img:hover{
   filter: brightness(0.8); /* 밝기를 70%로 줄여 색을 더 짙게 표현 */
 }
 @media screen and (max-width : 860px) {
@@ -74,7 +74,7 @@ p.review-txt{
   p.review-txt {
     font-size: 24px;
   }
-  .review-txt a img{
+  .review-txt img{
     max-width: 50px;
     width: 100%;
   }
@@ -131,7 +131,7 @@ p.review-txt{
     max-width: 120px; /* 원하는 크기로 조정 */
     width: 100%;
   }
-  .review-txt a img{
+  .review-txt img{
     max-width: 45px;
     width: 100%;
     vertical-align:sub;
@@ -171,7 +171,7 @@ p.review-txt{
     max-width: 120px; /* 원하는 크기로 조정 */
     width: 100%;
   }
-  .review-txt a img{
+  .review-txt img{
     max-width: 40px;
     width: 100%;
     vertical-align:sub;
@@ -211,7 +211,7 @@ p.review-txt{
     max-width: 100px; /* 원하는 크기로 조정 */
     width: 100%;
   }
-  .review-txt a img{
+  .review-txt img{
     max-width: 35px;
     width: 100%;
     vertical-align:sub;
