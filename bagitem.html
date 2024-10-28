@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!--  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO 적용 -->
+
+    <meta name="description" content="몬나니농장에서는 모양은 못났지만 맛있고 신선한 못난이 농산물을 저렴하게 제공합니다. 신선한 채소와 과일을 환경을 생각하며 구매하세요!" />
+    <meta name="keywords" content="못난이 농산물, 신선한 농산물, 할인 농산물, 환경친화적 소비, 몬나니농장" />
+    <meta name="author" content="몬나니농장 운영팀" />
+    <meta property="og:title" content="몬나니농장 - 모양은 못났지만 신선한 농산물을 저렴하게 구매하세요!" />
+    <meta property="og:description" content="모양은 못났지만 맛있는 농산물을 저렴하게 구매하세요!" />
+
+    <!-- 버셀 주소 만들고 넣기-->
+    <meta property="og:image" content="https://monnani-b.vercel.app/images/logo.png" />
+    <meta property="og:url" content="https://monnani-b.vercel.app/" />
+    <meta property="og:site_name" content="몬나니농장" />
+    <meta property="og:type" content="website" />
+
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon//site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- CSS 적용 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main/main.css" />
+    <!-- swiper css 적용 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- js -->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- AOS.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script src="js/main/main.js"></script>
+    <script src="js/main/modal.js"></script>
+    <script src="js/main/header.js"></script>
+    <script src="js/main/visual.js"></script>
+    <script src="js/main/introduction.js"></script>
+    <script src="js/main/farmswiper.js"></script>
+    <script src="js/main/count.js"></script>
+    <script src="js/main/review.js"></script>
+    <script src="js/main/minibanner.js"></script>
+    <script src="js/main/footer.js"></script>
+    <script src="js/main/count.js"></script>
+    <script src="js/main/season.js"></script>
+    <title>특가 상세페이지</title>
+  </head>
+  <body>
+    <!-- 전체 wrap -->
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="header-wrap">
+          <div class="header-inner">
+            <a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo" /></a>
+            <div id="cart-menu">
+              <img src="images/icons/icon_cart.svg" alt="" />
+            </div>
+
+            <div id="header-close" class="header-close">
+              <img src="images/icons/icon_menu.png" alt="menu" id="menu-icon" />
+            </div>
+            <div class="header-toggle">
+              <ul class="header-nav" id="header-nav">
+                <li><a href="brand.html">브랜드</a></li>
+                <li><a href="delivery.html">정기배송</a></li>
+                <li><a href="purchase.html">제품구매</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="faq.html">문의하기</a></li>
+              </ul>
+              <ul class="header-login" id="header-login">
+                <li id="login-button"><a href="login.html">로그인</a></li>
+                <li id="signup-button"><a href="signup.html">회원가입</a></li>
+                <li style="display: none" id="login-display" class="login-display">
+                  <ul>
+                    <li id="name-display">
+                      <!-- 이름 출력 -->
+                    </li>
+                    <li id="logout">로그아웃</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 제품 상세페이지 -->
+      
+    </div>
+  </body>
+</html>
