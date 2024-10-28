@@ -60,6 +60,7 @@ p .title-sub{
   border-radius: 30px;
   margin: 0 auto; /* 부모 요소에서 가로 방향으로 중앙 정렬 */
   margin-top: 3%;
+  cursor: pointer;
 }
 .buybtn a {
   font-size: 30px;
@@ -68,6 +69,7 @@ p .title-sub{
   padding: 10px;
   display: block; /* a 태그를 블록 요소로 설정 */
   text-align: center; /* 텍스트 중앙 정렬 */
+  cursor: pointer;
 }
 .buybtn:hover {
   background-color: #e2360a;
