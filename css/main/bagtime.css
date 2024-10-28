@@ -1,0 +1,15 @@
+@charset "utf-8";
+.product_detail_sec01 {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  font-size: 14px;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  outline: none;
+  margin-bottom: 40px;
+}
