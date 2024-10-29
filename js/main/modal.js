@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     slidesPerView: 1, // 한 번에 하나의 슬라이드만 보여줌
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 2000,
       disableOnInteraction: false,
     },
    

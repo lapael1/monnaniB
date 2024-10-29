@@ -53,19 +53,7 @@
   font-size: 40px;
   font-weight: bold;
 }
-.introduction h3::after,
-.introduction2 h3::after {
-  content: "";
-  display: block;
-  width: 100%; /* h3의 너비에 맞게 설정 */
-  height: 5px;
-  border-radius: 5px;
-  background-color: #ff6741;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  z-index: -1;
-}
+
 .introduction h3,
 .introduction2 h3 {
   display: inline-block;
