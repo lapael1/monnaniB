@@ -57,41 +57,7 @@
     <title>몬나니농장</title>
   </head>
   <body>
-    <!-- event modal -->
-
-    <div id="myModal" class="modal">
-      <div class="modal-wrapper">
-        <div class="modal-content">
-          <!-- 스와이퍼가 적용될 이미지 영역 -->
-          <div class="swiper sw-modal">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="purchase.html">
-                  <img src="images/eventmodal1.png" alt="이벤트 팝업 이미지" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="community.html">
-                  <img src="images/eventmodal2.png" alt="이벤트 팝업 이미지" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="signup.html">
-                  <img src="images/eventmodal3.png" alt="이벤트 팝업 이미지" />
-                </a>
-              </div>
-            </div>
-            <!-- 페이지네이션 -->
-          </div>
-
-          <!-- 고정된 닫기 버튼 및 '오늘 하루 열지 않음' -->
-          <div class="close-wrap">
-            <label><input type="checkbox" id="notToday" /><span class="notToday">오늘 하루 열지 않음</span></label>
-            <span class="close-btn">&times;</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- event modal --
 
     <!-- 플로팅버튼 -->
 
@@ -108,7 +74,7 @@
     <div id="faqSection" class="faq-section">
       <h3>문의하기 (F&Q)</h3>
       <p>여기서 궁금한 사항을 남기세요.</p>
-      <!-- 추가 내용 -->ㄴㅀㄱㅈㅎㅈㄱㅎㅈㄱㅎ ㄱㅎㅈㅎㅈㅎ ㅈㄱㅎ ㅈㄱㅎㄱㅈㅎ
+      <!-- 추가 내용 -->문의하기
     </div>
 
     <!-- JavaScript -->
@@ -119,19 +85,23 @@
       <!-- header -->
       <header class="header">
         <div class="header-wrap">
-          <div class="inner">
+          <div class="header-inner">
             <a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo" /></a>
+            <div id="cart-menu">
+              <img src="images/icons/icon_cart.svg" alt="" />
+            </div>
+
             <div id="header-close" class="header-close">
               <img src="images/icons/icon_menu.png" alt="menu" id="menu-icon" />
             </div>
             <div class="header-toggle">
               <ul class="header-nav" id="header-nav">
-                <li><a href="">브랜드</a></li>
-                <li><a href="">정기배송</a></li>
-                <li><a href="">제품구매</a></li>
-                <li><a href="">커뮤니티</a></li>
-                <li><a href="">갤러리</a></li>
-                <li><a href="">문의하기</a></li>
+                <li><a href="brand.html">브랜드</a></li>
+                <li><a href="delivery.html">정기배송</a></li>
+                <li><a href="purchase.html">제품구매</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="faq.html">문의하기</a></li>
               </ul>
               <ul class="header-login" id="header-login">
                 <li id="login-button"><a href="login.html">로그인</a></li>
@@ -149,22 +119,23 @@
           </div>
         </div>
       </header>
-        
+        <!-- visual -->
+         <img src="images/detailbanner/communitybanner.png" alt="">
       <!-- introduction영역 -->
       <section class="introduction">
         <div class="inner">
           <div class="introduction-wrap">
             <!-- 좌측이미지 -->
-            <div class="intro-left" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+            <div class="intro-left">
               <img src="images/intro/intro1.png" alt="소개1" />
             </div>
             <!-- 우측텍스트 -->
             <div class="intro-right">
-              <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">농산물 폐기 문제</h1>
-              <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">언제까지 외면하실 껀가요?</h3>
-              <p class="p1" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">소비자의 선택을 받기 위해 균일하고 깨끗한 농산물들이 ‘정상품’으로 분류돼 시장으로 나오고, 나머지는 규격 외 농산물로 분류됩니다.</p>
-              <p class="p2" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">규격 외 농산물들은 맛도 영양도 다를 바 없지만, 크기가 조금 작거나 크거나 개성있다는 이유로 적절한 판로를 찾기가 어렵습니다.</p>
-              <p class="p3" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000">판로를 찾지 못한 농산물의 상당 양은 폐기로 이어집니다. 농산물의 폐기는 온실가스를 배출해 환경을 오염시키고, 생산에 투입된 물과 비료, 노동력의 낭비로 직결돼 큰 사회적·경제적·환경적 손실입니다.</p>
+              <h1>농산물 폐기 문제</h1>
+              <h3>언제까지 외면하실 껀가요?</h3>
+              <p class="p1">균일하고 깨끗한 농산물들이 ‘정상품’으로 분류돼 시장으로 나오고, 나머지는 규격 외 농산물로 분류되요</p>
+              <p class="p2">크기가 조금 작거나 크거나 개성있다는 이유로 적절한 판로를 찾기가 어려워요</p>
+              <p class="p3">판로를 찾지 못한 농산물의 상당 양은 폐기로 이어집니다. 농산물의 폐기는 온실가스를 배출해 환경을 오염시켜요</p>
             </div>
           </div>
         </div>
@@ -175,19 +146,19 @@
           <div class="introduction-wrap2">
             <!-- 좌측텍스트 -->
             <div class="intro2-left">
-              <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">외모지상주의에 맞서다</h1>
-              <h3 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">외모가 전부는 아니에요</h3>
-              <p class="p4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">농산물 전체 생산량 중 20~30%는 색깔, 크기, 흠집 등 '외모심사'에서 탈락하여 못난이 농산물에 속하고 있습니다. 맛과 품질은 문제가 없지만, 판매 기회조차 제대로 얻지 못하고 있습니다.</p>
-              <p class="p5" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">농산물은 공장이 아닌 땅에서 자연의 기준에 따라 키워지는 생물이라서 모두 일정할 수 없는 것이 당연합니다. 똑같은 땅에서 똑같은 환경에서 자연스럽게 태어난 다르지만 특별한 농산물의 가치를 전달하겠습니다.</p>
+              <h1>외모지상주의에 맞서다</h1>
+              <h3>외모가 전부는 아니에요</h3>
+              <p class="p4">농산물 전체 생산량 중 20~30%는 못난이 농산물에 속하고 있어요. 맛과 품질은 문제가 없지만, 판매 기회조차 제대로 얻지 못하고 있어요.</p>
+              <p class="p5">농산물은 모두 일정할 수 없는 것이 당연해요. 다르지만 특별한 농산물의 가치를 전달할께요.</p>
             </div>
             <!-- 우측이미지 -->
-            <div class="intro2-right" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+            <div class="intro2-right">
               <img src="images/intro/intro2.png" alt="소개2" />
             </div>
           </div>
         </div>
       </section>
-
+      
       
 
       <!-- footer영역 -->
