@@ -1,0 +1,44 @@
+@charset "utf-8";
+h2{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  color: white;
+  background-color: #ff6741;
+}
+.delivery-review{
+padding-top: 100px;
+}
+.delivery-review ul{
+  padding: 100px;
+}
+.delivery-review ul li{
+  width: 31%;
+  padding: 20px;
+}
+.delivery-review img:first-child{
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* padding: 10px; */
+  
+}
+.delivery-instruct > .inner > ul>li{
+  width: 48%;
+}
+.delivery-instruct ul li ul li{
+  text-align: center;
+}
+.delivery-instruct img{
+width: 80%;
+/* display: inline-block; */
+}
+.delivery-instruct ul li ul:nth-child(2) li:first-child{
+  width: 33px;
+}
