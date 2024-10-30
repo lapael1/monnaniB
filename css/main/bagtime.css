@@ -7,11 +7,12 @@
 /* 상단 */
 .product-page {
   display: flex;
+  align-items: center;
   width: 100%;
   /* max-width: 800px; */
-  margin: 20px;
+  /* margin: 20px; */
   background: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -19,17 +20,20 @@
 .image-section {
   flex: 1;
   margin-right: 20px;
+  width: 100%;
 }
 
 .main-image {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 40px;
+  padding: 20px;
 }
 
 .thumbnail-images {
   display: flex;
   gap: 5px;
   margin-top: 10px;
+  width: 100%;
 }
 
 .thumbnail-images img {
@@ -44,7 +48,7 @@
 .rating {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 17px;
   color: #f2994a;
   margin-bottom: 8px;
 }
@@ -56,7 +60,7 @@
 }
 
 .details-section h1 {
-  font-size: 18px;
+  font-size: 26px;
   margin: 10px 0;
 }
 
@@ -67,20 +71,20 @@
 }
 
 .original-price {
-  font-size: 14px;
+  font-size: 18px;
   color: #999;
   text-decoration: line-through;
   margin-right: 8px;
 }
 
 .discount {
-  font-size: 14px;
-  color: #ff5a5a;
+  font-size: 18px;
+  color: #ff6741;
   margin-right: 8px;
 }
 
 .sale-price {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
 }
@@ -93,34 +97,34 @@
 
 .new,
 .special {
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   padding: 2px 8px;
   border-radius: 4px;
 }
 
 .new {
-  background-color: #4caf50;
+  background-color: #292929;
 }
 
 .special {
-  background-color: #ff5a5a;
+  background-color: #ff6741;
 }
 
 .details p {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .delivery-date {
   font-weight: bold;
-  color: #4caf50;
+  color: #1fbf6a;
 }
 
-.buttons {
+.details-buttons {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .details-section button {
@@ -134,7 +138,7 @@
 }
 
 .cart {
-  background-color: #ff8c00;
+  background-color: #ff6741;
 }
 
 .gift {
@@ -148,9 +152,6 @@
 /* 배송 일정 */
 .product-img-page {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .delivery-schedule {
   width: 100%;
@@ -167,7 +168,7 @@
 }
 
 .delivery-days {
-  background-color: #ff5a5a;
+  background-color: #ff6741;
   color: #fff;
   padding: 10px;
   border-radius: 4px;
@@ -228,41 +229,33 @@
   text-align: center;
 }
 .product-details h3 {
-  font-size: 16px;
-  color: #ff5a5a;
+  font-size: 25px;
+  color: #ff6741;
   margin: 0;
 }
 
 .product-details h2 {
   font-size: 20px;
-  color: #ff5a5a;
+  color: #ff6741;
   font-weight: bold;
   margin: 5px 0 15px;
 }
 
 .product-image {
-  width: 100%;
+  width: 70%;
   border-radius: 8px;
+}
+.product-details-img {
+  margin: 45px auto;
 }
 /* 제품 상세 텍스트 */
 .mt30 {
-  margin-top: 30px !important;
-}
-.list-text-item:first-child {
-  padding-top: 0;
+  margin-top: 20px !important;
 }
 .list-text-item {
   display: flex !important;
+  justify-content: space-around;
   padding: 5px 0;
-}
-.list-text-item-number {
-  color: #212121;
-  flex-basis: auto;
-  line-height: 1.6;
-  width: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-right: 20px;
 }
 .list-text-item-title-bold {
   color: #212121;
@@ -271,6 +264,7 @@
   font-size: 18px;
   font-weight: 600;
   margin-right: 20px;
+  text-align: center;
 }
 .text14-gray {
   font-weight: 400;
@@ -279,6 +273,54 @@
   color: #414b5a;
 }
 /* 사고보상 정책안내 */
+.policy-guide {
+  width: 100%;
+  padding: 30px;
+}
+.guide-txt {
+  margin-bottom: 50px;
+}
 .policy-notice {
   display: flex;
+  margin: 20px auto;
+}
+.policy-left-round {
+  margin: 20px auto;
+}
+.policy-left-notice {
+    border-radius: 10px;
+    border: 1px solid #e5e7eb; /* gray-200 */
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600; /* font-semibold */
+}
+.policy-notice-main {
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  /* box-sizing: border-box; */
+  border: 0 solid #e5e7eb;
+  margin: 0;
+  width: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.policy-notice-sub {
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  /* box-sizing: border-box; */
+  border: 0 solid #e5e7eb;
+  margin: 0;
+  font-size: 16px;
+}
+.policy-cate {
+  display: flex;
+  flex-direction: column;
+}
+.policy-notice-txt {
+  display: flex;
+}
+.policy-right-cate {
+  display: flex;
+}
+.policy-right {
+  margin-left: 40px;
 }
