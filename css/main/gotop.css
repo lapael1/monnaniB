@@ -54,7 +54,367 @@
   width: 50px;
   height: 50px;
 }
+/* 문의하기 버튼 */
+#faqSection {
+  max-height: 600px; /* 섹션 높이 설정 */
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-width: thin; /* Firefox에서 얇은 스크롤바 표시 */
+}
 
+/* 스크롤바 스타일 */
+#faqSection::-webkit-scrollbar {
+  width: 2px; /* 스크롤바 너비 */
+}
+
+#faqSection::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* 스크롤바 색상 */
+  border-radius: 30px; /* 스크롤바 모서리 둥글기 */
+}
+
+#faqSection::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 스크롤바 트랙 색상 */
+}
+
+/* FAQ 콘텐츠 스타일 */
+.faqtimewrap {
+  padding: 6px 16px 0px;
+}
+
+.faqtop {
+  display: flex;
+  align-items: center;
+}
+.faqlogo {
+  width: 150px;
+  vertical-align: middle;
+}
+/* faqtime */
+.faqtimewrap {
+  padding: 6px 16px 0px;
+}
+.faqtime {
+  display: flex;
+  column-gap: 10px;
+  width: 100%;
+  padding: 12px;
+  font-weight: 400;
+  background-color: var(--bg-black-lightest, rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.faqtime2 p {
+  flex: 1 1 0%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+.faqtime3 {
+  flex-shrink: 0;
+  align-self: end;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.notice-text {
+  flex: 1 1 0%;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.notice-text.clamped {
+  white-space: normal;
+  overflow: visible;
+}
+
+.faqtime3 {
+  text-decoration-color: none;
+  cursor: pointer;
+  color: #ff6741;
+  font-weight: bold;
+}
+/* middle */
+.bkkQiR {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 30px 24px 8px;
+}
+/* faqcontent */
+.duHTod {
+  position: relative;
+  animation: 400ms cubic-bezier(0.36, 0, 0, 1) 0ms 1 normal backwards running eMWxiG;
+}
+/* 시간기능 */
+.euWjea {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 16px 14px 8px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+/* 내용 */
+.hlXDXU {
+  display: flex;
+}
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  user-select: none;
+}
+.fAsAbP {
+  flex: 1 1 0px;
+  -webkit-box-flex: 1;
+  width: calc(100% - 52px);
+}
+/* 몬나니농장 */
+.eljxEN {
+  margin-left: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+  /* line-height: 16px; */
+}
+/* .fSXmUX {
+  display: flex;
+  flex: 0 1 auto;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+.jCWfjL {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+}
+.bvgzeM {
+  margin-top: 2px;
+}
+/* 사이드 공간 */
+.kCLVTv {
+  display: flex;
+}
+/* .eFTzyr {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  width: 52px;
+  padding: 0px 6px 0px 16px;
+} */
+.kutQUI {
+  width: 30px;
+}
+.eOEXZe {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  border-radius: 12.6px;
+}
+/* 이미지 */
+.eOEXZe img {
+  width: 100%;
+  height: 100%;
+  vertical-align: baseline;
+  object-fit: cover;
+}
+.eOEXZe::after {
+  position: absolute;
+  inset: 0px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 12.6px;
+  pointer-events: none;
+  content: "";
+  box-shadow: 0 0 1px 1px var(--bdr-black-lightest) inset;
+}
+/* 전체wrap */
+.dOOqRC {
+  width: 100%;
+}
+.hmnVjG {
+  position: relative;
+  /* display: flex; */
+  column-gap: 4px;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.kvtWDR {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+.koUXgt {
+  position: relative;
+  max-width: 340px;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+.hyPeUI {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 18px;
+  margin: 0px 2px;
+}
+/* 폰트 */
+.ghEzGR {
+  font-size: 15px;
+  /* line-height: 20px; */
+  letter-spacing: -0.1px;
+}
+.gDflWG {
+  font-size: inherit;
+  text-align: left;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+/* 간격 */
+.ghEzGR div.empty-line {
+  height: 1rem;
+}
+.gDflWG div.empty-line {
+  display: block;
+  line-height: 5px;
+}
+/* 웃는이미지 */
+.kQKnqh {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0px 1px;
+  vertical-align: -4px;
+}
+/* 하단질문 */
+/* 자주묻는질문 */
+.fNCBqQ {
+  flex-direction: column;
+  width: 100%;
+  height: 86px;
+  margin-top: 10px;
+}
+.hxwBGZ {
+  display: flex;
+  width: 100%;
+}
+.heierr {
+  height: 40px;
+  padding: 0px 14px;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px inset;
+}
+.dQwmhA {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* .heierr {
+  height: 40px;
+  padding: 0px 14px;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px inset;
+} */
+/* 자주 */
+.dQwmhA .LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-1 {
+  color: #ff6741;
+}
+.dQwmhA .LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-2 {
+  color: #62c975;
+}
+.fcPAbw {
+  font-size: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prod {
+  margin-top: 6px;
+}
+/* 채소 */
+.fNCBqQ > a:not(:first-child) {
+  margin-top: 6px;
+}
+.fNCBqQ {
+  flex-direction: column;
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+}
+.hxwBGZ {
+  display: flex;
+  width: 100%;
+}
+.koUXgt {
+  position: relative;
+  max-width: 340px;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 10px 12px;
+}
+.gTpGMO {
+  flex-shrink: 0;
+  width: 48px;
+}
 @media screen and (max-width : 768px) {
   .gotop img{
     width:60px;
