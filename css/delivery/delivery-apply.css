@@ -1,6 +1,21 @@
 @charset "utf-8";
-.plan-title{
-    
+.plan-title {
+  width: 100%;
+}
+.plan-title ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.size-select ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.size-select ul li{
+width: 45%;
+justify-content: center;
 }
 .payment-item {
   display: flex;
