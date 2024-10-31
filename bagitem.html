@@ -360,5 +360,19 @@
         </div>
       </footer>
     </section>
+    <script>
+      // 상세페이지 사진 클릭시 이미지 변경
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainImage = document.querySelector(".main-image");
+        const thumbnails = document.querySelectorAll(".thumbnail-images img");
+
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            mainImage.src = thumbnail.src;
+            mainImage.alt = thumbnail.alt;
+          });
+        });
+      });
+    </script>
   </body>
 </html>

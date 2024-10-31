@@ -16,35 +16,31 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .image-section {
   flex: 1;
   margin-right: 20px;
   width: 100%;
 }
-
 .main-image {
   width: 100%;
   border-radius: 40px;
   padding: 20px;
+  /* position: relative;
+  display: block; */
 }
-
 .thumbnail-images {
   display: flex;
   gap: 5px;
   margin-top: 10px;
   width: 100%;
 }
-
 .thumbnail-images img {
   width: 20%;
   border-radius: 4px;
 }
-
 .details-section {
   flex: 1;
 }
-
 .rating {
   display: flex;
   align-items: center;
@@ -58,43 +54,36 @@
   color: #333;
   text-decoration: underline;
 }
-
 .details-section h1 {
   font-size: 26px;
   margin: 10px 0;
 }
-
 .price {
   display: flex;
   align-items: center;
   margin: 10px 0;
 }
-
 .original-price {
   font-size: 18px;
   color: #999;
   text-decoration: line-through;
   margin-right: 8px;
 }
-
 .discount {
   font-size: 18px;
   color: #ff6741;
   margin-right: 8px;
 }
-
 .sale-price {
   font-size: 18px;
   font-weight: bold;
   color: #333;
 }
-
 .badges {
   display: flex;
   gap: 8px;
   margin: 10px 0;
 }
-
 .new,
 .special {
   font-size: 14px;
@@ -102,31 +91,25 @@
   padding: 2px 8px;
   border-radius: 4px;
 }
-
 .new {
   background-color: #292929;
 }
-
 .special {
   background-color: #ff6741;
 }
-
 .details p {
   margin: 5px 0;
   font-size: 16px;
 }
-
 .delivery-date {
   font-weight: bold;
   color: #1fbf6a;
 }
-
 .details-buttons {
   display: flex;
   gap: 10px;
   margin-top: 25px;
 }
-
 .details-section button {
   flex: 1;
   padding: 10px;
@@ -136,15 +119,12 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
 .cart {
   background-color: #ff6741;
 }
-
 .gift {
   background-color: #333;
 }
-
 .buy {
   background-color: #ff5a5a;
 }
@@ -282,18 +262,21 @@
 }
 .policy-notice {
   display: flex;
-  margin: 20px auto;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+  /* margin: 20px auto; */
 }
 .policy-left-round {
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .policy-left-notice {
-    border-radius: 10px;
-    border: 1px solid #e5e7eb; /* gray-200 */
-    padding: 16px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600; /* font-semibold */
+  border-radius: 10px;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600; /* font-semibold */
 }
 .policy-notice-main {
   color: rgb(31 41 55 / var(--tw-text-opacity));
