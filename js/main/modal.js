@@ -57,6 +57,10 @@ window.addEventListener('load', function () {
   swModal = new Swiper('.sw-modal', {
     slidesPerView: 1,
     loop: false,
+    autoplay: {
+      delay: 1800,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '#myModal .swiper-pagination', // modal 내의 페이지 네이션만 적용
       clickable: true,
