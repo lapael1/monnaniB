@@ -19,12 +19,12 @@ window.addEventListener("load", function () {
       },
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".season .swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".season .swiper-button-next",
+      prevEl: ".season .swiper-button-prev",
     },
   });
 });
