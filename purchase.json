@@ -12,31 +12,63 @@
         "image": "kiwi.png",
         "name": "골드키위 1팩(6입)",
         "discount": "20%",
-        "price": "5,900"
+        "price": "5,900",
+        "monnani":"못난이"
       },
       {
         "image": "mandarin.png",
         "name": "제주 감귤 1kg",
         "discount": "16%",
-        "price": "9,900"
+        "price": "9,900",
+        "season":"제철",
+        "monnani":"못난이"
       },
       {
         "image": "pakchoi.jpg",
         "name": "친환경 청경채 1kg",
         "discount": "27%",
-        "price": "7,210"
+        "price": "7,210",
+        "monnani":"못난이"
       },
       {
         "image": "sweetpotato.png",
         "name": "꿀밤고구마 1.5kg",
         "discount": "27%",
-        "price": "7,900"
+        "price": "7,900",
+        "season":"제철",
+        "monnani":"못난이"
       },
       {
         "image": "persimmon.png",
         "name": "단감 1kg",
         "discount": "21%",
-        "price": "7,490"
+        "price": "7,490",
+        "season":"제철",
+        "monnani":"못난이"
+      },
+      {
+        "image": "date.png",
+        "name": "사과대추 500g",
+        "discount": "10%",
+        "price": "8900",
+        "season":"제철",
+        "monnani":"못난이"
+      },
+      {
+        "image": "pear.png",
+        "name": "무농약 배 5kg",
+        "discount": "30%",
+        "price": "33,500",
+        "season":"제철",
+        "monnani":"못난이"
+      },
+      {
+        "image": "pumpkin.png",
+        "name": "단호박 3kg",
+        "discount": "12%",
+        "price": "22,900",
+        "season":"제철",
+        "monnani":"못난이"
       }
     ]
   }

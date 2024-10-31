@@ -19,14 +19,14 @@ window.addEventListener("load", function () {
     const idRegex = /^[a-zA-Z0-9]+$/;
     // 비밀번호는 영어 대소문자 숫자 특수문자를 포함한 8자리 이상
     const pwRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+      /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
     if (!idRegex.test(id)) {
-      alert("아이디는 영문자와 숫자로만 이루어져야 합니다.");
+      alert("아이디는 영어와 숫자로만 이루어져야 합니다.");
       return;
     }
     if (!pwRegex.test(pw)) {
       alert(
-        "비밀번호는 영대소문자, 숫자, 특수문자를 포함하여 최소 8자 이상 작성 해야 합니다."
+        "비밀번호는 영대소문자, 숫자를 포함하여 최소 6자 이상 작성 해야 합니다."
       );
       return;
     }

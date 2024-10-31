@@ -22,8 +22,8 @@ let purchase = document.getElementById("market-list")
 function showPurchase(){
     let html =""
     PURCHASE.forEach(function(item){
-        const seasonButton = item.season ? `<li class="${item.season}" >${item.season}</li>`:"";
-        const monnaniButton = item.monnani ? `<li class="${item.monnani}" >${item.monnani}</li>`:"";
+        const seasonButton = item.season ? `<li class="season" >${item.season}</li>`:"";
+        const monnaniButton = item.monnani ? `<li class="monnani" >${item.monnani}</li>`:"";
 
         const tag =`
         <li>

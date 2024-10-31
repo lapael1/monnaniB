@@ -35,6 +35,7 @@ window.addEventListener("load", function () {
     document.getElementById("login-display").style.display = "none"; // 로그인 정보 숨김
     clearUserData();
     clearUsernameParam();
+    window.location.href = "index.html"
   });
 
   function clearUserData() {
@@ -77,6 +78,3 @@ window.addEventListener("load", function () {
     isMenuOpen = !isMenuOpen;
   });
 });
-
-// jquery
-$(document).ready(function () {});
