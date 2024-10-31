@@ -82,38 +82,52 @@
     <div id="myModal" class="modal">
       <div class="modal-wrapper">
         <div class="modal-content">
-          <!-- 스와이퍼가 적용될 이미지 영역 -->
-          <div class="swiper sw-modal">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="signup.html">
-                  <img src="images/eventmodal3.png" alt="이벤트 팝업 이미지" class="popup_1" />
-                </a>
+          <!-- 페이지 네이션 요소 -->
+          <div class="swiper-pagination"></div>
+    
+          <!-- Swiper 컨테이너 -->
+          <div class="swiper sw-modal"> <!-- Swiper 컨테이너 클래스 -->
+            <div class="swiper-wrapper"> <!-- 슬라이드 래퍼 -->
+              <!-- 각 슬라이드 -->
+              <div class="swiper-slide" id="modal-wrap1">
+                <div class="modal-wrap">
+                  <a href="signup.html">
+                    <img src="images/eventmodal3.png" alt="이벤트 팝업 이미지" class="popup_1" />
+                  </a>
+                  <div class="close-wrap">
+                    <label><input type="checkbox" id="notToday1" /><span class="notToday">오늘 하루 열지 않음</span></label>
+                    <span class="close-btn" onclick="closeSlide('modal-wrap1', 'notToday1')">&times;</span>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <a href="community.html">
-                  <img src="images/eventmodal2.png" alt="이벤트 팝업 이미지" class="popup_2"/>
-                </a>
+              <div class="swiper-slide" id="modal-wrap2">
+                <div class="modal-wrap">
+                  <a href="community.html">
+                    <img src="images/eventmodal2.png" alt="이벤트 팝업 이미지" class="popup_2" />
+                  </a>
+                  <div class="close-wrap">
+                    <label><input type="checkbox" id="notToday2" /><span class="notToday">오늘 하루 열지 않음</span></label>
+                    <span class="close-btn" onclick="closeSlide('modal-wrap2', 'notToday2')">&times;</span>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <a href="purchase.html">
-                  <img src="images/eventmodal1.png" alt="이벤트 팝업 이미지" class="popup_3"/>
-                </a>
+              <div class="swiper-slide" id="modal-wrap3">
+                <div class="modal-wrap">
+                  <a href="purchase.html">
+                    <img src="images/eventmodal1.png" alt="이벤트 팝업 이미지" class="popup_3" />
+                  </a>
+                  <div class="close-wrap">
+                    <label><input type="checkbox" id="notToday3" /><span class="notToday">오늘 하루 열지 않음</span></label>
+                    <span class="close-btn" onclick="closeSlide('modal-wrap3', 'notToday3')">&times;</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- 네비게이션 버튼 추가 -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-
-          <!-- 고정된 닫기 버튼 및 '오늘 하루 열지 않음' -->
-          <div class="close-wrap">
-            <label><input type="checkbox" id="notToday" /><span class="notToday">오늘 하루 열지 않음</span></label>
-            <span class="close-btn">&times;</span>
           </div>
         </div>
       </div>
     </div>
+    
     <!-- 적립금 버튼 참고 -->
     <!-- <div class="jumping">
       <div id="jumping" class="bounce" style="left: 0px;">

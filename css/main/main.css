@@ -40,16 +40,9 @@ a {
 h2.title {
   line-height: 130%;
 }
-p .title-sub{
-  font-size: 20px;
-    color: #6d6d6d;
-}
-.season .title-sub, .today .title-sub{
-  font-size: 20px;
-    color: #6d6d6d;
-}
 /* 구출하기 버튼 */
-.buybtn, #buybtntag {
+.buybtn,
+#buybtntag {
   display: flex; /* 플렉스 박스로 변경 */
   justify-content: center; /* 수평 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
@@ -62,7 +55,8 @@ p .title-sub{
   margin-top: 3%;
   cursor: pointer;
 }
-.buybtn a, #buybtntag a {
+.buybtn a,
+#buybtntag a {
   font-size: 30px;
   color: #fff;
   font-weight: bold;
@@ -74,19 +68,23 @@ p .title-sub{
 .buybtn:hover {
   background-color: #e2360a;
 }
-#buybtntag:hover{
+#buybtntag:hover {
   background-color: #e2360a;
 }
 /* 모달창 */
 /* 모달 컨테이너 */
-.modal {
+/* 모달페이지네이션 */
+/* 페이지 네이션 위치 설정 */
+/* #myModal 내 페이지 네이션을 상단에 위치 */
+
+#myModal {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 9999;
   left: 0;
-  top: 00px;
+  top: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -94,19 +92,17 @@ p .title-sub{
 
 .modal-wrapper {
   width: 500px; /* 모달 팝업의 전체 크기 */
+  
   height: auto;
   position: relative;
-
 }
 
 .modal-content {
   width: 80%;
-  background-color: white;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   margin: auto;
-
 }
 
 .sw-modal {
@@ -115,11 +111,31 @@ p .title-sub{
 }
 
 .sw-modal .swiper-slide {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+#myModal .swiper-pagination {
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  text-align: center;
+  z-index: 10; /* 이미지 위로 배치 */
 }
 
+/* 페이지네이션의 각 불릿 스타일 */
+#myModal .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  margin: 0 3px;
+}
+
+#myModal .swiper-pagination-bullet-active {
+  background-color: #ff6741; /* 활성화된 불릿 색상 */
+  opacity: 1;
+}
 .sw-modal img {
   width: 100%;
   display: block;
@@ -167,30 +183,28 @@ p .title-sub{
   font-size: 30px;
   cursor: pointer;
   vertical-align: middle;
-
 }
 
 .close-btn:hover {
   color: #333;
 }
-input#notToday{
+input#notToday {
   width: 20px;
   height: 20px;
-  vertical-align: middle
+  vertical-align: middle;
 }
-span.notToday{
+span.notToday {
   padding-left: 5px;
   vertical-align: middle;
-
 }
 
 /* 페이지네이션 */
 
 @media screen and (max-width: 768px) {
-  .modal{
+  .modal {
     top: 0px;
   }
-  .modal-content{
+  .modal-content {
     margin: auto;
   }
   .close-wrap {
@@ -208,25 +222,27 @@ span.notToday{
     font-size: 25px;
     cursor: pointer;
   }
- 
-  input#notToday{
+
+  input#notToday {
     width: 18px;
     height: 18px;
-    vertical-align: middle
+    vertical-align: middle;
   }
-  .close-wrap .notToday{
+  .close-wrap .notToday {
     font-size: 18px;
   }
   h2.title {
     font-size: 30px;
     margin-top: 50px;
   }
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 260px;
     min-height: 40px;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 24px;
     padding: 8px;
@@ -255,14 +271,15 @@ span.notToday{
   h2.title {
     font-size: 26px;
   }
- 
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 230px;
     min-height: 30px;
     margin-top: 7%;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 20px;
     padding: 7px;
@@ -273,24 +290,24 @@ span.notToday{
     width: 60%; /* 화면 너비의 90%로 조정 */
   }
   .sw-modal .swiper-button-next,
-.sw-modal .swiper-button-prev {
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  color: #ff6741; /* 화살표 색 */
-  border-radius: 50%; /* 둥근 버튼 */
-  z-index: 10;
-}
-.sw-modal .swiper-button-prev {
-  left: 0px; /* 모달 바깥으로 위치시킴 */
-}
+  .sw-modal .swiper-button-prev {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #ff6741; /* 화살표 색 */
+    border-radius: 50%; /* 둥근 버튼 */
+    z-index: 10;
+  }
+  .sw-modal .swiper-button-prev {
+    left: 0px; /* 모달 바깥으로 위치시킴 */
+  }
 
-/* 오른쪽 버튼을 모달 바깥으로 */
-.sw-modal .swiper-button-next {
-  right: 0px; /* 모달 바깥으로 위치시킴 */
-}
+  /* 오른쪽 버튼을 모달 바깥으로 */
+  .sw-modal .swiper-button-next {
+    right: 0px; /* 모달 바깥으로 위치시킴 */
+  }
   input[type="checkbox"] {
     transform: scale(0.95); /* 80% 크기로 줄이기 */
     -webkit-transform: scale(0.95); /* 크롬 및 사파리 호환 */
@@ -307,13 +324,15 @@ span.notToday{
   h2.title {
     font-size: 24px;
   }
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 200px;
     min-height: 30px;
     margin-top: 7%;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 18px;
     padding: 6px;
@@ -323,13 +342,15 @@ span.notToday{
   h2.title {
     font-size: 22px;
   }
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 180px;
     min-height: 30px;
     margin-top: 6%;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 17px;
     padding: 6px;
@@ -340,13 +361,15 @@ span.notToday{
   h2.title {
     font-size: 19px;
   }
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 175px;
     min-height: 28px;
     margin-top: 5%;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 16px;
     padding: 6px;
@@ -356,33 +379,34 @@ span.notToday{
   h2.title {
     font-size: 18px;
   }
-  .buybtn, #buybtntag,
+  .buybtn,
+  #buybtntag,
   .galbtn {
     min-width: 172px;
     min-height: 25px;
     margin-top: 5%;
   }
-  .buybtn a, #buybtntag a,
+  .buybtn a,
+  #buybtntag a,
   .galbtn a {
     font-size: 15px;
     padding: 5px;
   }
-  .modal-content{
+  .modal-content {
     width: 50%;
     margin: auto;
   }
-  .close-wrap{
+  .close-wrap {
     padding: 2px 5px 2px 5px;
   }
-  .close-btn{
+  .close-btn {
     margin: 0;
   }
-  .notToday{
+  .notToday {
     margin: 0;
   }
-  input#notToday{
+  input#notToday {
     width: 13px;
     height: 13px;
   }
-  
 }
