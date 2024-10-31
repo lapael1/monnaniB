@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P78D1CE4XQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P78D1CE4XQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-P78D1CE4XQ');
-</script>
+      gtag("config", "G-P78D1CE4XQ");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO 적용 -->
@@ -65,18 +67,24 @@
     <script src="js/main/season.js"></script>
     <title>몬나니농장</title>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-572PP59W');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-572PP59W");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-572PP59W"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-572PP59W" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- event modal -->
 
     <div id="myModal" class="modal">
@@ -84,10 +92,12 @@
         <div class="modal-content">
           <!-- 페이지 네이션 요소 -->
           <div class="swiper-pagination"></div>
-    
+
           <!-- Swiper 컨테이너 -->
-          <div class="swiper sw-modal"> <!-- Swiper 컨테이너 클래스 -->
-            <div class="swiper-wrapper"> <!-- 슬라이드 래퍼 -->
+          <div class="swiper sw-modal">
+            <!-- Swiper 컨테이너 클래스 -->
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 래퍼 -->
               <!-- 각 슬라이드 -->
               <div class="swiper-slide" id="modal-wrap1">
                 <div class="modal-wrap">
@@ -127,7 +137,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- 적립금 버튼 참고 -->
     <!-- <div class="jumping">
       <div id="jumping" class="bounce" style="left: 0px;">
@@ -144,13 +154,13 @@
       <img src="images/call_carrot.png" alt="클릭" id="faqToggleBtn" class="faqToggleBtn" />
     </div>
 
-     <!-- 문의하기 내용 -->
-     <div id="faqSection" class="faq-section">
+    <!-- 문의하기 내용 -->
+    <div id="faqSection" class="faq-section">
       <div class="faqwrap">
         <div class="faqtop">
           <svg
-          id="faqClose"
-          onclick="closeFaq()"
+            id="faqClose"
+            onclick="closeFaq()"
             width="20"
             height="20"
             viewBox="0 0 13 20"
@@ -165,7 +175,7 @@
             marginbottom="0"
             marginleft="8"
             withtheme="true"
-            style="color: #ff6741;"
+            style="color: #ff6741"
           >
             <path
               fill="currentColor"
@@ -199,7 +209,6 @@
         <div tabindex="0" class="ChannelInfostyled__Wrapper-ch-front__sc-2hwj0l-0 bkkQiR">
           <div size="72" class="Avatarstyled__Wrapper-ch-front__sc-yfy5xq-0 eLJRgO"><img width="72" height="72" src="images/call_carrot.png" alt="" /></div>
           <div class="ChannelInfostyled__Title-ch-front__sc-2hwj0l-1 cBrgxr">몬나니농장에 문의하기</div>
-          
         </div>
         <!-- faqcontent -->
         <div class="MessageNodestyled__Container-ch-front__sc-1xdrx16-0 duHTod">
@@ -273,14 +282,14 @@
       </div>
     </div>
     <!-- 문의복사 -->
-    
+
     <script>
       // 더보기, 접기 기능
       function toggleText() {
         const noticeText = document.getElementById("notice-text");
         const fullText = document.getElementById("full-text");
         const toggleButton = document.querySelector(".faqtime3");
-    
+
         if (fullText.style.display === "none") {
           noticeText.style.display = "none";
           fullText.style.display = "block";
@@ -291,24 +300,24 @@
           toggleButton.textContent = "더보기";
         }
       }
-    // 닫기 기능
-    function closeFaq() {
-    const faqSection = document.getElementById("faqSection");
-    faqSection.style.display = "none"; // faqSection을 숨기기
-  }
+      // 닫기 기능
+      function closeFaq() {
+        const faqSection = document.getElementById("faqSection");
+        faqSection.style.display = "none"; // faqSection을 숨기기
+      }
       // 현재 시간 업데이트 기능
       function updateTime() {
         const now = new Date();
         let hours = now.getHours();
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const period = hours >= 12 ? '오후' : '오전';
-    
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const period = hours >= 12 ? "오후" : "오전";
+
         hours = hours % 12 || 12; // 12시간 형식으로 변환, 0시는 12로 표시
         const formattedTime = `${period} ${hours}:${minutes}`;
-    
+
         document.getElementById("current-time").textContent = formattedTime;
       }
-    
+
       // 페이지 로드 시 즉시 시간 설정하고, 1초마다 갱신
       updateTime();
       setInterval(updateTime, 1000);
@@ -418,7 +427,7 @@
                 </div>
                 <!-- 사진 -->
                 <div class="today-img">
-                  <img src="images/tangerine.png" alt="상품" />
+                  <a href="bagitem.html"><img src="images/tangerine.png" alt="상품" /></a>
                 </div>
               </div>
 
@@ -932,7 +941,6 @@
                 <div class="recipe-overlay">
                   <img src="images/farmswiper/hoverimg11.png" alt="귤" class="recipe-img" />
                   <p class="recipe-text">귤 샐러드<br />새콤달콤한 🍊귤과 샐러드가 만났어요</p>
-
                 </div>
               </a>
             </div>
@@ -942,7 +950,6 @@
                 <div class="recipe-overlay">
                   <img src="images/farmswiper/hoverimg12.png" alt="토마토" class="recipe-img" />
                   <p class="recipe-text">토마토소면<br />🍅토마토의 산뜻함이 소면의 부드러움과 조화를 이루어요</p>
-
                 </div>
               </a>
             </div>
