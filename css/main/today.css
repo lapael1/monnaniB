@@ -37,6 +37,7 @@
 }
 .today-sale {
   font-size: 30px;
+  margin-bottom: 10px;
 }
 .today-item {
   font-size: 28px;
@@ -105,7 +106,7 @@
 
 #timer365 {
   font-size: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: #fff;
 }
 
@@ -194,7 +195,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .today-img {
     margin-top: 20px;
@@ -207,7 +208,7 @@
   }
   #timer365 {
     font-size: 18px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     color: #fff;
   }
   .timer_area {
