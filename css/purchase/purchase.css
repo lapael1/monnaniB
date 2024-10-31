@@ -2,7 +2,7 @@
 .inner{
     padding: 0 20px;
 }
-h3{
+.market h3{
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -45,4 +45,60 @@ h3{
     width: 40%;
     margin-top: 10px;
     margin-left: -2px;
+}
+.market-list{
+    display: flex;
+    width: 100%;
+}
+.market-list li{
+    width: calc(100% / 3 - 10px);
+}
+.market-list li a{
+    width: 100%;
+}
+.market-list li a img{
+    width: 100%;
+}
+
+.market-name{
+    margin: 10px 0;
+}
+.market-discount{
+    color: #ff6741;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.price-container {
+    display: flex; /* 수평 배치 */
+    align-items: center; /* 텍스트와 아이콘의 수직 정렬 */
+}
+.market-price {
+    margin-right: 5px; /* 가격과 화살표 사이의 여백 */
+}
+
+.discount_arrow {
+    width: 16px; /* 화살표 아이콘의 크기 */
+    height: auto;
+}
+.market-star{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.market-star img{
+    margin-right: 5px;
+}
+.market-list {
+    display: flex;
+    flex-wrap: wrap; /* 한 줄이 가득 차면 다음 줄로 넘어가도록 설정 */
+    gap: 10px; /* 각 항목 사이 간격 조정 */
+    justify-content: space-between; /* 각 행의 항목을 양쪽에 배치 */
+  }
+  
+.market-list li {
+    width: calc(33.33% - 15px); /* 3열로 나누고, 간격에 따라 조정 */
+    box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+  }
+.purchase-type{
+    display: flex;
 }

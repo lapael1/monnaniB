@@ -1,0 +1,43 @@
+{
+    "purchase": [
+      {
+        "image": "apple.png",
+        "name": "홍로사과 2.5kg",
+        "discount": "14%",
+        "price": "23,000",
+        "season":"제철",
+        "monnani":"못난이"
+      },
+      {
+        "image": "kiwi.png",
+        "name": "골드키위 1팩(6입)",
+        "discount": "20%",
+        "price": "5,900"
+      },
+      {
+        "image": "mandarin.png",
+        "name": "제주 감귤 1kg",
+        "discount": "16%",
+        "price": "9,900"
+      },
+      {
+        "image": "pakchoi.jpg",
+        "name": "친환경 청경채 1kg",
+        "discount": "27%",
+        "price": "7,210"
+      },
+      {
+        "image": "sweetpotato.png",
+        "name": "꿀밤고구마 1.5kg",
+        "discount": "27%",
+        "price": "7,900"
+      },
+      {
+        "image": "persimmon.png",
+        "name": "단감 1kg",
+        "discount": "21%",
+        "price": "7,490"
+      }
+    ]
+  }
+  
