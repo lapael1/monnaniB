@@ -1,11 +1,16 @@
 @charset "utf-8";
-.inner{
+.wrap .inner{
     padding: 0 20px;
 }
-.market h3{
+.wrap h2{
+    text-align: center;
+    font-size: 50px;
+}
+.wrap h3{
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
+    margin-top: 70px;
 }
 .purchase-visual{
     width: 100%;
@@ -46,13 +51,14 @@
     margin-top: 10px;
     margin-left: -2px;
 }
+.market{
+    font-weight: 700;
+}
 .market-list{
     display: flex;
     width: 100%;
 }
-.market-list li{
-    width: calc(100% / 3 - 10px);
-}
+
 .market-list li a{
     width: 100%;
 }
@@ -62,6 +68,7 @@
 
 .market-name{
     margin: 10px 0;
+    font-size: 18px;
 }
 .market-discount{
     color: #ff6741;
@@ -81,7 +88,7 @@
     height: auto;
 }
 .market-star{
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
 }
@@ -94,11 +101,30 @@
     gap: 10px; /* 각 항목 사이 간격 조정 */
     justify-content: space-between; /* 각 행의 항목을 양쪽에 배치 */
   }
-  
-.market-list li {
+.market-list > li {
     width: calc(33.33% - 15px); /* 3열로 나누고, 간격에 따라 조정 */
     box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+    margin-bottom: 50px;
+  }
+  .market-list img{
+    border-radius: 20px;
   }
 .purchase-type{
     display: flex;
+    margin-top: 5px;
+}
+.purchase-type li{
+    /* width: 70px; */
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 700;
+}
+.season{
+    background-color: #ff6741;
+}
+.monnani{
+    background-color: #1FBF6A;
 }

@@ -16,12 +16,12 @@ body {
 }
 #signup-form > input {
   width: 70%;
-  height: 55px;
+  height: 40px;
   max-width: 450px;
   display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
   border: 1px solid black;
 }
@@ -43,21 +43,26 @@ body {
   max-width: 450px;
   margin: 10px 0;
 }
-#signup-form label{
+#signup-form label {
   width: 70%;
   max-width: 450px;
   margin: 5px 0;
 }
-button:last-child{
+button:last-child {
   background-color: #ff6741;
   color: white;
   font-size: 20px;
 }
-#agree-all{
+#agree-all {
   font-size: 20px;
 }
-@media screen and (max-width : 768px) {
-  #signup-form{
+@media screen and (max-width: 768px) {
+  #signup-form {
     padding-top: 90px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #signup-form {
+    padding-top: 70px;
   }
 }
