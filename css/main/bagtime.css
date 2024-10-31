@@ -12,7 +12,7 @@
   /* max-width: 800px; */
   /* margin: 20px; */
   background: #fff;
-  padding: 40px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -37,7 +37,7 @@
 .thumbnail-images {
   display: flex;
   gap: 5px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 100%;
 }
 .thumbnail-images img {
@@ -157,11 +157,11 @@
 }
 
 .delivery-days {
-  background-color: #ff6741;
+  background-color: #1FBF6A;
   color: #fff;
   padding: 10px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -218,14 +218,14 @@
   text-align: center;
 }
 .product-details h3 {
-  font-size: 25px;
-  color: #ff6741;
+  font-size: 22px;
+  color: black;
   margin: 0;
 }
 
 .product-details h2 {
-  font-size: 20px;
-  color: #ff6741;
+  font-size: 19px;
+  color: black;
   font-weight: bold;
   margin: 5px 0 15px;
 }
@@ -260,6 +260,7 @@
   font-size: 16px;
   line-height: 160%;
   color: #414b5a;
+  /* padding-left: 30px; */
 }
 /* 사고보상 정책안내 */
 .policy-guide {
@@ -314,7 +315,8 @@
   display: flex;
 }
 .policy-right {
-  margin-left: 40px;
+  margin-left: 30px;
+  /* gap: 20px; */
 }
 
 /* 반응형 */
@@ -359,7 +361,7 @@
   }
   .details-section h1 {
     font-size: 20px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
   }
   .price {
     display: flex;
@@ -438,7 +440,7 @@
     /* max-width: 800px; */
     /* margin: 20px; */
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -447,6 +449,7 @@
     font-size: 14px;
     line-height: 160%;
     color: #414b5a;
+    padding-left: 0;
   }
   .policy-notice-sub {
     color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -501,6 +504,7 @@
     font-size: 13px;
     line-height: 160%;
     color: #414b5a;
+    padding-left: 0;
   }
   .new,
   .special {
@@ -528,9 +532,10 @@
   .product-page {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     width: 100%;
     min-width: 200px;
-    padding: 20px;
+    padding: 10px;
   }
   .main-image {
     height: 32.25vw;
@@ -547,23 +552,21 @@
   .thumbnail-images img {
     width: 20%;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     object-fit: cover;
   }
   .details-section {
     flex: 1;
-    margin-top: 10px;
+    margin-top: 20px;
     /* gap: 10px; */
-    /* margin-left: 30px; */
   }
   .delivery-days {
-    background-color: #ff6741;
     color: #fff;
     padding: 10px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .policy-notice {
     display: flex;
@@ -584,7 +587,33 @@
     font-size: 16px;
     font-weight: 600; /* font-semibold */
   }
+  .guide-txt {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .details-section {
+    flex: 1;
+    margin-top: 10px;
+    /* gap: 10px; */
+  }
+  .delivery-days {
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    /* margin-bottom: 20px; */
+  }
+  .order-deadline,
+  .handling-notes,
+  .additional-note {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+  .guide-txt {
+    margin-bottom: 20px;
+  }
+
 }
