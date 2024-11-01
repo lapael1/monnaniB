@@ -1,5 +1,5 @@
 @charset "utf-8";
-h2{
+.container h2 {
   font-size: 40px;
   text-align: center;
   padding-top: 30px;
@@ -7,85 +7,115 @@ h2{
   margin-bottom: 70px;
   font-weight: 700;
 }
-h3{
+.container h3 {
   text-align: center;
   margin: 25px 0;
   font-size: 25px;
   font-weight: 700;
 }
-ul{
+.container ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-button{
-  
-  color: white;
-  display: block;
+.container button {
+  display: flex; /* 플렉스 박스로 변경 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  min-width: 300px;
+  min-height: 70px;
   background-color: #ff6741;
   border: none;
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 25%;
-  aspect-ratio: 850/150;
-  font-size: 2vw;
-  border-radius: 2vw;
+  border-radius: 30px;
+  margin: 0 auto; /* 부모 요소에서 가로 방향으로 중앙 정렬 */
+  margin-top: 3%;
+  cursor: pointer;
 }
-button a{
-  color: white;
-  font-weight: 700;
+.container button a {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  display: block; /* a 태그를 블록 요소로 설정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  cursor: pointer;
 }
-
-.inner{
+.container button:hover {
+  background-color: #e2360a;
+}
+.container .inner {
   padding: 0 20px;
 }
-.delivery-visual{
+.delivery-visual {
   width: 100%;
+  height: 550px;
   padding-top: 100px;
+  overflow: hidden;
+  position: relative;
 }
-.delivery-visual img{
+.delivery-visual img {
   width: 100%;
+  position: absolute;
+  top: -100px;
 }
-.delivery-instruct{
-padding-top: 100px;
-/* background-color: #fdf4ee; */
-}
-.delivery-instruct-what{
+.delivery-visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
-.delivery-instruct-what li{
-  width: 48%;
-}
-.delivery-instruct-what li ul{
-  width: 100%;
-}
-.delivery-instruct-what li ul li{
+
+.delivery-visual .overlay h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
   text-align: center;
 }
-.delivery-instruct-what li ul:first-child{
+.delivery-instruct {
+  padding-top: 100px;
+  /* background-color: #fdf4ee; */
+}
+.delivery-instruct-what {
+  justify-content: space-between !important;
+}
+.delivery-instruct-what li {
+  width: 48%;
+}
+.delivery-instruct-what li ul {
+  width: 100%;
+}
+.delivery-instruct-what li ul li {
+  text-align: center;
+}
+.delivery-instruct-what li ul:first-child {
   flex-wrap: nowrap;
 }
-.delivery-instruct img{
-width: 80%;
-/* display: inline-block; */
+.delivery-instruct img {
+  width: 80%;
+  /* display: inline-block; */
 }
 /* .delivery-instruct h3{
   text-align: center;
   margin: 25px 0 70px 0;
   font-size: 25px;
 } */
-.delivery-instruct ul li:nth-child(2) ul li:first-child{
+.delivery-instruct ul li:nth-child(2) ul li:first-child {
   width: 30%;
   margin-right: 10px;
 }
-.delivery-instruct ul li:nth-child(2) ul li:last-child{
+.delivery-instruct ul li:nth-child(2) ul li:last-child {
   width: calc(70% - 10px);
 }
-.delivery-worry ul{
+.delivery-worry ul {
   align-items: flex-start;
 }
-.delivery-worry > .inner > ul > li{
+.delivery-worry > .inner > ul > li {
   width: 48%;
   height: 100%;
 }
@@ -95,94 +125,139 @@ width: 80%;
 .delivery-worry ul li ul li{
   text-align: center;
 } */
-.delivery-worry img{
-width: 50%;
-aspect-ratio: 1/1;
-/* display: inline-block; */
+.delivery-worry img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  /* display: inline-block; */
 }
 /* .delivery-worry h3{
   text-align: center;
   margin: 25px 0 70px 0;
   font-size: 25px;
 } */
-.delivery-worry img{
+.delivery-worry img {
   margin: 0 auto;
   display: block;
 }
 /* .delivery-review ul{
   padding: 0 100px;
 } */
-.delivery-review .inner{
+.delivery-review .inner {
   max-width: 1110px;
+  padding: 0 0 0 20px !important;
 }
-.delivery-review .swiper-slide{
+.delivery-review .swiper-slide {
   width: 350px;
   height: 510px;
   padding: 20px;
   background-color: rgb(245, 245, 247);
 }
-.delivery-review p{
-  display: -webkit-box;          /* Flex 컨테이너로 설정 */
-  -webkit-box-orient: vertical;  /* 박스 방향을 세로로 설정 */
-  overflow: hidden;              /* 넘치는 텍스트 숨김 */
-  text-overflow: ellipsis;       /* 말줄임표 사용 */
-  -webkit-line-clamp: 4;         /* 최대 4줄까지만 표시 */
+.delivery-review p {
+  display: -webkit-box; /* Flex 컨테이너로 설정 */
+  -webkit-box-orient: vertical; /* 박스 방향을 세로로 설정 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 말줄임표 사용 */
+  -webkit-line-clamp: 4; /* 최대 4줄까지만 표시 */
   line-height: 1.6;
 }
-.review-photo{
+.review-photo {
   width: 100%;
   aspect-ratio: 1/1;
   /* padding: 10px; */
-  
 }
-.review-star{
+.review-star {
   width: 50%;
   margin: 10px 0;
 }
 
-.delivery-qna{
+.delivery-qna {
   margin-bottom: 50px;
-}
-.delivery-qna .inner{
+  padding-bottom: 20px;
   background-color: rgb(245, 245, 247);
 }
-dt{
+dt {
   font-size: 20px;
   padding: 10px 0 10px 10px;
   font-weight: 700;
   background-color: rgb(229 231 235);
   margin-bottom: 10px;
 }
-dd{
+dd {
   font-size: 14px;
   padding: 0 0 10px 10px;
   line-height: 1.6;
   display: none;
 }
-@media screen and (max-width:1180px) {
-  .delivery-visual{
+@media screen and (max-width: 1180px) {
+  .delivery-visual {
     padding-top: 90px;
   }
 }
-@media screen and (max-width:1024px) {
-  h3{
-    font-size: 20px;
+@media screen and (max-width: 1024px) {
+  .container h3 {
+    font-size: 23px;
   }
 }
-@media screen and (max-width:768px) {
-.delivery-visual{
-  padding-top: 70px;
+@media screen and (max-width: 768px) {
+  .delivery-instruct-what {
+    justify-content: center !important;
+  }
+  .delivery-visual {
+    padding-top: 70px;
+  }
+  .container h2 {
+    font-size: 30px;
+  }
+  .delivery-worry ul {
+    flex-direction: column;
+  }
+  .delivery-worry > .inner > ul > li {
+    width: 100%;
+  }
+  .delivery-instruct-what > li {
+    width: 70%;
+  }
+  .container button {
+    min-width: 260px;
+    min-height: 40px;
+  }
+  .container button a {
+    font-size: 24px;
+    padding: 8px;
+  }
 }
-  h3{
-  font-size: 16px;
+@media screen and (max-width: 480px) {
+  .container h3 {
+    font-size: 18px;
+  }
+  .delivery-review .swiper-slide {
+    width: 280px;
+    height: 430px;
+  }
+  .delivery-instruct-what > li {
+    width: 90%;
+  }
+  dt {
+    font-size: 15px;
+  }
+  .container button {
+    min-width: 230px;
+    min-height: 30px;
+    margin-top: 7%;
+  }
+  .container button a {
+    font-size: 20px;
+    padding: 7px;
+  }
 }
-.delivery-worry ul{
-  flex-direction: column;
-}
-.delivery-worry > .inner > ul > li{
-  width: 100%;
-}
-.delivery-instruct-what > li{
-  width: 70%;
-}
+@media screen and (max-width: 320px) {
+  .container button {
+    min-width: 172px;
+    min-height: 25px;
+    margin-top: 5%;
+  }
+  .container button a {
+    font-size: 15px;
+    padding: 5px;
+  }
 }
