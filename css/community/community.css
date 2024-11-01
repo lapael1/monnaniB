@@ -1,0 +1,158 @@
+@charset "utf-8";
+.review-visual img{
+  width: 100%;
+
+}
+
+/* 리뷰킹 */
+.revkingcard{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.revkingcard img{
+  width: 100%;
+}
+.reviewking .inner{
+  width: 100%;
+ max-width: 1300px;
+  margin: auto;
+}
+/* 리뷰 */
+.rev-titlewrap{
+  display: flex;
+  gap: 10px;
+}
+
+.review-detail .inner {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+.revwrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+}
+
+.revcard {
+  position: relative;
+  overflow: hidden;
+}
+
+.revcard .revimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.revcard .rev-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 어두운 배경 */
+  color: white;
+  font-size: 1.2em;
+  opacity: 0; /* 기본적으로 숨김 */
+  transition: opacity 0.3s ease;
+  padding: 10px;
+
+}
+
+.overlay-stars{
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+.overlay-bot{
+  display: flex;
+  gap: 10px;
+  
+}
+
+.revcard:hover .rev-overlay {
+  opacity: 1; /* 호버 시 표시 */
+}
+/* 검색바 */
+.search-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* 오른쪽 여백을 추가하여 아이콘과 간격 확보 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* 아이콘 크기 조정 */
+  height: 20px;
+  pointer-events: none; /* 아이콘 클릭이 입력창에 영향을 주지 않도록 설정 */
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
+}
+
+.search-result-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}
+/* gpt */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.page-number:hover {
+  background-color: #ddd;
+}
+
+.page-number.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 리뷰 카드 스타일은 기존 CSS 유지 */
