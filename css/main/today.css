@@ -18,7 +18,7 @@
   /* margin: 20px 20px; */
 }
 .today-inner {
-  margin: 50px 20px;
+  margin: 70px 20px;
 }
 .title-wrap {
   margin-bottom: 50px;
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: #3fbb79;
+  background: #6d6d6d1a;
   width: 125px;
   border-radius: 10px;
 }
@@ -102,13 +102,13 @@
   /* 필터로 색상 변경 */
   width: 20px;
   height: 20px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(219deg) brightness(107%) contrast(101%);
+  filter: invert(100%) brightness(0%);
 }
 
 #timer365 {
   font-size: 20px;
   /* margin-left: 10px; */
-  color: #fff;
+  color: #000;
 }
 
 /* 장바구니 이미지 */
@@ -210,7 +210,6 @@
   #timer365 {
     font-size: 18px;
     /* margin-left: 10px; */
-    color: #fff;
   }
   .timer_area {
     align-items: center;
