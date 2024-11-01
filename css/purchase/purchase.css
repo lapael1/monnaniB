@@ -1,130 +1,171 @@
 @charset "utf-8";
-.wrap .inner{
-    padding: 0 20px;
+.wrap .inner {
+  padding: 0 20px;
 }
-.wrap h2{
-    text-align: center;
-    font-size: 50px;
+.wrap h2 {
+  text-align: center;
+  font-size: 50px;
 }
-.wrap h3{
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    margin-top: 70px;
+.wrap h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 70px;
 }
-.purchase-visual{
-    width: 100%;
+.purchase-visual {
+  width: 100%;
+  height: 550px;
+  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
 }
-.purchase-visual img{
-    width: 100%;
+.purchase-visual img {
+  width: 100%;
+  position: absolute;
+  top: -100px;
 }
-.purchase-recommend .inner > ul{
-    display: flex;
-    justify-content: space-between;
-}
-.purchase-recommend .inner > ul > li{
-    width: 30%;
-    background-color: #eee;
-    padding: 20px;
-}
-.purchase-description{
-    margin-bottom: 15px;
-}
-.review-name li{
-    align-content: center;
-    font-size: 25px;
-    font-weight: 700;
-    margin-right: 20px;
-}
-.review-name li:first-child{
-    width: 20%;
-}
-.review-name img{
-    width: 100%;
-    
-}
-.review-name{
-    display: flex;
-}
-.review-star{
-    width: 40%;
-    margin-top: 10px;
-    margin-left: -2px;
-}
-.market{
-    font-weight: 700;
-}
-.market-list{
-    display: flex;
-    width: 100%;
+.purchase-visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.market-list li a{
-    width: 100%;
+.purchase-visual .overlay h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
 }
-.market-list li a img{
-    width: 100%;
+.purchase-recommend .inner > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.purchase-recommend .inner > ul > li {
+  width: calc(33.33% - 15px);
+  background-color: #eee;
+  padding: 20px;
+}
+.purchase-description {
+  margin-bottom: 15px;
+}
+.review-name li {
+  align-content: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.review-name li:first-child {
+  width: 20%;
+}
+.review-name img {
+  width: 100%;
+}
+.review-name {
+  display: flex;
+}
+.review-star {
+  width: 40%;
+  margin-top: 10px;
+  margin-left: -2px;
+}
+.market {
+  font-weight: 700;
+}
+.market-list {
+  display: flex;
+  width: 100%;
 }
 
-.market-name{
-    margin: 10px 0;
-    font-size: 18px;
+.market-list li a {
+  width: 100%;
 }
-.market-discount{
-    color: #ff6741;
-    font-weight: 700;
-    margin-right: 10px;
+.market-list li a img {
+  width: 100%;
+}
+
+.market-name {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.market-discount {
+  color: #ff6741;
+  font-weight: 700;
+  margin-right: 10px;
 }
 .price-container {
-    display: flex; /* 수평 배치 */
-    align-items: center; /* 텍스트와 아이콘의 수직 정렬 */
+  display: flex; /* 수평 배치 */
+  align-items: center; /* 텍스트와 아이콘의 수직 정렬 */
 }
 .market-price {
-    margin-right: 5px; /* 가격과 화살표 사이의 여백 */
+  margin-right: 5px; /* 가격과 화살표 사이의 여백 */
 }
 
 .discount_arrow {
-    width: 16px; /* 화살표 아이콘의 크기 */
-    height: auto;
+  width: 16px; /* 화살표 아이콘의 크기 */
+  height: auto;
 }
-.market-star{
-    margin-top: 5px;
-    display: flex;
-    align-items: center;
+.market-star {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
 }
-.market-star img{
-    margin-right: 5px;
+.market-star img {
+  margin-right: 5px;
 }
 .market-list {
-    display: flex;
-    flex-wrap: wrap; /* 한 줄이 가득 차면 다음 줄로 넘어가도록 설정 */
-    gap: 10px; /* 각 항목 사이 간격 조정 */
-    justify-content: space-between; /* 각 행의 항목을 양쪽에 배치 */
-  }
+  display: flex;
+  flex-wrap: wrap; /* 한 줄이 가득 차면 다음 줄로 넘어가도록 설정 */
+  gap: 10px; /* 각 항목 사이 간격 조정 */
+  justify-content: space-between; /* 각 행의 항목을 양쪽에 배치 */
+}
 .market-list > li {
-    width: calc(33.33% - 15px); /* 3열로 나누고, 간격에 따라 조정 */
-    box-sizing: border-box; /* padding을 포함하여 크기 계산 */
-    margin-bottom: 50px;
+  width: calc(33.33% - 15px); /* 3열로 나누고, 간격에 따라 조정 */
+  box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+  margin-bottom: 50px;
+}
+.market-list img {
+  border-radius: 20px;
+}
+.purchase-type {
+  display: flex;
+  margin-top: 5px;
+}
+.purchase-type li {
+  /* width: 70px; */
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  color: white;
+  font-weight: 700;
+}
+.season {
+  background-color: #ff6741;
+}
+.monnani {
+  background-color: #1fbf6a;
+}
+@media screen and (max-width: 768px) {
+  .purchase-recommend .inner > ul > li {
+    width: 100%;
+    margin-bottom: 10px;
   }
-  .market-list img{
-    border-radius: 20px;
+  .purchase-recommend .inner > ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-.purchase-type{
-    display: flex;
-    margin-top: 5px;
+  .market-list {
+    flex-wrap: wrap;
+  }
+  .market-list > li {
+    width: calc(50% - 15px);
+  }
 }
-.purchase-type li{
-    /* width: 70px; */
-    text-align: center;
-    padding: 5px 15px;
-    border-radius: 20px;
-    margin-right: 10px;
-    color: white;
-    font-weight: 700;
-}
-.season{
-    background-color: #ff6741;
-}
-.monnani{
-    background-color: #1FBF6A;
+@media screen and (max-width: 480px) {
 }
