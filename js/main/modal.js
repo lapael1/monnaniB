@@ -40,16 +40,27 @@ function closeSlide(slideId, checkboxId) {
   // 남아 있는 슬라이드가 없으면 모달 전체 숨기기 (어두운 배경 포함)
   if (remainingSlides.length === 0) {
     document.getElementById('myModal').style.display = 'none';
+    document.body.style.overflow = ''; // 페이지 스크롤 활성화
   } else {
     swModal.update(); // Swiper를 업데이트하여 변경사항 반영
   }
 }
 
+// 모든 팝업이 닫혔는지 확인하는 함수
+function allPopupsClosed() {
+  return (
+    getCookie("modal-wrap1") === "closed" &&
+    getCookie("modal-wrap2") === "closed" &&
+    getCookie("modal-wrap3") === "closed"
+  );
+}
+
 // 페이지 로드 시 각 슬라이드의 쿠키 확인하여 표시 여부 결정
 window.addEventListener('load', function () {
-  // '오늘 하루 열지 않음' 쿠키 확인
-  if (getCookie("notToday") === "true") {
+  // 모든 팝업이 닫혔는지 확인하고, 그렇다면 전체 모달 숨기기
+  if (allPopupsClosed() || getCookie("notToday") === "true") {
     document.getElementById('myModal').style.display = 'none';
+    document.body.style.overflow = ''; // 페이지 스크롤 활성화
     return;
   }
 
@@ -58,7 +69,7 @@ window.addEventListener('load', function () {
     slidesPerView: 1,
     loop: false,
     autoplay: {
-      delay: 1800,
+      delay: 2000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -79,8 +90,10 @@ window.addEventListener('load', function () {
   const remainingSlides = document.querySelectorAll('.swiper-slide:not([style*="display: none"])');
   if (remainingSlides.length === 0) {
     document.getElementById('myModal').style.display = 'none';
+    document.body.style.overflow = ''; // 페이지 스크롤 활성화
   } else {
     swModal.update();
+    document.body.style.overflow = 'hidden'; // 페이지 스크롤 비활성화
   }
   
   // '오늘 하루 열지 않음' 체크박스 클릭 시 쿠키 설정
