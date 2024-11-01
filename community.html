@@ -28,6 +28,7 @@
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/community/community.css" />
     <!-- swiper css 적용 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- js -->
@@ -54,30 +55,186 @@
     <script src="js/main/minibanner.js"></script>
     <script src="js/main/footer.js"></script>
     <script src="js/main/count.js"></script>
-    <title>몬나니농장</title>
+    <script src="js/community/community.js"></script>
+    <title>커뮤니티</title>
   </head>
   <body>
-    <!-- event modal -->
-    <!-- 플로팅버튼 -->
-
     <!-- 탑버튼 -->
     <div class="topbtn fixBtn">
       <img src="images/topbtn1.png" alt="탑버튼" />
     </div>
     <!-- 문의하기 버튼 -->
     <div class="gotop fixBtn">
-      <img src="images/call_carrot.png" alt="클릭" id="faqToggleBtn" />
+      <img src="images/call_carrot.png" alt="클릭" id="faqToggleBtn" class="faqToggleBtn" />
     </div>
 
     <!-- 문의하기 내용 -->
     <div id="faqSection" class="faq-section">
-      <h3>문의하기 (F&Q)</h3>
-      <p>여기서 궁금한 사항을 남기세요.</p>
-      <!-- 추가 내용 -->문의하기
+      <div class="faqwrap">
+        <div class="faqtop">
+          <svg
+            id="faqClose"
+            onclick="closeFaq()"
+            width="20"
+            height="20"
+            viewBox="0 0 13 20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            foundation="[object Object]"
+            class="icon"
+            defaultopacity="1"
+            hoveredopacity="1"
+            margintop="0"
+            marginright="0"
+            marginbottom="0"
+            marginleft="8"
+            withtheme="true"
+            style="color: #ff6741"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.17255 16.4226C8.84711 16.748 8.31947 16.748 7.99404 16.4226L2.1607 10.5893C1.83527 10.2638 1.83527 9.73619 2.1607 9.41075L7.99404 3.57742C8.31947 3.25198 8.84711 3.25198 9.17255 3.57742C9.49799 3.90285 9.49799 4.43049 9.17255 4.75593L3.92847 10L9.17255 15.2441C9.49799 15.5695 9.49799 16.0972 9.17255 16.4226Z"
+            ></path>
+          </svg>
+          <img src="images/logo.png" alt="문의로고" class="faqlogo" />
+        </div>
+        <div class="faqtimewrap">
+          <div class="faqtime">
+            <div class="faqtime1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" foundation="[object Object]" class="Iconstyled__Icon-sc-1iqwu2g-0 dKyOtd" data-testid="bezier-react-icon" color="txt-black-dark" margintop="0" marginright="0" marginbottom="0" marginleft="0">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M20.138 2.018a.86.86 0 0 0-.427.115l-6.51 3.727a.86.86 0 0 1-.428.114H4a1 1 0 0 0-1 1V15a1 1 0 0 0 1 1h2.668l-.908 4.4a.5.5 0 0 0 .49.6h3.321a.8.8 0 0 0 .783-.638L11.255 16h1.518a.86.86 0 0 1 .428.114l6.51 3.727a.86.86 0 0 0 1.29-.747V2.88a.86.86 0 0 0-.863-.862"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="faqtime2">
+              <p class="notice-text" id="notice-text">💁 고객센터 운영 시간 <br />월요일~목요일 11:00 ~ 18:00 ...</p>
+              <p class="full-text" id="full-text" style="display: none">💁 고객센터 운영 시간 <br />월요일~목요일 11:00 ~ 18:00 <br />금요일 09:00 ~ 18:00 <br />점심시간 12:00 ~ 13:00 <br />토요일·일요일·공휴일 휴무</p>
+            </div>
+            <div class="faqtime3" onclick="toggleText()">더보기</div>
+          </div>
+        </div>
+        <!-- faqmiddle -->
+        <div tabindex="0" class="ChannelInfostyled__Wrapper-ch-front__sc-2hwj0l-0 bkkQiR">
+          <div size="72" class="Avatarstyled__Wrapper-ch-front__sc-yfy5xq-0 eLJRgO"><img width="72" height="72" src="images/call_carrot.png" alt="" /></div>
+          <div class="ChannelInfostyled__Title-ch-front__sc-2hwj0l-1 cBrgxr">몬나니농장에 문의하기</div>
+        </div>
+        <!-- faqcontent -->
+        <div class="MessageNodestyled__Container-ch-front__sc-1xdrx16-0 duHTod">
+          <div class="TimeDividerstyled__TimeDivider-ch-front__sc-jlgrsq-0 euWjea" id="current-time"></div>
+          <div class="MessageNodestyled__MessageWrapper-ch-front__sc-1xdrx16-1">
+            <div class="DeskMessagestyled__Wrapper-ch-front__sc-1oun56u-1 hlXDXU" tabindex="0">
+              <span class="a11y-hidden"> A message sent by an agent </span>
+              <div class="DeskMessagestyled__Content-ch-front__sc-1oun56u-2 fAsAbP">
+                <div class="DeskMessagestyled__Header-ch-front__sc-1oun56u-0 eljxEN"><div class="DeskMessagestyled__Name-ch-front__sc-1oun56u-3 fSXmUX">몬나니농장</div></div>
+                <div class="DeskMessageContentstyled__NodesWrapper-ch-front__sc-o56u98-1 jCWfjL">
+                  <div class="MessageContentCommonstyled__NodeWrapper-ch-front__sc-luiwx1-15 bvgzeM">
+                    <div class="WithAvatar__Wrapper-ch-front__sc-6jg0dz-0 kCLVTv">
+                      <!-- <div class="WithAvatar__Gutter-ch-front__sc-6jg0dz-1 eFTzyr">
+                      <div class="WithAvatar__AvatarWrapper-ch-front__sc-6jg0dz-2 kutQUI">
+                        <div radius="12.6" class="Avatarstyled__Wrapper-ch-front__sc-yfy5xq-0 eOEXZe WithAvatar__Avatar-ch-front__sc-6jg0dz-3 hWYRsm" size="30"><img width="30" height="30" src="images/call_carrot.png" alt="" /></div>
+                      </div>
+                    </div> -->
+                      <div class="MessageContentCommonstyled__BubbleContainer-ch-front__sc-luiwx1-2 hmnVjG DeskMessageContentstyled__BubbleContainer-ch-front__sc-o56u98-2 dOOqRC">
+                        <div class="MessageContentCommonstyled__BubbleWrapper-ch-front__sc-luiwx1-3 koUXgt DeskMessageContentstyled__BubbleWrapper-ch-front__sc-o56u98-3 kvtWDR">
+                          <div class="MessageContentCommonstyled__MessageWrapper-ch-front__sc-luiwx1-0 hyPeUI">
+                            <div>
+                              <div class="Messagestyled__Wrapper-ch-front__sc-19x3rf3-0 gDflWG MessageContentCommonstyled__Message-ch-front__sc-luiwx1-4 ghEzGR">
+                                <div id="node-037f9e1d-dae5-4ae5-8770-dd5adc87f21d">안녕하세요.</div>
+                                <div id="node-26bc9782-7ba1-42f6-8133-9da0ffd45ded">
+                                  몬나니농장<img src="https://cf.channel.io/asset/emoji/images/80/carrot.png" alt="carrot" data-context-type="emoji" size="18" width="18" height="18" class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh" />입니다!
+                                </div>
+                                <div id="node-4f1e7044-af34-4b24-aae8-1cc8fe4fa9ff">어떤 도움이 필요하신가요?</div>
+                                <div id="node-511c8fff-3d8c-4502-bbbf-f618274f65b0">아래에서 궁금하신 내용을 선택해주세요.</div>
+                                <div id="node-8eaed267-93dd-4e47-9ccf-05c7bce4cb11">
+                                  <img src="https://cf.channel.io/asset/emoji/images/80/information_desk_person.png" alt="information_desk_person" data-context-type="emoji" size="18" width="18" height="18" class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh" /><b> 고객센터 운영 시간</b> ​
+                                </div>
+                                <div id="node-15b9fdd4-4b7a-4658-8c52-8b5c30e68389"><b>월요일/금요일</b> 09:00 ~ 18:00</div>
+                                <div id="node-43401374-d0b8-4d24-9061-596c8a06a1f3"><b>토요일</b> 09:00 ~ 12:00</div>
+                                <div id="node-f24581bc-2c9c-41ef-8055-2f3d3161dc81"><b>점심시간</b> 12:00 ~ 13:00</div>
+                                <div id="node-efef75ea-cbea-4c0f-8e59-839dd7365492">일요일·공휴일 휴무</div>
+                                <div id="node-6af65bb3-79b2-432e-ae00-f05145ddb943">
+                                  휴일에 남겨주신 문의는 다음 운영 시간 내에 순차적으로 답변 도와 드리겠습니다<img
+                                    src="https://cf.channel.io/asset/emoji/images/80/grinning.png"
+                                    alt="grinning"
+                                    data-context-type="emoji"
+                                    size="18"
+                                    width="18"
+                                    height="18"
+                                    class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh"
+                                  />
+                                </div>
+                                <div id="node-7d941671-ba70-43d5-b363-fee6bd9a0de7">궁금한 사항이 있으시다면 <b>자주 묻는 질문(FAQ) 또는 정기배송 더 알아보기 페이지</b>를 참고해주세요. 아래에 궁금한 내용을 문의해주세요.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="LinkButtonsstyled__LinkButtonsWrapper-ch-front__sc-x39uja-0 hxwBGZ MessageContentCommonstyled__LinkButtons-ch-front__sc-luiwx1-5 fNCBqQ">
+                            <a target="_blank" rel="noopener noreferrer" href="delivery.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-1 fcPAbw">자주 묻는 질문(FAQ)</div></a
+                            ><a target="_blank" rel="noopener noreferrer" href="delivery.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-1 fcPAbw">정기배송 더 알아보기</div></a
+                            >
+                            <a target="_blank" rel="noopener noreferrer" href="faq.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-2 fcPAb2">납품 문의하기</div></a
+                            >
+                          </div>
+                        </div>
+                        <div class="DeskMessageContentstyled__RightMarginWrapper-ch-front__sc-o56u98-0 gTpGMO"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- JavaScript -->
-    <script></script>
+    <script>
+      // 더보기, 접기 기능
+      function toggleText() {
+        const noticeText = document.getElementById("notice-text");
+        const fullText = document.getElementById("full-text");
+        const toggleButton = document.querySelector(".faqtime3");
+
+        if (fullText.style.display === "none") {
+          noticeText.style.display = "none";
+          fullText.style.display = "block";
+          toggleButton.textContent = "접기";
+        } else {
+          noticeText.style.display = "block";
+          fullText.style.display = "none";
+          toggleButton.textContent = "더보기";
+        }
+      }
+      // 닫기 기능
+      function closeFaq() {
+        const faqSection = document.getElementById("faqSection");
+        faqSection.style.display = "none"; // faqSection을 숨기기
+      }
+      // 현재 시간 업데이트 기능
+      function updateTime() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const period = hours >= 12 ? "오후" : "오전";
+
+        hours = hours % 12 || 12; // 12시간 형식으로 변환, 0시는 12로 표시
+        const formattedTime = `${period} ${hours}:${minutes}`;
+
+        document.getElementById("current-time").textContent = formattedTime;
+      }
+
+      // 페이지 로드 시 즉시 시간 설정하고, 1초마다 갱신
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
 
     <!-- 전체 wrap -->
     <div class="wrap">
@@ -118,7 +275,354 @@
           </div>
         </div>
       </header>
+      <!-- visual -->
+      <section class="review-visual">
+        <img src="images/visual/comvisual.png" alt="" />
+      </section>
+      <!-- <div class="visual-community">
+        <img src="images/visual/comvisual.png" alt="" />
+      </div> -->
+      <!-- 이벤트영역 -->
+      <section class="reviewking">
+        <div class="inner">
+          <div class="title-wrap">
+            <h2 class="title">이달의 리뷰왕</h2>
+            <!-- 리뷰왕 이미지 -->
+            <div class="revkingimg">
+              <div class="revkingwrap">
+                <div class="revkingcard">
+                  <a href="#"><img src="images/review/pr1.png" alt="" /></a>
+                  <a href="#"><img src="images/review/pr2.png" alt="" /></a>
+                  <a href="#"><img src="images/review/pr8.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 이용후기 영역 -->
+      <!-- <section class="review-detail">
+        <div class="inner">
+          <div class="rev-title">
+            <div class="rev-titlewrap"><span class="alltitle">전체</span><span>|</span><span class="protitle">생산자 리뷰</span><span>|</span><span class="custitle">소비자 리뷰</span></div>
+          </div>
+          <div class="revwrap">
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="revcard">
+              <a href="#">
+                <img src="images/review/pr1.png" alt="" class="revimg" />
+                <div class="rev-overlay">
+                  <div class="overlay-top">
+                    <div class="overlay-name">
+                      <p>못난이님</p>
+                    </div>
+                    <div class="overlay-date">
+                      <p>2024-11-01</p>
+                    </div>
+                  </div>
+                  <div class="overlay-mid">
+                    <p>신선해보여서 바로 시켜봤는데 만족해요! 달콤하고 맛있었어요.</p>
+                  </div>
+                  <div class="overlay-bot">
+                    <div class="overlay-thumb">
+                      <img src="images/review/pr1.png" alt="" style="width: 80px; height: 80px" />
+                    </div>
+                    <div class="overlay-stars">
+                      <div class="overlay-item">
+                        <p>몬나니농장 테스트 과일</p>
+                      </div>
+                      <div class="overlay-star">
+                        <img src="images/cusstar.png" alt="" style="width: 80px" ; />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="review-detail">
+        <div class="inner">
+          <div class="rev-title">
+            <div class="rev-titlewrap">
+              <span class="alltitle">전체</span><span>|</span><span class="protitle">생산자 리뷰</span><span>|</span><span class="custitle">소비자 리뷰</span>
+            </div>
+          </div>
+      
+          
+          <!-- 동적으로 리뷰 카드가 표시될 영역 -->
+          <div class="revwrap" id="reviewContent">
+            
+          </div>
+      <!-- search-bar -->
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="검색어를 입력하세요..." onkeyup="searchFunction()" />
+  <img src="images/search-icon.png" class="search-icon" alt="Search Icon" />
+  <div class="search-results" id="searchResults"></div>
+</div>
+          <!-- 페이지네이션 -->
+          <div class="pagination">
+            <span class="page-number" onclick="showPage(1)">1</span>
+            <span class="page-number" onclick="showPage(2)">2</span>
+            <span class="page-number" onclick="showPage(3)">3</span>
+          </div>
+        </div>
+      </section>
+      
 
+
+ <!-- 번호 페이지 기능 -->
+  <section class="num-page">
+
+  </section>
       <!-- footer영역 -->
       <footer class="footer">
         <div class="inner">
