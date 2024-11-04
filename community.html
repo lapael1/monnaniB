@@ -255,7 +255,7 @@
                 <li><a href="brand.html">브랜드</a></li>
                 <li><a href="delivery.html">정기배송</a></li>
                 <li><a href="purchase.html">제품구매</a></li>
-                <li><a href="community.html">커뮤니티</a></li>
+                <li><a href="community.html">이용후기</a></li>
                 <li><a href="gallery.html">갤러리</a></li>
                 <li><a href="faq.html">문의하기</a></li>
               </ul>
@@ -283,23 +283,110 @@
         <img src="images/visual/comvisual.png" alt="" />
       </div> -->
       <!-- 이벤트영역 -->
-      <section class="reviewking">
-        <div class="inner">
-          <div class="title-wrap">
-            <h2 class="title">이달의 리뷰왕</h2>
-            <!-- 리뷰왕 이미지 -->
-            <div class="revkingimg">
-              <div class="revkingwrap">
-                <div class="revkingcard">
-                  <a href="#"><img src="images/review/pr1.png" alt="" /></a>
-                  <a href="#"><img src="images/review/pr2.png" alt="" /></a>
-                  <a href="#"><img src="images/review/pr8.png" alt="" /></a>
+      <section class="community-review slide">
+        <section class="reviewking">
+          <div class="inner">
+            <div class="title-wrap">
+              <h2 class="title">이달의 리뷰왕</h2>
+              <!-- 리뷰왕 이미지 -->
+              <div class="revkingimg">
+                <div class="revkingwrap">
+                  <div class="revkingcard">
+                    <a href="#"><img src="images/review/pr1.png" alt="" /></a>
+                    <a href="#"><img src="images/review/pr2.png" alt="" /></a>
+                    <a href="#"><img src="images/review/pr8.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 리뷰들 -->
+        <section class="review-detail">
+          <div class="inner">
+            <div class="rev-title">
+              <div class="rev-titlewrap">
+                <span class="alltitle" onclick="showFilteredReviews('all')">전체</span><span>|</span> <span class="protitle" onclick="showFilteredReviews('producer')">생산자 리뷰</span><span>|</span>
+                <span class="custitle" onclick="showFilteredReviews('customer')">소비자 리뷰</span>
+              </div>
+            </div>
+
+            <!-- 동적으로 리뷰 카드가 표시될 영역 -->
+            <div class="revwrap" id="reviewContent"></div>
+
+            <!-- 검색창 -->
+            <div class="search-container">
+              <input type="text" id="searchInput" placeholder="검색어를 입력하세요..." onkeyup="searchFunction()" />
+              <img src="images/search-icon.png" class="search-icon" alt="Search Icon" />
+              <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination"></div>
+          </div>
+        </section>
+      </section>
+      <div id="reviewModal" class="review-modal" style="display: none">
+        <div class="review-modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="clearfix _review_modal_body">
+            <div class="modal-left float_l">
+              <div class="item single-item">
+                <img id="modalReviewImage" class="item-image" src="" alt="Review Image" />
+              </div>
+            </div>
+            <div class="modal-right float_l">
+              <div class="modal-header no-border">
+                <div class="tabled full-width">
+                  <div class="table-cell vertical-top use_title">
+                    <div class="interlock_star_point star_point_wrap" id="modalReviewStars">
+                      <!-- JavaScript에서 별점 아이콘을 동적으로 추가합니다 -->
+                    </div>
+                    <p class="no-margin text-13 body_font_color_60 write_info clearfix">
+                      <span id="modalReviewName" class="inline-blocked"></span>
+                      <span id="modalReviewDate" class="inline-blocked"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="text-area margin-bottom-xxxl text-14">
+                  <div class="fr-view">
+                    <span id="modalReviewComment" class="txt"></span>
+                  </div>
+                </div>
+                <div class="tabled full-width prod_thumb_wrap margin-bottom-xxxl" style="cursor: pointer">
+                  <div class="table-cell vertical-middle" style="width: 62px">
+                    <img id="modalProductImage" class="prod_thumb" src="" width="48" height="48" alt="Product Thumbnail" />
+                  </div>
+                  <div class="table-cell vertical-middle">
+                    <p class="no-margin text-15 prod_name">
+                      <a id="modalProductName" href="javascript:;"></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="clearfix margin-bottom-xxl">
+                  <span class="text-13 float_l">댓글 <span class="text-brand" id="comment_count">0</span></span>
+                  <span class="text-13 float_r"><a class="text-brand" href="javascript:;" onclick="focusCommentInput()">댓글쓰기</a></span>
+                </div>
+                <!-- 댓글 입력 및 섹션 추가 -->
+                <div class="comment_section" id="review_comment_section">
+                  <div class="comment_list" id="commentList"></div>
+                  <div class="comment_textarea">
+                    <form id="modal_review_form">
+                      <div class="textarea_block">
+                        <textarea placeholder="로그인이 필요합니다." rows="1" name="body" id="modal_review_comment_body"></textarea>
+                        <button type="button" class="btn btn-brand btn-sm _style" onclick="submitComment()">작성</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
       <!-- 이용후기 영역 -->
       <!-- <section class="review-detail">
         <div class="inner">
@@ -589,40 +676,7 @@
           </div>
         </div>
       </section> -->
-      <section class="review-detail">
-        <div class="inner">
-          <div class="rev-title">
-            <div class="rev-titlewrap">
-              <span class="alltitle">전체</span><span>|</span><span class="protitle">생산자 리뷰</span><span>|</span><span class="custitle">소비자 리뷰</span>
-            </div>
-          </div>
-      
-          
-          <!-- 동적으로 리뷰 카드가 표시될 영역 -->
-          <div class="revwrap" id="reviewContent">
-            
-          </div>
-      <!-- search-bar -->
-<div class="search-container">
-  <input type="text" id="searchInput" placeholder="검색어를 입력하세요..." onkeyup="searchFunction()" />
-  <img src="images/search-icon.png" class="search-icon" alt="Search Icon" />
-  <div class="search-results" id="searchResults"></div>
-</div>
-          <!-- 페이지네이션 -->
-          <div class="pagination">
-            <span class="page-number" onclick="showPage(1)">1</span>
-            <span class="page-number" onclick="showPage(2)">2</span>
-            <span class="page-number" onclick="showPage(3)">3</span>
-          </div>
-        </div>
-      </section>
-      
 
-
- <!-- 번호 페이지 기능 -->
-  <section class="num-page">
-
-  </section>
       <!-- footer영역 -->
       <footer class="footer">
         <div class="inner">

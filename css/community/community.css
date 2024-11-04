@@ -3,12 +3,32 @@
   width: 100%;
 
 }
+/* 전환효과 */
+/* 페이드 인 + 확대 애니메이션 */
+@keyframes fadeInZoom {
+  from {
+    transform: scale(0.9); /* 약간 축소된 상태 */
+    opacity: 0; /* 투명도 0으로 시작 */
+  }
+  to {
+    transform: scale(1); /* 원래 크기로 확대 */
+    opacity: 1; /* 완전한 투명도 */
+  }
+}
+
+/* 애니메이션 적용 */
+.community-review {
+  animation: fadeInZoom 0.8s ease-out forwards; /* 0.8초 동안 효과 */
+  opacity: 0; /* 초기 투명도 0으로 설정 */
+  transform-origin: center; /* 중심에서 커지도록 설정 */
+}
 
 /* 리뷰킹 */
 .revkingcard{
   display: flex;
   justify-content: center;
   gap: 30px;
+  
 }
 .revkingcard img{
   width: 100%;
@@ -85,7 +105,7 @@
 .search-container {
   position: relative;
   width: 300px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 #searchInput {
@@ -156,3 +176,204 @@
 }
 
 /* 리뷰 카드 스타일은 기존 CSS 유지 */
+/* 버튼 클릭 시 효과 */
+/* 기본 스타일 설정 */
+.rev-titlewrap {
+  margin-bottom: 10px;
+}
+
+.rev-titlewrap span {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: #666;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+/* 활성화된 필터의 스타일 */
+.rev-titlewrap span.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 생산자 및 소비자 필터 활성화 스타일 */
+.rev-titlewrap .protitle.active {
+  background-color: #62C975;
+  color: #fff;
+}
+
+.rev-titlewrap .custitle.active {
+  background-color: #FF6741;
+  color: #fff;
+}
+
+/* 반응형 스타일 */
+
+/* 태블릿: 768px 이하에서 필터 스타일 조정 */
+@media (max-width: 768px) {
+  .rev-titlewrap {
+    margin-bottom: 8px; /* 여백 조정 */
+  }
+  
+  .rev-titlewrap span {
+    padding: 8px 12px; /* 패딩 줄임 */
+    font-size: 14px; /* 글자 크기 줄임 */
+  }
+}
+
+/* 모바일: 480px 이하에서 필터 스타일 추가 조정 */
+@media (max-width: 480px) {
+  .rev-titlewrap {
+    margin-bottom: 6px;
+  }
+  
+  .rev-titlewrap span {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+
+/* 공통 배지 스타일 */
+.review-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* 생산자 배지 스타일 */
+.review-badge.producer {
+  background-color: #62C975;
+}
+
+/* 소비자 배지 스타일 */
+.review-badge.customer {
+  background-color: #FF6741;
+}
+
+/* 반응형 스타일 */
+
+/* 태블릿: 768px 이하에서 배지 크기 줄임 */
+@media (max-width: 768px) {
+  .review-badge {
+    top: 8px;      /* 위치 조정 */
+    right: 8px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
+
+/* 모바일: 480px 이하에서 배지 크기 및 위치 추가 조정 */
+@media (max-width: 480px) {
+  .review-badge {
+    top: 6px;
+    right: 6px;
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+}
+
+
+/* 호버 시 스타일 */
+/* .rev-titlewrap span:hover {
+  background-color: #e0e0e0; 
+  color: #333;
+} */
+/* 기본 데스크탑 레이아웃: 3x3 배열 */
+.revwrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 */
+  gap: 10px; /* 아이템 간의 간격 */
+}
+
+/* 768px 이하에서 2x4 배열 */
+@media (max-width: 768px) {
+  .revwrap {
+    grid-template-columns: repeat(2, 1fr); /* 2열 */
+    gap: 10px;
+  }
+}
+.review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.review-modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.review-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-left,
+.modal-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.modal-left {
+  width: 40%;
+}
+
+.modal-right {
+  width: 55%;
+  padding-left: 45px;
+}
+
+.float_l {
+  float: left;
+}
+
+.no-border {
+  border: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-area {
+  margin-bottom: 20px;
+}
+
+.tabled {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.prod_thumb_wrap {
+  cursor: pointer;
+}
+
+.prod_name {
+  font-size: 15px;
+}
+
