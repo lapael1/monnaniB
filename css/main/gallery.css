@@ -1,5 +1,7 @@
 @charset "utf-8";
 /* 메인페이지 갤러리 */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
 .gallery {
   width: 100%;
@@ -89,17 +91,40 @@
 .gallery-wrap {
   width: 100%;
   height: auto;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .gallery-visual {
+  width: 100%;
+  height: 550px;
+  padding-top: 100px;
+  overflow: hidden;
   position: relative;
-  text-align: center;
-  height: auto;
+  justify-content: center;
+  display: flex;
 }
 .gallery-visual img {
   width: 100%;
-  opacity: 0.5;
-  height: 550px;
-  /* min-height: 300px; */
+  /* height: calc(100% + 100px); */
+  position: absolute;
+  /* top: -100px; */
+}
+.gallery-visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-visual .overlay h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
 }
 /* .gallery-visual h1 {
   position: absolute;
@@ -154,7 +179,7 @@
   margin-top: 10px;
 }
 .gallery-description p {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 .gallery-item-img > img {
@@ -266,6 +291,11 @@
     transform: scale(1.1);
   }
 }
+@media screen and (max-width: 1180px) {
+  .gallery-visual {
+    padding-top: 90px;
+  }
+}
 @media screen and (max-width: 950px) {
   .img-wrap ul {
     display: flex;
@@ -287,6 +317,14 @@
     font-size: 16px;
     font-weight: 700;
     padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .gallery-visual img {
+    width: auto;
+    height: calc(100% - 90px) ;
+    position: absolute;
+    
   }
 }
 @media screen and (max-width: 800px) {
@@ -317,6 +355,17 @@
   .bbs-de {
     font-size: 15px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-visual {
+    padding-top: 70px;
+  }
+  .gallery-visual img {
+    width: auto;
+    height: calc(100% - 70px) ;
+    position: absolute;
+    
   }
 }
 

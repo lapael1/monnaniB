@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P78D1CE4XQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF4G6ZPVZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-P78D1CE4XQ');
-</script>
+      gtag("config", "G-6QF4G6ZPVZ");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO 적용 -->
@@ -21,8 +23,8 @@
     <meta property="og:description" content="모양은 못났지만 맛있는 농산물을 저렴하게 구매하세요!" />
 
     <!-- 버셀 주소 만들고 넣기-->
-    <meta property="og:image" content="https://monnani-b.vercel.app/images/logo.png" />
-    <meta property="og:url" content="https://monnani-b.vercel.app/" />
+    <meta property="og:image" content="https://monnani.vercel.app/images/logo.png" />
+    <meta property="og:url" content="https://monnani.vercel.app/" />
     <meta property="og:site_name" content="몬나니농장" />
     <meta property="og:type" content="website" />
 
@@ -36,6 +38,7 @@
     <!-- CSS 적용 -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main/main.css" />
+    <link rel="stylesheet" href="css/faq/faq.css" />
     <!-- swiper css 적용 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- js -->
@@ -62,23 +65,30 @@
     <script src="js/main/minibanner.js"></script>
     <script src="js/main/footer.js"></script>
     <script src="js/main/count.js"></script>
-    <script src="js/main/season.js"></script>
     <title>문의하기</title>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-572PP59W');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NHL277JZ");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-572PP59W"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
- 
-  
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHL277JZ" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- event modal -->
+
+    <!-- 플로팅버튼 -->
+
     <!-- 탑버튼 -->
     <div class="topbtn fixBtn">
       <img src="images/topbtn1.png" alt="탑버튼" />
@@ -90,10 +100,172 @@
 
     <!-- 문의하기 내용 -->
     <div id="faqSection" class="faq-section">
-      <h3>문의하기 (F&Q)</h3>
-      <p>여기서 궁금한 사항을 남기세요.</p>
-      <!-- 추가 내용 -->문의하기
+      <div class="faqwrap">
+        <div class="faqtop">
+          <svg
+            id="faqClose"
+            onclick="closeFaq()"
+            width="20"
+            height="20"
+            viewBox="0 0 13 20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            foundation="[object Object]"
+            class="icon"
+            defaultopacity="1"
+            hoveredopacity="1"
+            margintop="0"
+            marginright="0"
+            marginbottom="0"
+            marginleft="8"
+            withtheme="true"
+            style="color: #ff6741"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.17255 16.4226C8.84711 16.748 8.31947 16.748 7.99404 16.4226L2.1607 10.5893C1.83527 10.2638 1.83527 9.73619 2.1607 9.41075L7.99404 3.57742C8.31947 3.25198 8.84711 3.25198 9.17255 3.57742C9.49799 3.90285 9.49799 4.43049 9.17255 4.75593L3.92847 10L9.17255 15.2441C9.49799 15.5695 9.49799 16.0972 9.17255 16.4226Z"
+            ></path>
+          </svg>
+          <img src="images/logo.png" alt="문의로고" class="faqlogo" />
+        </div>
+        <div class="faqtimewrap">
+          <div class="faqtime">
+            <div class="faqtime1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" foundation="[object Object]" class="Iconstyled__Icon-sc-1iqwu2g-0 dKyOtd" data-testid="bezier-react-icon" color="txt-black-dark" margintop="0" marginright="0" marginbottom="0" marginleft="0">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M20.138 2.018a.86.86 0 0 0-.427.115l-6.51 3.727a.86.86 0 0 1-.428.114H4a1 1 0 0 0-1 1V15a1 1 0 0 0 1 1h2.668l-.908 4.4a.5.5 0 0 0 .49.6h3.321a.8.8 0 0 0 .783-.638L11.255 16h1.518a.86.86 0 0 1 .428.114l6.51 3.727a.86.86 0 0 0 1.29-.747V2.88a.86.86 0 0 0-.863-.862"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="faqtime2">
+              <p class="notice-text" id="notice-text">💁 고객센터 운영 시간 <br />월요일~목요일 11:00 ~ 18:00 ...</p>
+              <p class="full-text" id="full-text" style="display: none">💁 고객센터 운영 시간 <br />월요일~목요일 11:00 ~ 18:00 <br />금요일 09:00 ~ 18:00 <br />점심시간 12:00 ~ 13:00 <br />토요일·일요일·공휴일 휴무</p>
+            </div>
+            <div class="faqtime3" onclick="toggleText()">더보기</div>
+          </div>
+        </div>
+        <!-- faqmiddle -->
+        <div tabindex="0" class="ChannelInfostyled__Wrapper-ch-front__sc-2hwj0l-0 bkkQiR">
+          <div size="72" class="Avatarstyled__Wrapper-ch-front__sc-yfy5xq-0 eLJRgO"><img width="72" height="72" src="images/call_carrot.png" alt="" /></div>
+          <div class="ChannelInfostyled__Title-ch-front__sc-2hwj0l-1 cBrgxr">몬나니농장에 문의하기</div>
+        </div>
+        <!-- faqcontent -->
+        <div class="MessageNodestyled__Container-ch-front__sc-1xdrx16-0 duHTod">
+          <div class="TimeDividerstyled__TimeDivider-ch-front__sc-jlgrsq-0 euWjea" id="current-time"></div>
+          <div class="MessageNodestyled__MessageWrapper-ch-front__sc-1xdrx16-1">
+            <div class="DeskMessagestyled__Wrapper-ch-front__sc-1oun56u-1 hlXDXU" tabindex="0">
+              <span class="a11y-hidden"> A message sent by an agent </span>
+              <div class="DeskMessagestyled__Content-ch-front__sc-1oun56u-2 fAsAbP">
+                <div class="DeskMessagestyled__Header-ch-front__sc-1oun56u-0 eljxEN"><div class="DeskMessagestyled__Name-ch-front__sc-1oun56u-3 fSXmUX">몬나니농장</div></div>
+                <div class="DeskMessageContentstyled__NodesWrapper-ch-front__sc-o56u98-1 jCWfjL">
+                  <div class="MessageContentCommonstyled__NodeWrapper-ch-front__sc-luiwx1-15 bvgzeM">
+                    <div class="WithAvatar__Wrapper-ch-front__sc-6jg0dz-0 kCLVTv">
+                      <!-- <div class="WithAvatar__Gutter-ch-front__sc-6jg0dz-1 eFTzyr">
+                        <div class="WithAvatar__AvatarWrapper-ch-front__sc-6jg0dz-2 kutQUI">
+                          <div radius="12.6" class="Avatarstyled__Wrapper-ch-front__sc-yfy5xq-0 eOEXZe WithAvatar__Avatar-ch-front__sc-6jg0dz-3 hWYRsm" size="30"><img width="30" height="30" src="images/call_carrot.png" alt="" /></div>
+                        </div>
+                      </div> -->
+                      <div class="MessageContentCommonstyled__BubbleContainer-ch-front__sc-luiwx1-2 hmnVjG DeskMessageContentstyled__BubbleContainer-ch-front__sc-o56u98-2 dOOqRC">
+                        <div class="MessageContentCommonstyled__BubbleWrapper-ch-front__sc-luiwx1-3 koUXgt DeskMessageContentstyled__BubbleWrapper-ch-front__sc-o56u98-3 kvtWDR">
+                          <div class="MessageContentCommonstyled__MessageWrapper-ch-front__sc-luiwx1-0 hyPeUI">
+                            <div>
+                              <div class="Messagestyled__Wrapper-ch-front__sc-19x3rf3-0 gDflWG MessageContentCommonstyled__Message-ch-front__sc-luiwx1-4 ghEzGR">
+                                <div id="node-037f9e1d-dae5-4ae5-8770-dd5adc87f21d">안녕하세요.</div>
+                                <div id="node-26bc9782-7ba1-42f6-8133-9da0ffd45ded">
+                                  몬나니농장<img src="https://cf.channel.io/asset/emoji/images/80/carrot.png" alt="carrot" data-context-type="emoji" size="18" width="18" height="18" class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh" />입니다!
+                                </div>
+                                <div id="node-4f1e7044-af34-4b24-aae8-1cc8fe4fa9ff">어떤 도움이 필요하신가요?</div>
+                                <div id="node-511c8fff-3d8c-4502-bbbf-f618274f65b0">아래에서 궁금하신 내용을 선택해주세요.</div>
+                                <div id="node-8eaed267-93dd-4e47-9ccf-05c7bce4cb11">
+                                  <img src="https://cf.channel.io/asset/emoji/images/80/information_desk_person.png" alt="information_desk_person" data-context-type="emoji" size="18" width="18" height="18" class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh" /><b> 고객센터 운영 시간</b> ​
+                                </div>
+                                <div id="node-15b9fdd4-4b7a-4658-8c52-8b5c30e68389"><b>월요일/금요일</b> 09:00 ~ 18:00</div>
+                                <div id="node-43401374-d0b8-4d24-9061-596c8a06a1f3"><b>토요일</b> 09:00 ~ 12:00</div>
+                                <div id="node-f24581bc-2c9c-41ef-8055-2f3d3161dc81"><b>점심시간</b> 12:00 ~ 13:00</div>
+                                <div id="node-efef75ea-cbea-4c0f-8e59-839dd7365492">일요일·공휴일 휴무</div>
+                                <div id="node-6af65bb3-79b2-432e-ae00-f05145ddb943">
+                                  휴일에 남겨주신 문의는 다음 운영 시간 내에 순차적으로 답변 도와 드리겠습니다<img
+                                    src="https://cf.channel.io/asset/emoji/images/80/grinning.png"
+                                    alt="grinning"
+                                    data-context-type="emoji"
+                                    size="18"
+                                    width="18"
+                                    height="18"
+                                    class="Emojistyled__Emoji-ch-front__sc-kwanmh-0 kQKnqh"
+                                  />
+                                </div>
+                                <div id="node-7d941671-ba70-43d5-b363-fee6bd9a0de7">궁금한 사항이 있으시다면 <b>자주 묻는 질문(FAQ) 또는 정기배송 더 알아보기 페이지</b>를 참고해주세요. 아래에 궁금한 내용을 문의해주세요.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="LinkButtonsstyled__LinkButtonsWrapper-ch-front__sc-x39uja-0 hxwBGZ MessageContentCommonstyled__LinkButtons-ch-front__sc-luiwx1-5 fNCBqQ">
+                            <a target="_blank" rel="noopener noreferrer" href="delivery.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-1 fcPAbw">자주 묻는 질문(FAQ)</div></a
+                            ><a target="_blank" rel="noopener noreferrer" href="delivery.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-1 fcPAbw">정기배송 더 알아보기</div></a
+                            >
+                            <a target="_blank" rel="noopener noreferrer" href="faq.html" class="LinkButtonsstyled__LinkButton-ch-front__sc-x39uja-2 dQwmhA LinkButtonsstyled__ChatLinkButton-ch-front__sc-x39uja-6 heierr"
+                              ><div class="LinkButtonsstyled__ButtonText-ch-front__sc-x39uja-2 fcPAb2">납품 문의하기</div></a
+                            >
+                          </div>
+                        </div>
+                        <div class="DeskMessageContentstyled__RightMarginWrapper-ch-front__sc-o56u98-0 gTpGMO"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- 문의복사 -->
+
+    <script>
+      // 더보기, 접기 기능
+      function toggleText() {
+        const noticeText = document.getElementById("notice-text");
+        const fullText = document.getElementById("full-text");
+        const toggleButton = document.querySelector(".faqtime3");
+
+        if (fullText.style.display === "none") {
+          noticeText.style.display = "none";
+          fullText.style.display = "block";
+          toggleButton.textContent = "접기";
+        } else {
+          noticeText.style.display = "block";
+          fullText.style.display = "none";
+          toggleButton.textContent = "더보기";
+        }
+      }
+      // 닫기 기능
+      function closeFaq() {
+        const faqSection = document.getElementById("faqSection");
+        faqSection.style.display = "none"; // faqSection을 숨기기
+      }
+      // 현재 시간 업데이트 기능
+      function updateTime() {
+        const now = new Date();
+        let hours = now.getHours();
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const period = hours >= 12 ? "오후" : "오전";
+
+        hours = hours % 12 || 12; // 12시간 형식으로 변환, 0시는 12로 표시
+        const formattedTime = `${period} ${hours}:${minutes}`;
+
+        document.getElementById("current-time").textContent = formattedTime;
+      }
+
+      // 페이지 로드 시 즉시 시간 설정하고, 1초마다 갱신
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
 
     <!-- JavaScript -->
     <script></script>
@@ -138,7 +310,119 @@
         </div>
       </header>
       <!-- visual영역 -->
-     
+      <section class="faq-visual">
+        <img src="images/visual/faqviusal.png" alt="visual" />
+        <div class="overlay">
+          <h2>문의하기</h2>
+        </div>
+      </section>
+      <!-- faq 영역 -->
+      <div class="title-wrap">
+        <h2 class="title">몬나니농장에<br />언제든 문의해주세요!</h2>
+      </div>
+      <section class="faq">
+        <div class="inner">
+          <div class="faqnotice">
+            <p class="call">고객센터 : 070-1234-5678</p>
+            <p class="time">월~금요일 09:00 ~ 18:00 <br />토요일 09:00 ~ 12:00 <br />일요일, 공휴일 휴무</p>
+          </div>
+          <div class="faqmain">
+            <div class="faq-wrap">
+              <form id="comp-lnfzjpr11" class="JVi7i2 comp-lnfzjpr11 wixui-form">
+                <div data-mesh-id="comp-lnfzjpr11inlineContent" data-testid="inline-content" class="">
+                  <div data-mesh-id="comp-lnfzjpr11inlineContent-gridContainer" data-testid="mesh-container-content">
+                    <div id="comp-lnfzjpr32" class="HcOXKn c9GqVL QxJLC3 lq2cno comp-lnfzjpr32 wixui-rich-text" data-testid="richTextElement">
+                      <h2 class="font_5 wixui-rich-text__text" style="font-size: 14px; line-height: 1.4em">
+                        <span style="font-size: 14px" class="wixui-rich-text__text"
+                          ><span style="font-family: wfont_143fc3_bf95f1fb246b482785b38e8b493187c1, wf_bf95f1fb246b482785b38e8b4, orig_pretendard_bold" class="wixui-rich-text__text"
+                            ><span style="color: #000000" class="wixui-rich-text__text"
+                              ><span style="letter-spacing: normal" class="wixui-rich-text__text"><span style="font-weight: bold" class="wixui-rich-text__text">몬나니농장 문의하기</span></span></span
+                            ></span
+                          ></span
+                        >
+                      </h2>
+                    </div>
+                    <div id="comp-lnfzos8y" class="PDy5M6 jNPppN comp-lnfzos8y wixui-dropdown JploZQ kxLeFB">
+  <label class="psSgWb wixui-dropdown__label" for="collection_comp-lnfzos8y">문의 유형</label>
+  <div class="RJZaGO dropdown-container">
+    <select class="wixui-dropdown__input McLPII has-custom-focus T6F83Z" id="collection_comp-lnfzos8y" data-testid="select-trigger" required="" aria-required="true">
+      <option value="" disabled="" class="R4tv1w U5WS_f">어떤 문의인지 골라주세요</option>
+      <option value="상품 문의" class="R4tv1w" aria-selected="false">상품 문의</option>
+      <option value="배송 문의" class="R4tv1w" aria-selected="false">배송 문의</option>
+      <option value="농장 입점 문의" class="R4tv1w" aria-selected="false">농장 입점 문의</option>
+      <option value="기타 문의" class="R4tv1w" aria-selected="false">기타 문의</option>
+    </select>
+    <!-- 커스텀 화살표 아이콘 -->
+    <span class="custom-arrow"></span>
+  </div>
+</div>
+
+                    <div id="comp-lnfzjpr43" class="MpKiNN comp-lnfzjpr43 wixui-text-input qzvPmW lPl_oN">
+                      <label for="input_comp-lnfzjpr43" class="wPeA6j wixui-text-input__label">이름</label>
+                      <div class="pUnTVX"><input name="이름" id="input_comp-lnfzjpr43" class="KvoMHf has-custom-focus wixui-text-input__input" type="text" placeholder="이름을 입력하세요" required="" aria-required="true" aria-invalid="true" maxlength="100" autocomplete="off" value="" /></div>
+                    </div>
+                    <div id="comp-lnfzuiu3" class="MpKiNN comp-lnfzuiu3 wixui-text-input qzvPmW lPl_oN">
+                      <label for="input_comp-lnfzuiu3" class="wPeA6j wixui-text-input__label">전화번호</label>
+                      <div class="pUnTVX"><input name="phone" id="input_comp-lnfzuiu3" class="KvoMHf has-custom-focus wixui-text-input__input" type="tel" placeholder="연락처를 입력하세요" required="" aria-required="true" aria-invalid="true" maxlength="50" autocomplete="off" value="" /></div>
+                    </div>
+                    <div id="comp-lnfzjpr73" class="MpKiNN comp-lnfzjpr73 wixui-text-input qzvPmW">
+                      <label for="input_comp-lnfzjpr73" class="wPeA6j wixui-text-input__label">이메일</label>
+                      <div class="pUnTVX">
+                        <input name="email" id="input_comp-lnfzjpr73" class="KvoMHf has-custom-focus wixui-text-input__input" type="email" placeholder="이메일을 입력하세요" aria-required="false" aria-invalid="false" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" autocomplete="off" value="" />
+                      </div>
+                    </div>
+                    <div id="comp-lnfzjpr84" class="snt4Te comp-lnfzjpr84 wixui-text-box oKe0Po NyPO4H">
+                      <label for="textarea_comp-lnfzjpr84" class="PSkPrR wixui-text-box__label">문의 내용</label><br /><textarea
+                        id="textarea_comp-lnfzjpr84"
+                        class="rEindN has-custom-focus wixui-text-box__input"
+                        placeholder="문의 내용을 자세히 적어주세요"
+                        required=""
+                        aria-required="true"
+                        aria-invalid="true"
+                      ></textarea>
+                    </div>
+                    <div class="comp-lnfzjprb FubTgk" id="comp-lnfzjprb" aria-disabled="false">
+                      <button aria-disabled="false" data-testid="buttonElement" class="uDW_Qe wixui-button PlZyDq"><span class="l7_2fn wixui-button__label">문의하기</span></button>
+                    </div>
+                    <div id="comp-lnfzjprc5" class="HcOXKn c9GqVL QxJLC3 lq2cno comp-lnfzjprc5 wixui-rich-text" data-testid="richTextElement">
+                      <p class="font_8 wixui-rich-text__text" style="line-height: 1.4em; text-align: right; font-size: 10px">
+                        <span style="font-family: wfont_143fc3_3fc8a9ae87ad4f9e95056ebb8ec086e3, wf_3fc8a9ae87ad4f9e95056ebb8, orig_pretendard_medium" class="wixui-rich-text__text"
+                          ><span style="letter-spacing: normal" class="wixui-rich-text__text"><span style="color: #000000" class="wixui-rich-text__text"></span></span
+                        ></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- 고객센터,상담시간 -->
+      </section>
+      <!-- 오시는 길 / 지도 -->
+      <div class="title-wrap">
+        <h2 class="title">몬나니농장 오시는 길</h2>
+      </div>
+      <div class="map-frame">
+        <h2>카카오맵</h2>
+        <div class="map-content">
+          <!-- 카카오맵 퍼가기 -->
+          <div id="daumRoughmapContainer1723012593792" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+          <!-- 카카오맵 로더 스크립트 (중복 삽입 불필요) -->
+          <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+          <!-- 카카오맵 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              timestamp: "1723012593792",
+              key: "2kacz",
+              mapWidth: "100%",
+              mapHeight: "450",
+            }).render();
+          </script>
+        </div>
+      </div>
       <!-- footer영역 -->
       <footer class="footer">
         <div class="inner">
@@ -226,28 +510,5 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
-    // 타임세일 시간
-    function updateTimer() {
-      const timerElement = document.getElementById("timer365");
-      const now = new Date();
-
-      // 내일 00:00:00 시각 계산
-      const tomorrow = new Date();
-      tomorrow.setDate(now.getDate() + 1);
-      tomorrow.setHours(0, 0, 0, 0);
-
-      // 남은 시간 계산 (밀리초 단위)
-      const timeDifference = tomorrow - now;
-
-      // 밀리초를 시, 분, 초로 변환
-      const hours = String(Math.floor(timeDifference / (1000 * 60 * 60))).padStart(2, "0");
-      const minutes = String(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
-      const seconds = String(Math.floor((timeDifference % (1000 * 60)) / 1000)).padStart(2, "0");
-
-      timerElement.textContent = `${hours}:${minutes}:${seconds}`;
-    }
-
-    // 매 초마다 업데이트
-    setInterval(updateTimer, 1000);
   </script>
 </html>
