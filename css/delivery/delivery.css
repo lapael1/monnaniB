@@ -53,9 +53,12 @@
   padding-top: 100px;
   overflow: hidden;
   position: relative;
+  justify-content: center;
+  display: flex;
 }
 .delivery-visual img {
   width: 100%;
+  /* height: calc(100% + 100px); */
   position: absolute;
   top: -100px;
 }
@@ -181,6 +184,7 @@ dt {
   font-weight: 700;
   background-color: rgb(229 231 235);
   margin-bottom: 10px;
+  cursor: pointer;
 }
 dd {
   font-size: 14px;
@@ -196,6 +200,14 @@ dd {
 @media screen and (max-width: 1024px) {
   .container h3 {
     font-size: 23px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .delivery-visual img {
+    width: auto;
+    height: calc(100% + 100px);
+    position: absolute;
+    top: -8.3vh;
   }
 }
 @media screen and (max-width: 768px) {

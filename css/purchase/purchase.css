@@ -18,9 +18,12 @@
   padding-top: 100px;
   overflow: hidden;
   position: relative;
+  justify-content: center;
+  display: flex;
 }
 .purchase-visual img {
   width: 100%;
+  /* height: calc(100% + 100px); */
   position: absolute;
   top: -100px;
 }
@@ -150,6 +153,14 @@
 }
 .monnani {
   background-color: #1fbf6a;
+}
+@media screen and (max-width: 1155px) {
+  .purchase-visual img {
+    width: auto;
+    height: calc(100% + 100px);
+    position: absolute;
+    top: -8.3vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .purchase-recommend .inner > ul > li {
