@@ -26,15 +26,15 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <!-- CSS 적용 -->
-    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="css/main/main.css" />
     <link rel="stylesheet" href="css/main/bagtime.css" />
     <!-- swiper css 적용 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- js -->
-    <script src="js/html5shiv.js"></script>
+    <!-- <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -44,12 +44,12 @@
     <!-- 폰트어썸 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- js -->
-    <script src="js/main/main.js"></script>
-    <script src="js/login/header.js"></script>
-    <script src="js/login/login.js"></script>
+    <!-- <script src="js/main/main.js"></script> -->
+    <!-- <script src="js/login/header.js"></script>
+    <script src="js/login/login.js"></script> -->
     <script src="js/main/header.js"></script>
-    <script src="js/main/gallery.js"></script>
     <script src="js/main/footer.js"></script>
+    <!-- <script src="js/main/bagitem.js"></script> -->
 
     <title>특가 상세페이지</title>
   </head>
@@ -131,14 +131,53 @@
                 <p><strong>배송 출발일</strong>: 지금 주문 시</p>
                 <p class="delivery-date">2024년 11월 7일 (목) 출발</p>
               </div>
+              <!-- 상품구매하기버튼 -->
               <div class="details-buttons">
                 <button class="cart">장바구니</button>
-                <button class="gift">선물하기</button>
+                <button class="buy">구매하기</button>
                 <!-- <button class="buy">구매하기</button> -->
               </div>
             </div>
           </div>
-          <hr />
+
+          <!-- 상품 옵션 선택 -->
+          <div class="option-container">
+            <div class="option-toggle" onclick="toggleOptions()">
+              <span class="option-title">옵션 선택</span>
+              <button class="toggle-button">
+                <img alt="토글아이콘" src="images/bagitem/togle-icon-down.png" />
+              </button>
+            </div>
+            <hr class="divider" />
+
+            <!-- 옵션 리스트 -->
+            <div id="option-list" class="option-list" style="display: none">
+              <ul class="option-items">
+                <li class="option-item" id="product1">
+                  <span class="item-name">몬나니농장 몬나니 노지감귤 2kg</span>
+                  <span class="item-price">15,900원</span>
+                </li>
+                <li class="option-item" id="product2">
+                  <span class="item-name">몬나니농장 노지감귤 2kg</span>
+                  <span class="item-price">23,000원</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 선택된 상품 리스트 -->
+          <div class="selected-items">
+            <ul id="selected-list" class="selected-list">
+              <!-- 선택된 상품들이 여기에 추가됨 -->
+            </ul>
+            <hr class="divider" />
+
+            <!-- 총 상품 금액 -->
+            <div class="total-amount">
+              <span class="total-label">총 상품 금액</span>
+              <span id="total-price" class="total-price">0원</span>
+            </div>
+          </div>
+          
           <!-- 배송 일정 -->
           <div class="product-img-page">
             <div class="delivery-schedule">
@@ -160,6 +199,7 @@
               </div>
             </div>
             <hr />
+
             <!-- 제품 상세페이지 -->
             <div class="product-details">
               <h3>입안 가득 퍼지는</h3>
@@ -203,6 +243,7 @@
                 </div>
               </div>
             </div>
+
             <!-- 사고보상정책안내 -->
             <div class="policy-guide">
               <div class="guide-txt">
