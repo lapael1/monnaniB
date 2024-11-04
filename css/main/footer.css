@@ -16,15 +16,15 @@
   background: #d9d9d9;
 }
 .footer h3 {
-  font-weight: bold;
-  font-size: 25px;
+  /* font-weight: bold; */
+  font-size: 20px;
   color: black;
   margin-left: 26px;
 }
 .number {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #ff6741;
-  font-size: 25px;
+  font-size: 20px;
 }
 /* cs(고객센터) */
 .cs-call {
@@ -42,13 +42,13 @@
   display: flex;
   font-size: 20px;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 200;
 }
 .cs-time {
   margin-left: 20px;
 }
 .cs p {
-  padding: 5px;
+  padding: 2px;
 }
 
 /* cs(sns) */
@@ -69,9 +69,9 @@
 }
 .cs-name p,
 .cs-name span {
-  padding: 5px;
-  font-size: 20px;
-  font-weight: 600;
+  /* padding: 5px; */
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 5px;
   /* white-space: no-wrap; */
 }
@@ -87,12 +87,12 @@
 /* cs-copy */
 .cs-copy {
   display: flex;
-  padding: 20px 10px;
+  padding: 10px 10px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
   /* justify-content: space-between; */
   margin-left: 10px;
-  gap: 35px;
+  gap: 20px;
 }
 .cs-time-br {
   display: none;
@@ -102,9 +102,9 @@
 @media screen and (max-width: 1090px) {
   .cs-name p,
   .cs-name span {
-    padding: 5px;
+    /* padding: 5px; */
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 5px;
     white-space: no-wrap;
   }
@@ -115,10 +115,10 @@
     display: flex;
     padding: 20px 10px;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 35px;
+    gap: 15px;
   }
 }
 
@@ -127,7 +127,7 @@
   .cs-name span {
     padding: 5px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 5px;
     white-space: no-wrap;
   }
@@ -136,38 +136,38 @@
   }
   .cs-copy {
     display: flex;
-    padding: 20px 10px;
+    padding: 15px 10px;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 35px;
+    gap: 15px;
   }
 }
 
 @media screen and (max-width: 954px) {
   .footer h3 {
-    font-weight: bold;
-    font-size: 20px;
+    /* font-weight: bold; */
+    font-size: 17px;
     color: black;
     margin-left: 26px;
   }
   .number {
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #ff6741;
-    font-size: 20px;
+    font-size: 17px;
   }
   .cs {
     display: flex;
     font-size: 17px;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 300;
   }
   .cs-name p,
   .cs-name span {
     padding: 5px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 5px;
     white-space: nowrap;
   }
@@ -178,10 +178,10 @@
     display: flex;
     padding: 20px 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 35px;
+    gap: 15px;
   }
 }
 
@@ -192,11 +192,11 @@
   .cs-copy {
     /* display: flex; */
     padding: 20px 10px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 35px;
+    gap: 10px;
   }
   .cs-mb {
     display: block;
@@ -204,22 +204,22 @@
     padding: 0 10px;
   }
   .cs-mb p {
-    padding: 0 10px;
-    font-size: 16px;
-    font-weight: 550;
+    /* padding: 0 10px; */
+    font-size: 14px;
+    font-weight: 300;
     margin-bottom: 5px;
   }
   .cs-mb span {
     color: #ff6741;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    /* padding: 0 10px; */
   }
   .cs-copy {
     display: flex;
     padding: 10px 10px;
-    font-size: 16px;
-    font-weight: 550;
+    font-size: 14px;
+    font-weight: 300;
     margin-left: 15px;
   }
 }
@@ -227,10 +227,10 @@
 @media screen and (max-width: 768px) {
   .cs-copy {
     display: block;
-    padding: 15px 15px;
-    font-size: 16px;
-    font-weight: 550;
-    margin-left: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    /* font-weight: 550; */
+    margin-left: 10px;
   }
 }
 
@@ -241,9 +241,9 @@
   .cs {
     margin-bottom: 20px;
     display: flex;
-    font-size: 16px;
-    margin-left: 10px;
-    font-weight: 600;
+    font-size: 14px;
+    /* margin-left: 10px; */
+    font-weight: 200;
   }
   .cs-sns {
     padding: 5px 10px;
@@ -258,7 +258,7 @@
   .cs p {
     font-size: 13px;
     margin-left: 10px;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
   .cs-name p {
     font-size: 14px;
@@ -273,6 +273,6 @@
   .cs-sns svg {
     width: 35px;
     height: 35px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
   }
 }
