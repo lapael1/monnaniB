@@ -13,16 +13,64 @@
   color: white;
   padding: 30px 20px;
   width: 500px;
-  border-radius: 15px; /* 모서리 둥글게 */
-  font-size: 20px;
+
+  border-radius: 8px; /* 모서리 둥글게 */
   text-align: center; /* 중앙 정렬 */
 }
-#faqspan{
-  font-size: 16px;
+.faq-visual {
+  width: 100%;
+  height: 550px;
+  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  display: flex;
 }
-.PlZyDq{
-  padding: 7px;
+.faq-visual img {
+  width: 100%;
+  /* height: calc(100% + 100px); */
+  position: absolute;
+  /* top: -100px; */
 }
+.faq-visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-visual .overlay h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 1420px) {
+  .faq-visual img {
+    width: auto;
+    height: calc(100% - 100px);
+    position: absolute;
+    /* top: -8.3vh; */
+  }
+}
+@media screen and (max-width: 1180px) {
+  .faq-visual {
+    padding-top: 90px;
+  }
+  .faq-visual img {
+    width: auto;
+    height: calc(100% - 90px);
+    position: absolute;
+    /* top: -8.3vh; */
+  }
+}
+
 
 /* 태블릿 (768px 이하) */
 @media (max-width: 768px) {
@@ -30,6 +78,16 @@
     width: 80%; /* 가로폭을 화면의 80%로 설정 */
     padding: 25px 15px; /* 패딩 조정 */
   }
+  .faq-visual {
+    padding-top: 70px;
+  }
+  .faq-visual img {
+    width: auto;
+    height: calc(100% - 70px);
+    position: absolute;
+    /* top: -8.3vh; */
+  }
+
 }
 
 /* 모바일 (480px 이하) */
@@ -48,7 +106,9 @@
   justify-content: center;
   align-items: center;
  
-  padding: 20px 10px 40px 10px;
+
+  padding: 20px;
+
   box-sizing: border-box;
 }
 

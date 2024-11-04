@@ -1,8 +1,74 @@
 @charset "utf-8";
-.review-visual img{
+.review-visual {
   width: 100%;
-
+  height: 550px;
+  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  display: flex;
 }
+.review-visual img {
+  width: 100%;
+  /* height: calc(100% + 100px); */
+  position: absolute;
+  /* top: -100px; */
+}
+.review-visual .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-visual .overlay h2 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 1180px) {
+  .review-visual {
+    padding-top: 90px;
+  }
+  /* .review-visual img {
+    width: auto;
+    height: calc(100% - 90px);
+    position: absolute;
+   
+  } */
+}
+@media screen and (max-width: 1090px) {
+  .review-visual img {
+    width: auto;
+    height: calc(100% - 90px) ;
+    position: absolute;
+    
+  }
+}
+@media screen and (max-width: 768px) {
+  .review-visual {
+    padding-top: 70px;
+  }
+  .review-visual img {
+    width: auto;
+    height: calc(100% - 70px) ;
+    position: absolute;
+    
+  }
+}
+
+
+
+
+
+
 /* 전환효과 */
 /* 페이드 인 + 확대 애니메이션 */
 @keyframes fadeInZoom {
