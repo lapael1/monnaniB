@@ -154,7 +154,8 @@
   width: 350px;
   height: 510px;
   padding: 20px;
-  background-color: rgb(245, 245, 247);
+  background-color: #f5f5f5;
+  border-radius: 10px;  
 }
 .delivery-review p {
   display: -webkit-box; /* Flex 컨테이너로 설정 */
@@ -167,6 +168,7 @@
 .review-photo {
   width: 100%;
   aspect-ratio: 1/1;
+  border-radius: 10px;
   /* padding: 10px; */
 }
 .review-star {

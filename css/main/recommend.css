@@ -5,6 +5,9 @@
   width: 100%;
   margin-top: 100px;
 }
+.reviewking h2{
+  margin-bottom: 70px;
+}
 .recommend-top{
   display: block;
   position: relative;
@@ -22,8 +25,7 @@ h2.title {
 }
 .title-wrap{
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 70px 0;
 }
 .recommend h2::after {
   content: "";
