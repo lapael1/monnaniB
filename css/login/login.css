@@ -2,7 +2,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
-body{
+body {
   background-color: #f5f6f7;
   font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
@@ -67,36 +67,38 @@ body{
   max-width: 450px;
   margin-bottom: 30px;
 }
-p{
+p {
   margin-bottom: 10px;
 }
-.login-check{
+.login-check {
   display: flex;
   width: 70%;
   max-width: 450px;
 }
-.login-check li{
+.login-check li {
   width: 50%;
   text-align: center;
 }
-#signup{
-  /* background-color: #ff6741;
-  color: white; */
+#signup {
+  background-color: #ddd;
+  /* color: white; */
   font-size: 20px;
 }
-.id-save, .login-save{
+.id-save,
+.login-save {
   width: 70%;
   max-width: 450px;
-  
+
   /* margin: 10px 0; */
 }
-#id-save, #login-save{
+#id-save,
+#login-save {
   width: auto !important;
   height: auto !important;
   margin: 0 10px 0 0 !important;
 }
-@media screen and (max-width:768px){
-  #login-form{
+@media screen and (max-width: 768px) {
+  #login-form {
     padding-top: 90px;
   }
 }

@@ -41,12 +41,18 @@ body {
 #signup-form p {
   width: 70%;
   max-width: 450px;
-  margin: 10px 0;
+  margin: 5px 0;
+
+}
+.agree-all{
+  margin-bottom: 5px !important;
+  padding: 0 !important;
 }
 #signup-form label {
   width: 70%;
   max-width: 450px;
-  margin: 5px 0;
+  margin: 2px 0;
+  padding-left: 10px;
 }
 button:last-child {
   background-color: #ff6741;
