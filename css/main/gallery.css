@@ -140,6 +140,11 @@
   width: 100%;
   margin-top: 20px;
 }
+.gallery-cate h2{
+  font-size: 36px;
+  margin: 70px 0;
+  text-align: center;
+}
 .gallery-wh {
   list-style: none;
   /* padding-left:30px; */
@@ -243,15 +248,15 @@
   border-radius: 5px;
   text-align: center;
 }
+.gallery-wh {
+  width: 90%;
+  margin: 70px auto;
+}
 
 /* 반응형 */
 @media screen and (max-width: 1300px) {
   .gallery-item-img {
     height: 20vw;
-  }
-  .gallery-wh {
-    width: 90%;
-    margin: 50px auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -440,10 +445,10 @@
   .bbs-de {
     font-size: 14px;
   }
-  .gallery-visual img {
+  /* .gallery-visual img {
     height: 72vw;
     min-height: 330px;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
