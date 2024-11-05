@@ -77,4 +77,28 @@ window.addEventListener("load", function () {
     // 상태 토글 (true <-> false)
     isMenuOpen = !isMenuOpen;
   });
+
+  function adjustCartMenuMargin() {
+    const headerLogin = document.getElementById('header-login');
+    const cartMenu = document.getElementById('cart-menu');
+  
+    if (window.innerWidth > 1180) {  // 1180px 초과일 때만 적용
+      if (headerLogin && cartMenu) {
+        const headerLoginWidth = headerLogin.offsetWidth;
+        cartMenu.style.marginRight = `${headerLoginWidth + 50}px`;
+      }
+    } else {
+      // 1180px 이하에서는 margin-right 초기화
+      cartMenu.style.marginRight = '0';
+    }
+  }
+  
+  // 초기 로딩 시 실행
+  adjustCartMenuMargin();
+  
+  // 창 크기 조정 시 실행
+  window.addEventListener('resize', adjustCartMenuMargin);
+
+
+
 });
