@@ -1,11 +1,12 @@
 @charset "utf-8";
 .container h2 {
-  font-size: 40px;
+  font-size: 36px;
   text-align: center;
   padding-top: 30px;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 70px;
   font-weight: 700;
+  
 }
 .container h3 {
   text-align: center;
@@ -31,6 +32,7 @@
   margin: 0 auto; /* 부모 요소에서 가로 방향으로 중앙 정렬 */
   margin-top: 3%;
   cursor: pointer;
+  margin-bottom: 90px;
 }
 .container button a {
   font-size: 30px;
@@ -80,10 +82,9 @@
   font-weight: bold;
   text-align: center;
 }
-.delivery-instruct {
+/* .delivery-instruct {
   padding-top: 100px;
-  /* background-color: #fdf4ee; */
-}
+} */
 .delivery-instruct-what {
   justify-content: space-between !important;
 }
@@ -180,11 +181,17 @@
 }
 dt {
   font-size: 20px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 40px 10px 10px;
   font-weight: 700;
   background-color: rgb(229 231 235);
   margin-bottom: 10px;
   cursor: pointer;
+  position: relative;
+}
+dt img{
+  height: 20px;
+  position: absolute;
+  right: 20px;
 }
 dd {
   font-size: 14px;

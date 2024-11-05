@@ -7,10 +7,10 @@
   font-size: 50px;
 }
 .wrap h3 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 30px;
-  margin-top: 70px;
+  text-align: center;
+  margin: 70px 0;
 }
 .purchase-visual {
   width: 100%;
@@ -44,6 +44,9 @@
   font-size: 48px;
   font-weight: bold;
   text-align: center;
+}
+.purchase-review{
+  font-size: 12px;
 }
 .purchase-recommend .inner > ul {
   display: flex;
@@ -79,6 +82,7 @@
 }
 .market {
   font-weight: 700;
+  margin-bottom: 70px;
 }
 .market-list {
   display: flex;
