@@ -90,15 +90,83 @@
 }
 
 /* 리뷰킹 */
-.revkingcard{
+.reviewking {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  
+  padding: 20px;
 }
-.revkingcard img{
-  width: 100%;
+
+.revkingcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* 카드 간 간격 */
+  justify-content: center;
 }
+
+.rank-badge {
+  position: relative;
+  flex: 1 1 100px; /* 최소 100px 크기를 유지하며 반응형 조절 */
+  max-width: 300px; /* 최대 크기 제한 */
+}
+
+.rank-badge img {
+  width: 100%; /* 이미지가 카드의 크기에 맞게 조절 */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.rank-badge .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: gold; /* 배경 색상 */
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* 순위에 따른 색상 */
+.rank-badge.first .badge {
+  background-color: gold;
+}
+
+.rank-badge.second .badge {
+  background-color: silver;
+}
+
+.rank-badge.third .badge {
+  background-color: #cd7f32; /* 동색 */
+}
+
+/* 작은 화면에서 카드 정렬 */
+@media (max-width: 768px) {
+  .revkingcard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rank-badge .badge {
+    top: 5px;
+    left: 5px;
+    padding: 3px 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 매우 작은 화면에서 텍스트와 배지가 더 작아짐 */
+@media (max-width: 480px) {
+  .rank-badge .badge {
+    top: 3px;
+    left: 3px;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+  }
+}
+
+
 .reviewking .inner{
   width: 100%;
  max-width: 1300px;
@@ -444,3 +512,215 @@
   font-size: 15px;
 }
 
+.overlay-top,
+.overlay-mid,
+.overlay-bot {
+  margin-bottom: 10px;
+}
+
+.overlay-name p,
+.overlay-date p,
+.overlay-mid p,
+.overlay-item p {
+  margin: 0;
+}
+.modal-reivewrap{
+  display: flex;
+ 
+    flex-direction: column;
+    
+    margin-bottom: 20px;
+    gap: 5px;
+}
+.textarea_block{
+  display: flex;
+  justify-content: space-between;
+}
+/* 작은 화면에 맞춘 반응형 스타일 */
+@media (max-width: 768px) {
+  .rev-overlay {
+    padding: 15px;
+  }
+  .overlay-top,
+  .overlay-mid,
+  .overlay-bot {
+    margin-bottom: 8px;
+  }
+
+  .overlay-name p,
+  .overlay-date p,
+  .overlay-mid p,
+  .overlay-item p {
+    font-size: 14px;
+  }
+
+  .overlay-thumb img {
+    width: 50px;
+    
+  }
+
+  .overlay-star img {
+    width: 50px;
+  }
+}
+
+/* 매우 작은 화면에 맞춘 반응형 스타일 */
+@media (max-width: 480px) {
+  .rev-overlay {
+    padding: 10px;
+  }
+
+  .overlay-name p,
+  .overlay-date p,
+  .overlay-mid p,
+  .overlay-item p {
+    font-size: 12px;
+  }
+
+  .overlay-thumb img,
+  .overlay-star img {
+    width: 35px;
+    
+  }
+}
+/* 기본 모달 스타일 */
+.review-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.review-modal-content {
+  width: 80%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 모달 레이아웃 */
+.modal-left,
+.modal-right {
+  width: 50%;
+}
+
+.modal-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal-right {
+  padding-left: 20px;
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 768px) {
+  .revwrap{
+    padding: 10px
+  }
+  .review-modal-content {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 100%;
+  }
+
+  .modal-left {
+    margin-bottom: 15px;
+  }
+
+  .modal-right {
+    padding-left: 0;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding: 10px 0;
+  }
+
+  .text-13, .text-14, .text-15 {
+    font-size: 20px;
+  }
+
+  .prod_name {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 5px;
+  }
+  #modal_review_comment_body {
+    border: solid 1px #333;
+    padding: 10px;
+    font-size: 15px;
+}
+.clearfix .margin-bottom-xxl{
+  display: flex;
+  gap: 10px;
+}
+#modal-revwrap{
+  display: flex;
+        align-items: center;
+}
+.review-modal .close {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  font-size: 40px;
+  cursor: pointer;
+}
+}
+
+/* 매우 작은 화면 대응 */
+@media (max-width: 480px) {
+  .review-modal-content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .modal-left img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .text-13, .text-14, .text-15 {
+    font-size: 16px;
+  }
+
+  .prod_name {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+}
