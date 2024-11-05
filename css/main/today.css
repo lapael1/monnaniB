@@ -22,6 +22,7 @@
 }
 .title-wrap {
   margin-bottom: 50px;
+  /* font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif"; */
 }
 .today-wrap {
   display: flex;
@@ -29,18 +30,22 @@
   justify-content: space-evenly;
   width: 100%;
   margin-bottom: 100px;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .today-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .today-sale {
   font-size: 30px;
   margin-bottom: 10px;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .today-item {
   font-size: 28px;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .today-saleprice {
   display: flex;

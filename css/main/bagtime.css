@@ -1,7 +1,10 @@
 @charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 .sale {
   padding-top: 100px;
   width: 100%;
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 
 /* 상단 */
@@ -167,7 +170,7 @@
 }
 
 .delivery-days p:first-child {
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
@@ -186,7 +189,7 @@
 
 .order-deadline p:first-child,
 .handling-notes p:first-child {
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
 }
 
@@ -226,7 +229,7 @@
 .product-details h2 {
   font-size: 19px;
   color: black;
-  font-weight: bold;
+  font-weight: 400;
   margin: 5px 0 15px;
 }
 
@@ -286,7 +289,7 @@
   padding: 12px;
   text-align: center;
   font-size: 16px;
-  font-weight: 600; /* font-semibold */
+  font-weight: 400; /* font-semibold */
 }
 .policy-notice-main {
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -351,7 +354,6 @@
 }
 
 .option-list {
-  position: absolute;
   top: 100%;
   width: 100%;
   max-height: 200px;
@@ -442,8 +444,9 @@
 
 .total-label {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 400;
   color: #1f2937;
+  padding: 10px 10px;
 }
 
 .total-price {
