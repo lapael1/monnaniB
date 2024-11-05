@@ -9,6 +9,7 @@
   background-color: #fff9ea;
   margin: 20px auto;
   /* margin-top: 10px; */
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 .gallery h2 {
   text-align: center;
@@ -35,7 +36,8 @@
 .gallery-inner p {
   text-align: center;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
+  /* font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
 }
 .img-wrap {
   width: 100%;
@@ -230,6 +232,7 @@
 }
 .bbs-de {
   text-align: center;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 .bbsBtn ul {
   display: flex;
@@ -242,6 +245,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 
 /* 반응형 */
