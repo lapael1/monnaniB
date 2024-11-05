@@ -63,6 +63,7 @@ p.review-txt{
 .review-txt img:hover{
   filter: brightness(0.8); /* 밝기를 70%로 줄여 색을 더 짙게 표현 */
 }
+
 @media screen and (max-width : 860px) {
   /* 기존 스타일들 */
   .review h3 {

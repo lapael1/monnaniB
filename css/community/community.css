@@ -47,9 +47,8 @@
 @media screen and (max-width: 1090px) {
   .review-visual img {
     width: auto;
-    height: calc(100% - 90px) ;
+    height: calc(100% - 90px);
     position: absolute;
-    
   }
 }
 @media screen and (max-width: 768px) {
@@ -58,16 +57,10 @@
   }
   .review-visual img {
     width: auto;
-    height: calc(100% - 70px) ;
+    height: calc(100% - 70px);
     position: absolute;
-    
   }
 }
-
-
-
-
-
 
 /* 전환효과 */
 /* 페이드 인 + 확대 애니메이션 */
@@ -166,16 +159,14 @@
   }
 }
 
-
-.reviewking .inner{
+.reviewking .inner {
   width: 100%;
- max-width: 1300px;
+  max-width: 1300px;
   margin: auto;
 }
 /* 리뷰 */
-.rev-titlewrap{
+.rev-titlewrap {
   display: flex;
-  gap: 10px;
 }
 
 .review-detail .inner {
@@ -185,11 +176,7 @@
   margin: 0 auto;
 }
 
-.revwrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3%;
-}
+
 
 .revcard {
   position: relative;
@@ -218,18 +205,16 @@
   opacity: 0; /* 기본적으로 숨김 */
   transition: opacity 0.3s ease;
   padding: 10px;
-
 }
 
-.overlay-stars{
+.overlay-stars {
   display: flex;
   flex-direction: column;
-    justify-content: center;
+  justify-content: center;
 }
-.overlay-bot{
+.overlay-bot {
   display: flex;
   gap: 10px;
-  
 }
 
 .revcard:hover .rev-overlay {
@@ -306,7 +291,7 @@
 }
 
 .page-number.active {
-  background-color: #007bff;
+  background-color: #f3592a;
   color: white;
 }
 
@@ -319,11 +304,11 @@
 
 .rev-titlewrap span {
   cursor: pointer;
-  padding: 10px 15px;
   color: #666;
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 8px;
+  padding: 5px 10px;
 }
 
 /* 활성화된 필터의 스타일 */
@@ -334,12 +319,12 @@
 
 /* 생산자 및 소비자 필터 활성화 스타일 */
 .rev-titlewrap .protitle.active {
-  background-color: #62C975;
+  background-color: #62c975;
   color: #fff;
 }
 
 .rev-titlewrap .custitle.active {
-  background-color: #FF6741;
+  background-color: #ff6741;
   color: #fff;
 }
 
@@ -350,10 +335,10 @@
   .rev-titlewrap {
     margin-bottom: 8px; /* 여백 조정 */
   }
-  
+
   .rev-titlewrap span {
-    padding: 8px 12px; /* 패딩 줄임 */
     font-size: 14px; /* 글자 크기 줄임 */
+    padding: 3px 7px;
   }
 }
 
@@ -362,13 +347,12 @@
   .rev-titlewrap {
     margin-bottom: 6px;
   }
-  
+
   .rev-titlewrap span {
-    padding: 6px 10px;
+    padding: 2px 6px;
     font-size: 12px;
   }
 }
-
 
 /* 공통 배지 스타일 */
 .review-badge {
@@ -385,12 +369,12 @@
 
 /* 생산자 배지 스타일 */
 .review-badge.producer {
-  background-color: #62C975;
+  background-color: #62c975;
 }
 
 /* 소비자 배지 스타일 */
 .review-badge.customer {
-  background-color: #FF6741;
+  background-color: #ff6741;
 }
 
 /* 반응형 스타일 */
@@ -398,7 +382,7 @@
 /* 태블릿: 768px 이하에서 배지 크기 줄임 */
 @media (max-width: 768px) {
   .review-badge {
-    top: 8px;      /* 위치 조정 */
+    top: 8px; /* 위치 조정 */
     right: 8px;
     padding: 4px 8px;
     font-size: 11px;
@@ -415,7 +399,6 @@
   }
 }
 
-
 /* 호버 시 스타일 */
 /* .rev-titlewrap span:hover {
   background-color: #e0e0e0; 
@@ -426,10 +409,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3열 */
   gap: 10px; /* 아이템 간의 간격 */
+  padding: 10px;
+}
+.star-icon {
+  max-width: 100px;
+  width: 100%;
 }
 
 /* 768px 이하에서 2x4 배열 */
 @media (max-width: 768px) {
+  .star-icon {
+    max-width: 100px;
+    width: 100%;
+  }
   .revwrap {
     grid-template-columns: repeat(2, 1fr); /* 2열 */
     gap: 10px;
@@ -502,6 +494,7 @@
 
 .table-cell {
   display: table-cell;
+  vertical-align: middle;
 }
 
 .prod_thumb_wrap {
@@ -524,17 +517,17 @@
 .overlay-item p {
   margin: 0;
 }
-.modal-reivewrap{
+.modal-reivewrap {
   display: flex;
- 
-    flex-direction: column;
-    
-    margin-bottom: 20px;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
-.textarea_block{
+.textarea_block {
   display: flex;
   justify-content: space-between;
+}
+.comment-sectionwrap{
+  margin-top: 10px;
 }
 /* 작은 화면에 맞춘 반응형 스타일 */
 @media (max-width: 768px) {
@@ -556,11 +549,11 @@
 
   .overlay-thumb img {
     width: 50px;
-    
   }
 
   .overlay-star img {
-    width: 50px;
+    max-width: 70px;
+    width: 100%;
   }
 }
 
@@ -579,8 +572,8 @@
 
   .overlay-thumb img,
   .overlay-star img {
-    width: 35px;
-    
+    max-width: 50px;
+    width: 100%;
   }
 }
 /* 기본 모달 스타일 */
@@ -598,7 +591,7 @@
 }
 
 .review-modal-content {
-  width: 80%;
+  width: 100%;
   max-width: 700px;
   background-color: #fff;
   border-radius: 8px;
@@ -629,28 +622,133 @@
   height: auto;
   border-radius: 5px;
 }
-
+#modalReviewName {
+  font-weight: bold;
+}
 .modal-right {
   padding-left: 20px;
 }
+.modal-right .float_l {
+  display: flex;
+}
+/* #modal-right-flex{
+  display: flex;
+} */
+.modal-right {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 요소 간의 기본 간격 */
+}
 
+.review-modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.comment_section {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.comment_textarea textarea {
+  padding: 5px;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.comment_textarea button {
+  padding: 5px;
+  background-color: #ff6741;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#commentwrap {
+  display: flex;
+  gap: 5px;
+}
+/* 버튼 간격 */
+.textarea_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 수직 가운데 정렬 */
+  gap: 10px; /* 요소 간의 간격 */
+}
+.modal-reivewrap {
+  margin-top: 60px;
+}
+
+.comment_textarea button {
+  width: 100%;
+  max-width: 50px;
+}
+#modal_review_comment_body {
+  max-width: 200px;
+  width: 100%;
+}
+.rev-title{
+  padding-left: 10px;
+}
+.pagination-producer .page-number.active {
+  background-color: #4caf50; /* 생산자 리뷰 활성화 색상 */
+  color: #fff;
+}
 /* 작은 화면 대응 */
 @media (max-width: 768px) {
-  .revwrap{
-    padding: 10px
+  .comment_section {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 0px;
+  }
+  #modalReviewComment {
+    font-size: 16px;
+  }
+  #modalProductName {
+    font-size: 15px;
+  }
+  #modalReviewName,
+  #modalReviewDate {
+    font-size: 16px;
+  }
+  .modal-left,
+  .float_l {
+    /* margin-bottom: 15px; */
+  }
+  .modal-reivewrap {
+    margin-top: 0px;
+  }
+  .revwrap {
+    padding: 10px;
   }
   .review-modal-content {
-    width: 90%;
+    margin-top: 10%;
+    width: 65%;
     padding: 30px;
   }
 
   .modal-left,
   .modal-right {
     width: 100%;
-  }
-
-  .modal-left {
-    margin-bottom: 15px;
   }
 
   .modal-right {
@@ -663,10 +761,12 @@
 
   .modal-header,
   .modal-body {
-    padding: 10px 0;
+    margin-bottom: 0px;
   }
 
-  .text-13, .text-14, .text-15 {
+  .text-13,
+  .text-14,
+  .text-15 {
     font-size: 20px;
   }
 
@@ -682,37 +782,52 @@
     border: solid 1px #333;
     padding: 10px;
     font-size: 15px;
-}
-.clearfix .margin-bottom-xxl{
-  display: flex;
-  gap: 10px;
-}
-#modal-revwrap{
-  display: flex;
-        align-items: center;
-}
-.review-modal .close {
-  position: absolute;
-  top: 0px;
-  right: 2px;
-  font-size: 40px;
-  cursor: pointer;
-}
+  }
+  .clearfix .margin-bottom-xxl {
+    display: flex;
+    gap: 10px;
+  }
+  #modal-revwrap {
+    display: flex;
+    align-items: center;
+  }
+  .review-modal .close {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .comment_textarea button {
+    width: 100%;
+    max-width: 50px;
+  }
+  #modal_review_comment_body {
+    max-width: 330px;
+    width: 100%;
+  }
 }
 
 /* 매우 작은 화면 대응 */
 @media (max-width: 480px) {
+  .star-icon {
+    max-width: 80px;
+    width: 100%;
+  }
   .review-modal-content {
     width: 80%;
     padding: 20px;
   }
-
+  .modal-reivewrap {
+    margin-top: 0px;
+  }
   .modal-left img {
     width: 100%;
-    max-height: 200px;
   }
 
-  .text-13, .text-14, .text-15 {
+  .text-13,
+  .text-14,
+  .text-15 {
     font-size: 16px;
   }
 
@@ -720,7 +835,30 @@
     font-size: 13px;
   }
 
+  .review-modal .close {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    font-size: 25px;
+    cursor: pointer;
+  }
   .btn {
     font-size: 13px;
+    padding: 3px;
+  }
+  #modalProductName {
+    font-size: 15px;
+  }
+  #modal_review_comment_body {
+    border: solid 1px #333;
+    padding: 6px;
+    font-size: 12px;
+  }
+  .modal-body {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .modal-reivewrap {
+    margin-bottom: 0px;
   }
 }

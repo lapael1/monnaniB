@@ -25,7 +25,7 @@ const reviewData = {
       name: "청렴농부님",
       date: "2024-11-04",
       comment:
-        "못난이 농산물을 항상 폐기할 때마다 마음이 아팠는데 그러지 않아도 되서 정말 만족합니다.",
+        "못난이 농산물을 폐기할 때마다 마음 아팠는데 정말 만족해요.",
       image: "images/review/pro1.png",
       product: "몬나니농장 토마토",
       stars: "images/prostar.png",
@@ -321,10 +321,21 @@ function createPagination(totalReviews) {
     pageItem.className = "page-number";
     pageItem.setAttribute("data-page", i);
     pageItem.textContent = i;
-    pageItem.onclick = () => showPage(i, currentFilter);
+
+    // 활성화된 페이지에 `active` 클래스 추가
+    if (i === currentPage) {
+      pageItem.classList.add("active");
+    }
+
+    pageItem.onclick = () => {
+      currentPage = i; // 현재 페이지 갱신
+      showPage(i, currentFilter); // 페이지 표시
+    };
+
     paginationContainer.appendChild(pageItem);
   }
 }
+
 
 // 전체, 소비자, 생산자 리뷰 필터링 함수
 function showFilteredReviews(filterType) {
@@ -352,19 +363,26 @@ function showReviewModal(index) {
   document.getElementById("modalProductImage").src = review.image;
   document.getElementById("modalProductName").textContent = review.product;
 
-  // 별점 표시 (rating 값이 없을 경우 기본값을 5로 설정)
+  // 별 이미지 경로 설정 (생산자/소비자에 따라 다르게 적용)
+  const starImageSrc = review.stars.includes("prostar") 
+    ? "images/prostar.png" 
+    : "images/cusstar.png";
+
+  // 별 이미지 한 개만 추가
   const starContainer = document.getElementById("modalReviewStars");
   starContainer.innerHTML = ""; // 별점 초기화
-  const rating = review.rating || 5; // rating 값이 없으면 기본값 5
-  for (let i = 0; i < 5; i++) {
-    const star = document.createElement("a");
-    star.className = "bts bt-star " + (i < rating ? "active" : "");
-    starContainer.appendChild(star);
-  }
+
+  const starImg = document.createElement("img");
+  starImg.src = starImageSrc; // 생산자 또는 소비자 별 이미지 사용
+  starImg.alt = "Star Icon";
+  starImg.className = "star-icon";
+  starContainer.appendChild(starImg);
 
   // 모달 표시
   document.getElementById("reviewModal").style.display = "flex";
 }
+
+
 
 // 모달을 닫는 함수
 function closeModal() {
