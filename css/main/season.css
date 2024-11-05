@@ -42,6 +42,8 @@
 }
 .season-intro {
   background-color: #f5f5f5;
+  margin: 0 10px;
+  border-radius: 0 0 10px 10px;
 }
 .swipertitlewrap {
   padding: 10px 15px;
@@ -97,6 +99,7 @@
 .swiperwrap {
   background-color: #f5f5f5;
   border-radius: 10px;
+  margin: 0 10px;
 }
 
 /* 스와이퍼 */
@@ -180,6 +183,7 @@
 /* Swiper 설정 */
 .season .swiper-season {
   overflow: hidden;
+  margin: 0 10px;
 }
 @media (max-width: 635px) {
   .seasonimg img {

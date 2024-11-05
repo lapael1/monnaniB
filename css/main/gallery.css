@@ -256,7 +256,15 @@
   width: 90%;
   margin: 70px auto;
 }
-
+.gallery-inner ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
 /* 반응형 */
 @media screen and (max-width: 1300px) {
   .gallery-item-img {
@@ -271,15 +279,7 @@
     font-weight: bold;
     background-color: #fff;
   }
-  .gallery-inner ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 30px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 20px 0;
-  }
+  
 
   .gallery-inner p {
     text-align: center;
