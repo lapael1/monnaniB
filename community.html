@@ -295,15 +295,25 @@
               <div class="revkingimg">
                 <div class="revkingwrap">
                   <div class="revkingcard">
-                    <a href="#"><img src="images/review/pr1.png" alt="" /></a>
-                    <a href="#"><img src="images/review/pr2.png" alt="" /></a>
-                    <a href="#"><img src="images/review/pr8.png" alt="" /></a>
+                    <div class="rank-badge first">
+                      <a href="#"><img src="images/review/pr1.png" alt="1위" /></a>
+                      <span class="badge">1등</span>
+                    </div>
+                    <div class="rank-badge second">
+                      <a href="#"><img src="images/review/pr2.png" alt="2위" /></a>
+                      <span class="badge">2등</span>
+                    </div>
+                    <div class="rank-badge third">
+                      <a href="#"><img src="images/review/pr8.png" alt="3위" /></a>
+                      <span class="badge">3등</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         <!-- 리뷰들 -->
         <section class="review-detail">
           <div class="inner">
@@ -358,32 +368,35 @@
                     <span id="modalReviewComment" class="txt"></span>
                   </div>
                 </div>
-                <div class="tabled full-width prod_thumb_wrap margin-bottom-xxxl" style="cursor: pointer">
-                  <div class="table-cell vertical-middle" style="width: 62px">
-                    <img id="modalProductImage" class="prod_thumb" src="" width="48" height="48" alt="Product Thumbnail" />
+                <div class="modal-reivewrap">
+                  <div class="tabled full-width prod_thumb_wrap margin-bottom-xxxl" id="modal-revwrap" pointer">
+                    <div class="table-cell vertical-middle" style="width: 62px">
+                      <img id="modalProductImage" class="prod_thumb" src="" width="48" height="48" alt="Product Thumbnail" />
+                    </div>
+                    <div class="table-cell vertical-middle">
+                      <p class="no-margin text-15 prod_name">
+                        <a id="modalProductName" href="javascript:;"></a>
+                      </p>
+                    </div>
                   </div>
-                  <div class="table-cell vertical-middle">
-                    <p class="no-margin text-15 prod_name">
-                      <a id="modalProductName" href="javascript:;"></a>
-                    </p>
+                  <div class="clearfix margin-bottom-xxl">
+                    <span class="text-13 float_l">댓글 <span class="text-brand" id="comment_count">0</span></span>
+                    <span class="text-13 float_r"><a class="text-brand" href="javascript:;" onclick="focusCommentInput()">댓글쓰기</a></span>
+                  </div>
+                  <!-- 댓글 입력 및 섹션 추가 -->
+                  <div class="comment_section" id="review_comment_section">
+                    <div class="comment_list" id="commentList"></div>
+                    <div class="comment_textarea">
+                      <form id="modal_review_form">
+                        <div class="textarea_block">
+                          <textarea placeholder="로그인이 필요합니다." rows="1" name="body" id="modal_review_comment_body"></textarea>
+                          <button type="button" class="btn btn-brand btn-sm _style" onclick="submitComment()">작성</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-                <div class="clearfix margin-bottom-xxl">
-                  <span class="text-13 float_l">댓글 <span class="text-brand" id="comment_count">0</span></span>
-                  <span class="text-13 float_r"><a class="text-brand" href="javascript:;" onclick="focusCommentInput()">댓글쓰기</a></span>
-                </div>
-                <!-- 댓글 입력 및 섹션 추가 -->
-                <div class="comment_section" id="review_comment_section">
-                  <div class="comment_list" id="commentList"></div>
-                  <div class="comment_textarea">
-                    <form id="modal_review_form">
-                      <div class="textarea_block">
-                        <textarea placeholder="로그인이 필요합니다." rows="1" name="body" id="modal_review_comment_body"></textarea>
-                        <button type="button" class="btn btn-brand btn-sm _style" onclick="submitComment()">작성</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
