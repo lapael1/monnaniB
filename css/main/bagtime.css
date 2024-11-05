@@ -455,6 +455,13 @@
   color: #ef4444;
 }
 
+.selected-list {
+  padding: 10px 15px;
+}
+.total-amount {
+  padding: 0 10px;
+}
+
 /* 반응형 */
 @media screen and (max-width: 1240px) {
   .main-image {
