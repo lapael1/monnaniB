@@ -1,24 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  function adjustCartMenuMargin() {
-    const headerLogin = document.getElementById('header-login');
-    const cartMenu = document.getElementById('cart-menu');
-
-    if (window.innerWidth > 1180) {  // 1180px 초과일 때만 적용
-      if (headerLogin && cartMenu) {
-        const headerLoginWidth = headerLogin.offsetWidth;
-        cartMenu.style.marginRight = `${headerLoginWidth + 50}px`;
-      }
-    } else {
-      cartMenu.style.marginRight = '0';
-    }
-  }
-
-  // 초기 로딩 시 실행
-  adjustCartMenuMargin();
-
-  // 창 크기 조정 시 실행
-  window.addEventListener('resize', adjustCartMenuMargin);
-});
 window.addEventListener("load", function () {
   showInitDashboard();
 
@@ -56,7 +35,7 @@ window.addEventListener("load", function () {
     document.getElementById("login-display").style.display = "none"; // 로그인 정보 숨김
     clearUserData();
     clearUsernameParam();
-    window.location.href = "index.html"
+    window.location.href = "index.html";
   });
 
   function clearUserData() {
@@ -99,6 +78,24 @@ window.addEventListener("load", function () {
     isMenuOpen = !isMenuOpen;
   });
 
+  function adjustCartMenuMargin() {
+    const headerLogin = document.getElementById("header-login");
+    const cartMenu = document.getElementById("cart-menu");
 
+    if (window.innerWidth > 1180) {
+      // 1180px 초과일 때만 적용
+      if (headerLogin && cartMenu) {
+        const headerLoginWidth = headerLogin.offsetWidth;
+        cartMenu.style.marginRight = `${headerLoginWidth + 50}px`;
+      }
+    } else {
+      cartMenu.style.marginRight = "0";
+    }
+  }
 
+  // 초기 로딩 시 실행
+  adjustCartMenuMargin();
+
+  // 창 크기 조정 시 실행
+  window.addEventListener("resize", adjustCartMenuMargin);
 });

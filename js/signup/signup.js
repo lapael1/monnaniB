@@ -16,18 +16,15 @@ window.addEventListener("load", function () {
     const email = emailInput.value.trim();
     const phone = phoneInput.value.trim();
     // 아이디는 영어와 숫자로만
-    const idRegex = /^[a-zA-Z0-9]+$/;
+    const idRegex = /^(?=.*[A-Za-z])[A-Za-z0-9]+$/;
     // 비밀번호는 영어 대소문자 숫자 특수문자를 포함한 8자리 이상
-    const pwRegex =
-      /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+    const pwRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
     if (!idRegex.test(id)) {
-      alert("아이디는 영어와 숫자로만 이루어져야 합니다.");
+      alert("아이디는 영어를 포함한 영어, 숫자 조합이어야 합니다");
       return;
     }
     if (!pwRegex.test(pw)) {
-      alert(
-        "비밀번호는 영대소문자, 숫자를 포함하여 최소 6자 이상 작성 해야 합니다."
-      );
+      alert("비밀번호는 영어, 숫자를 포함하여 최소 6자 이상 작성 해야 합니다.");
       return;
     }
     if (pw !== pwChk) {

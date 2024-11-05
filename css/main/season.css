@@ -26,7 +26,7 @@
   filter: brightness(0.7);
   height: auto;
 }
-.recipe-overlay .recipe-text{
+.recipe-overlay .recipe-text {
   position: absolute;
   top: 50%;
   text-align: center;
@@ -193,23 +193,23 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 30px;
-}
-.fruitxt2 {
-  font-size: 18px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 18px;
-}
-.fruitxt {
-  font-size: 20px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
+  }
+  .fruitxt2 {
+    font-size: 18px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 18px;
+  }
+  .fruitxt {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 540px) {
   .seasonimg img {
@@ -219,51 +219,51 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 28px;
-}
-.fruitxt2 {
-  font-size: 17px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 17px;
-}
-.fruitxt {
-  font-size: 19px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.season-intro {
-  padding: 0px 30px 30px 30px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 10px 30px 0px 30px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 16px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
+  }
+  .fruitxt2 {
+    font-size: 17px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 17px;
+  }
+  .fruitxt {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .season-intro {
+    padding: 0px 30px 30px 30px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 30px 0px 30px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 16px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
 }
 @media (max-width: 448px) {
   .seasonimg img {
@@ -273,77 +273,77 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 26px;
-}
-.fruitxt2 {
-  font-size: 16px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 16px;
-}
-.fruitxt {
-  font-size: 18px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.season-intro {
-  padding: 0px 30px 30px 30px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 10px 30px 0px 30px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 16px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.season .swiper-button-next {
-  right: -3px;
-}
+  }
+  .fruitxt2 {
+    font-size: 16px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 16px;
+  }
+  .fruitxt {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .season-intro {
+    padding: 0px 30px 30px 30px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 30px 0px 30px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 16px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .season .swiper-button-next {
+    right: -3px;
+  }
 
-.season .swiper-button-prev {
-  left: -3px;
-}
-.fruititle {
-  text-align: center;
-  background-color: #fff;
-  padding: 5px 7px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 550;
-}
-.vegtitle{
-  text-align: center;
-  background-color: #fff;
-  padding: 5px 7px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 550;
-}
-.kg {
-  font-size: 16px;
-}
+  .season .swiper-button-prev {
+    left: -3px;
+  }
+  .fruititle {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 550;
+  }
+  .vegtitle {
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 7px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 550;
+  }
+  .kg {
+    font-size: 16px;
+  }
 }
 @media (max-width: 395px) {
   .seasonimg img {
@@ -353,74 +353,74 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 24px;
-}
-.fruitxt2 {
-  font-size: 15px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 15px;
-}
-.fruitxt {
-  font-size: 17px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-}
-.season-intro {
-  padding: 0px 25px 25px 25px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 10px 25px 0px 25px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 13px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.season .swiper-button-next {
-  right: -5px;
-}
+  }
+  .fruitxt2 {
+    font-size: 15px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 15px;
+  }
+  .fruitxt {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .season-intro {
+    padding: 0px 25px 25px 25px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 25px 0px 25px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 13px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .season .swiper-button-next {
+    right: -5px;
+  }
 
-.season .swiper-button-prev {
-  left: -5px;
-}
-.fruititle {
-  text-align: center;
-  background-color: #fff;
-  padding: 3px 5px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 550;
-}
-.vegtitle{
-  text-align: center;
-  background-color: #fff;
-  padding: 3px 5px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 550;
-}
+  .season .swiper-button-prev {
+    left: -5px;
+  }
+  .fruititle {
+    text-align: center;
+    background-color: #fff;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 550;
+  }
+  .vegtitle {
+    text-align: center;
+    background-color: #fff;
+    padding: 3px 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 550;
+  }
 }
 @media (max-width: 355px) {
   .seasonimg img {
@@ -430,77 +430,77 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 22px;
-}
-.fruitxt2 {
-  font-size: 14px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 14px;
-}
-.fruitxt {
-  font-size: 15px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-.season-intro {
-  padding: 0px 23px 23px 23px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 10px 23px 0px 23px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 12px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.season .swiper-button-next {
-  right: -5px;
-}
+  }
+  .fruitxt2 {
+    font-size: 14px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 14px;
+  }
+  .fruitxt {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .season-intro {
+    padding: 0px 23px 23px 23px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 23px 0px 23px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 12px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .season .swiper-button-next {
+    right: -5px;
+  }
 
-.season .swiper-button-prev {
-  left: -5px;
-}
-.fruititle {
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 550;
-}
-.vegtitle{
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 550;
-}
-.kg {
-  font-size: 14px;
-}
+  .season .swiper-button-prev {
+    left: -5px;
+  }
+  .fruititle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .vegtitle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .kg {
+    font-size: 14px;
+  }
 }
 @media (max-width: 320px) {
   .seasonimg img {
@@ -510,77 +510,77 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 22px;
-}
-.fruitxt2 {
-  font-size: 14px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 14px;
-}
-.fruitxt {
-  font-size: 15px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-.season-intro {
-  padding: 0px 23px 23px 23px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 10px 23px 0px 23px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 12px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.season .swiper-button-next {
-  right: -5px;
-}
+  }
+  .fruitxt2 {
+    font-size: 14px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 14px;
+  }
+  .fruitxt {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+  }
+  .season-intro {
+    padding: 0px 23px 23px 23px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px 23px 0px 23px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 12px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .season .swiper-button-next {
+    right: -5px;
+  }
 
-.season .swiper-button-prev {
-  left: -5px;
-}
-.fruititle {
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 550;
-}
-.vegtitle{
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 550;
-}
-.kg {
-  font-size: 14px;
-}
+  .season .swiper-button-prev {
+    left: -5px;
+  }
+  .fruititle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .vegtitle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+  }
+  .kg {
+    font-size: 14px;
+  }
 }
 @media (max-width: 324px) {
   .seasonimg img {
@@ -590,75 +590,75 @@
   .season-intro li {
     font-family: "Uiyeun";
     font-size: 20px;
-}
-.fruitxt2 {
-  font-size: 13px;
-  color: #6d6d6d;
-}
-.seasonprice {
-  font-size: 13px;
-}
-.fruitxt {
-  font-size: 14px;
-  font-weight: bold;
-}
-.seasontxt {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.season-intro {
-  padding: 0px 22px 22px 22px;
-}
-.season-fruit,
-.season-veg {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  padding: 8px 22px 0px 22px;
-}
-/* 스와이퍼 버튼 */
-.season .swiper-button-next::after,
-.season .swiper-button-prev::after {
-  font-size: 11px;
-  color: #ff6741;
-}
-.season .swiper-button-next,
-.season .swiper-button-prev {
-  position: absolute;
-  top: 73%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #fff;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-}
-.season .swiper-button-next {
-  right: -3px;
-}
+  }
+  .fruitxt2 {
+    font-size: 13px;
+    color: #6d6d6d;
+  }
+  .seasonprice {
+    font-size: 13px;
+  }
+  .fruitxt {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .seasontxt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .season-intro {
+    padding: 0px 22px 22px 22px;
+  }
+  .season-fruit,
+  .season-veg {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 8px 22px 0px 22px;
+  }
+  /* 스와이퍼 버튼 */
+  .season .swiper-button-next::after,
+  .season .swiper-button-prev::after {
+    font-size: 11px;
+    color: #ff6741;
+  }
+  .season .swiper-button-next,
+  .season .swiper-button-prev {
+    position: absolute;
+    top: 73%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .season .swiper-button-next {
+    right: -3px;
+  }
 
-.season .swiper-button-prev {
-  left: -3px;
-}
-.fruititle {
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 550;
-}
-.vegtitle{
-  text-align: center;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 10px;
-  font-size: 13px;
-  font-weight: 550;
-}
-.kg {
-  font-size: 13px;
-}
+  .season .swiper-button-prev {
+    left: -3px;
+  }
+  .fruititle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 550;
+  }
+  .vegtitle {
+    text-align: center;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 550;
+  }
+  .kg {
+    font-size: 13px;
+  }
 }
