@@ -4,6 +4,9 @@
 }
 /* count */
 /* 공통 스타일 */
+.count .inner{
+  padding: 0 20px;
+}
 .count-wrap {
   display: flex; /* 플렉스 박스 레이아웃 */
   align-items: center; /* 세로 중앙 정렬 */
@@ -12,6 +15,7 @@
   border-radius: 20px;
   width: 100%;
   min-height: 308px;
+  /* margin: 20px; */
 }
 
 /* count-left 중앙 정렬 */
@@ -64,7 +68,7 @@ sup {
 @media (max-width: 768px) {
   .count-wrap {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     height: 400px;
     margin: 0 auto;
     align-items: stretch;
