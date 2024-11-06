@@ -69,7 +69,7 @@ window.addEventListener('load', function () {
     slidesPerView: 1,
     loop: false,
     autoplay: {
-      delay: 2000,
+      delay: 2500,
       disableOnInteraction: false,
     },
     pagination: {

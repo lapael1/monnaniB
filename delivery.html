@@ -4,40 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>정기배송</title>
+  
+   
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon//site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- css -->
     <link rel="stylesheet" href="css/main/reset.css" />
     <link rel="stylesheet" href="css/main/main.css" />
     <link rel="stylesheet" href="css/delivery/delivery.css" />
-    <script src="js/main/header.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="js/delivery/delivery.js"></script>
+      <!-- js -->
+   <script src="js/main/html5shiv.js"></script>
+   <script src="js/main/respond.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- js -->
+     <script src="js/main/main.js"></script>
+     <script src="js/main/header.js"></script>
 
-    <!-- 파비콘 -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon//favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon//favicon-16x16.png"
-    />
-    <link rel="manifest" href="images/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <!-- 탑버튼 -->
@@ -217,12 +209,11 @@
       updateTime();
       setInterval(updateTime, 1000);
     </script>
+
     <header class="header">
       <div class="header-wrap">
         <div class="header-inner">
-          <a href="index.html" class="header-logo"
-            ><img src="images/logo.png" alt="logo"
-          /></a>
+          <a href="index.html" class="header-logo"><img src="images/logo.png" alt="logo" /></a>
           <div id="cart-menu">
             <img src="images/icons/icon_cart.svg" alt="cart-menu" />
           </div>
@@ -242,11 +233,7 @@
             <ul class="header-login" id="header-login">
               <li id="login-button"><a href="login.html">로그인</a></li>
               <li id="signup-button"><a href="signup.html">회원가입</a></li>
-              <li
-                style="display: none"
-                id="login-display"
-                class="login-display"
-              >
+              <li style="display: none" id="login-display" class="login-display">
                 <ul>
                   <li id="name-display">
                     <!-- 이름 출력 -->
@@ -312,43 +299,19 @@
           <div class="swiper swiper-delivery">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img
-                  src="images/delivery/review1.png"
-                  alt="review1"
-                  class="review-photo"
-                />
+                <img src="images/delivery/review1.png" alt="review1" class="review-photo" />
                 <img src="images/cusstar.png" alt="star" class="review-star" />
-                <p>
-                  샐러드도 해먹고 제철야채로 밥도해먹고 싶어서 시켜보았어요!
-                  단호박도 맛있고, 특히 버터헤드의 잎이 풍성하고 싱싱했습니다:-)
-                  앞으로 꾸준히 시켜볼게요. 이번 야채도 성공입니다!
-                </p>
+                <p>샐러드도 해먹고 제철야채로 밥도해먹고 싶어서 시켜보았어요! 단호박도 맛있고, 특히 버터헤드의 잎이 풍성하고 싱싱했습니다:-) 앞으로 꾸준히 시켜볼게요. 이번 야채도 성공입니다!</p>
               </div>
               <div class="swiper-slide">
-                <img
-                  src="images/delivery/review2.png"
-                  alt="review2"
-                  class="review-photo"
-                />
+                <img src="images/delivery/review2.png" alt="review2" class="review-photo" />
                 <img src="images/cusstar.png" alt="star" class="review-star" />
-                <p>
-                  첫주문 너무 만족스러웠어요. 스탠다드로 주문했는데, 양도
-                  생각보다 정말 많았어요. 품질은 당연히 좋았구요. 주변에도 많이
-                  추천하고 있습니다.
-                </p>
+                <p>첫주문 너무 만족스러웠어요. 스탠다드로 주문했는데, 양도 생각보다 정말 많았어요. 품질은 당연히 좋았구요. 주변에도 많이 추천하고 있습니다.</p>
               </div>
               <div class="swiper-slide">
-                <img
-                  src="images/delivery/review3.png"
-                  alt="review3"
-                  class="review-photo"
-                />
+                <img src="images/delivery/review3.png" alt="review3" class="review-photo" />
                 <img src="images/cusstar.png" alt="star" class="review-star" />
-                <p>
-                  보통 3주에 한 번씩 주문하는데 이번차에는 집에서 요리해먹는
-                  시간이 많아서 2주만에 주문했어요. 평소라면 제가 사먹지 않을
-                  법한 고구마순 땅콩호박등을 도전할 수 있어서 좋아요.
-                </p>
+                <p>보통 3주에 한 번씩 주문하는데 이번차에는 집에서 요리해먹는 시간이 많아서 2주만에 주문했어요. 평소라면 제가 사먹지 않을 법한 고구마순 땅콩호박등을 도전할 수 있어서 좋아요.</p>
               </div>
             </div>
           </div>
@@ -358,50 +321,14 @@
       <section class="delivery-qna">
         <div class="inner">
           <h2>자주 묻는 질문</h2>
-          <dt>
-            못난이 채소, 정말 맛과 영양에 문제가 없는건가요?<img
-              src="images/icons/down-arrow.svg"
-              alt="downarrow"
-            />
-          </dt>
-          <dd>
-            못난이 채소들은 똑같은 산지, 농법으로 건강하게 자랐지만 오로지 외형
-            및 판로 문제를 가진 정상 생산품이에요. 만약 받아보신 후 신선도 등의
-            문제가 발생한다면 고객 센터에서 보장을 도와드리고 있으니 걱정
-            마세요.
-          </dd>
-          <dt>
-            지방이나 제주도에도 배송되나요?<img
-              src="images/icons/down-arrow.svg"
-              alt="downarrow"
-            />
-          </dt>
-          <dd>
-            제주 지역을 비롯한 전국 어디서든지 주문하실 수 있어요. 하지만 배송에
-            조금 더 오랜 시간이 걸리는 제주 지역의 경우, 신선 배송이 불가한
-            한여름 배송이 어려울 수 있어요.
-          </dd>
-          <dt>
-            정기배송은 언제 오나요?<img
-              src="images/icons/down-arrow.svg"
-              alt="downarrow"
-            />
-          </dt>
-          <dd>
-            정기배송은 고객님이 선택하신 간격에 맞춰 배송됩니다. 배송일 변경이나
-            미루기도 가능하니, 필요한 경우 고객 센터를 통해 조정해 주세요.
-          </dd>
-          <dt>
-            어떤 품목이 올지 미리 알 수 있나요?<img
-              src="images/icons/down-arrow.svg"
-              alt="downarrow"
-            />
-          </dt>
-          <dd>
-            계절과 산지 상황에 따라 매주 신선한 품목들이 준비되며, 정확한 품목은
-            랜덤하게 선정되어 배송됩니다. 매주 다양한 채소를 만나보실 수 있도록
-            노력하고 있어요.
-          </dd>
+          <dt>못난이 채소, 정말 맛과 영양에 문제가 없는건가요?<img src="images/icons/down-arrow.svg" alt="downarrow" /></dt>
+          <dd>못난이 채소들은 똑같은 산지, 농법으로 건강하게 자랐지만 오로지 외형 및 판로 문제를 가진 정상 생산품이에요. 만약 받아보신 후 신선도 등의 문제가 발생한다면 고객 센터에서 보장을 도와드리고 있으니 걱정 마세요.</dd>
+          <dt>지방이나 제주도에도 배송되나요?<img src="images/icons/down-arrow.svg" alt="downarrow" /></dt>
+          <dd>제주 지역을 비롯한 전국 어디서든지 주문하실 수 있어요. 하지만 배송에 조금 더 오랜 시간이 걸리는 제주 지역의 경우, 신선 배송이 불가한 한여름 배송이 어려울 수 있어요.</dd>
+          <dt>정기배송은 언제 오나요?<img src="images/icons/down-arrow.svg" alt="downarrow" /></dt>
+          <dd>정기배송은 고객님이 선택하신 간격에 맞춰 배송됩니다. 배송일 변경이나 미루기도 가능하니, 필요한 경우 고객 센터를 통해 조정해 주세요.</dd>
+          <dt>어떤 품목이 올지 미리 알 수 있나요?<img src="images/icons/down-arrow.svg" alt="downarrow" /></dt>
+          <dd>계절과 산지 상황에 따라 매주 신선한 품목들이 준비되며, 정확한 품목은 랜덤하게 선정되어 배송됩니다. 매주 다양한 채소를 만나보실 수 있도록 노력하고 있어요.</dd>
         </div>
       </section>
     </div>
@@ -430,20 +357,8 @@
             </div>
             <div class="cs-sns">
               <a href="#" target="_blank">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="22"
-                    cy="22"
-                    r="22"
-                    fill="#D9D9D9"
-                    class="cs-circle"
-                  ></circle>
+                <svg width="65" height="65" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="22" fill="#D9D9D9" class="cs-circle"></circle>
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -453,20 +368,8 @@
                 </svg>
               </a>
               <a href="#" target="_blank">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="22"
-                    cy="22"
-                    r="22"
-                    fill="#D9D9D9"
-                    class="cs-circle"
-                  ></circle>
+                <svg width="65" height="65" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="22" fill="#D9D9D9" class="cs-circle"></circle>
                   <path
                     d="M18.5739 37V22.9231H15V17.8548H18.5739V13.5257C18.5739 10.124 20.685 7 25.5494 7C27.5189 7 28.9753 7.19665 28.9753 7.19665L28.8606 11.9296C28.8606 11.9296 27.3753 11.9146 25.7545 11.9146C24.0003 11.9146 23.7193 12.7565 23.7193 14.1539V17.8548H29L28.7702 22.9231H23.7193V37H18.5739Z"
                     fill="#323232"
@@ -474,20 +377,8 @@
                 </svg>
               </a>
               <a href="#" target="_blank">
-                <svg
-                  width="65"
-                  height="65"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="22"
-                    cy="22"
-                    r="22"
-                    fill="#D9D9D9"
-                    class="cs-circle"
-                  ></circle>
+                <svg width="65" height="65" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="22" fill="#D9D9D9" class="cs-circle"></circle>
                   <path
                     d="M33.5006 16.512C33.3647 16.0272 33.1 15.5883 32.7346 15.242C32.3589 14.885 31.8984 14.6296 31.3966 14.5C29.5186 14.005 21.9946 14.005 21.9946 14.005C18.8579 13.9693 15.722 14.1262 12.6046 14.475C12.1028 14.6142 11.6432 14.8752 11.2666 15.235C10.8966 15.591 10.6286 16.03 10.4886 16.511C10.1523 18.3227 9.98891 20.1623 10.0006 22.005C9.98862 23.846 10.1516 25.685 10.4886 27.499C10.6256 27.978 10.8926 28.415 11.2636 28.768C11.6346 29.121 12.0966 29.376 12.6046 29.511C14.5076 30.005 21.9946 30.005 21.9946 30.005C25.1353 30.0407 28.2752 29.8837 31.3966 29.535C31.8984 29.4053 32.3589 29.15 32.7346 28.793C33.1046 28.44 33.3676 28.001 33.4996 27.523C33.8447 25.7119 34.0125 23.8716 34.0006 22.028C34.0266 20.1766 33.859 18.3275 33.5006 16.511V16.512ZM19.6026 25.429V18.582L25.8626 22.006L19.6026 25.429Z"
                     fill="#323232"
@@ -498,15 +389,10 @@
           </div>
           <hr />
           <div class="cs-name">
-            <p>
-              상호명 : 주식회사 몬나니농장 | 대표 : 홍길동 ㅣ 사업자등록번호 :
-              571-83-13515 | 소재지 : 대구광역시
-            </p>
+            <p>상호명 : 주식회사 몬나니농장 | 대표 : 홍길동 ㅣ 사업자등록번호 : 571-83-13515 | 소재지 : 대구광역시</p>
             <p>
               통신판매업 신고번호 : 2021-대구동부-0123 |
-              <span class="name-mail"
-                >제휴 및 납품 문의 : mnn@monnani.co.kr</span
-              >
+              <span class="name-mail">제휴 및 납품 문의 : mnn@monnani.co.kr</span>
             </p>
           </div>
           <div class="cs-mb">
