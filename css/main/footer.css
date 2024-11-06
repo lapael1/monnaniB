@@ -1,14 +1,14 @@
 @charset "utf-8";
 .footer {
   background-color: #fdf4ee;
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-family: "Spoqa Han Sans", "Spoqa Han Sans JP", "Sans-serif";
 }
 .footer-wrap {
   width: 100%;
   height: auto;
 }
 .footer-wrap img {
-  width: 250px;
+  width: 200px;
   padding-left: 10px;
 }
 .footer-wrap hr {
@@ -18,14 +18,14 @@
 }
 .footer h3 {
   /* font-weight: bold; */
-  font-size: 20px;
+  font-size: 16px;
   color: black;
-  margin-left: 26px;
+  margin-left: 24px;
 }
 .number {
   /* font-weight: bold; */
   color: #ff6741;
-  font-size: 20px;
+  font-size: 16px;
 }
 /* cs(고객센터) */
 .cs-call {
@@ -35,13 +35,13 @@
 .footer-cs {
   display: flex;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 5px 10px;
 }
 
 /* cs (요일,시간) */
 .cs {
   display: flex;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 10px;
   font-weight: 200;
 }
@@ -49,7 +49,7 @@
   margin-left: 20px;
 }
 .cs p {
-  padding: 2px;
+  /* padding: 2px; */
 }
 
 /* cs(sns) */
@@ -59,7 +59,7 @@
   gap: 10px;
 }
 .cs-circle:hover {
-  fill: #ff6741;
+  fill: #ffffff;
   transition: all 0.2s;
 }
 
@@ -71,9 +71,9 @@
 .cs-name p,
 .cs-name span {
   /* padding: 5px; */
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   /* white-space: no-wrap; */
 }
 .cs-name {
@@ -89,7 +89,7 @@
 .cs-copy {
   display: flex;
   padding: 10px 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   /* justify-content: space-between; */
   margin-left: 10px;
@@ -104,9 +104,8 @@
   .cs-name p,
   .cs-name span {
     /* padding: 5px; */
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 300;
-    margin-bottom: 5px;
     white-space: no-wrap;
   }
   .cs-mb {
@@ -114,22 +113,20 @@
   }
   .cs-copy {
     display: flex;
-    padding: 20px 10px;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 15px;
+    /* gap: 15px; */
   }
 }
 
 @media screen and (max-width: 1034px) {
   .cs-name p,
   .cs-name span {
-    padding: 5px;
-    font-size: 17px;
+    /* padding: 5px; */
+    font-size: 16px;
     font-weight: 300;
-    margin-bottom: 5px;
     white-space: no-wrap;
   }
   .cs-mb {
@@ -137,39 +134,38 @@
   }
   .cs-copy {
     display: flex;
-    padding: 15px 10px;
-    font-size: 17px;
+    /* padding: 15px 10px; */
+    font-size: 16px;
     font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 15px;
+    /* gap: 15px; */
   }
 }
 
 @media screen and (max-width: 954px) {
   .footer h3 {
     /* font-weight: bold; */
-    font-size: 17px;
+    font-size: 15px;
     color: black;
     margin-left: 26px;
   }
   .number {
     /* font-weight: bold; */
     color: #ff6741;
-    font-size: 17px;
+    font-size: 15px;
   }
   .cs {
     display: flex;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 10px;
     font-weight: 300;
   }
   .cs-name p,
   .cs-name span {
-    padding: 5px;
-    font-size: 16px;
+    /* padding: 5px; */
+    font-size: 15px;
     font-weight: 300;
-    margin-bottom: 5px;
     white-space: nowrap;
   }
   .cs-mb {
@@ -177,12 +173,11 @@
   }
   .cs-copy {
     display: flex;
-    padding: 20px 10px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     /* justify-content: space-between; */
-    margin-left: 10px;
-    gap: 15px;
+    /* margin-left: 10px;
+    gap: 15px; */
   }
 }
 
@@ -192,23 +187,22 @@
   }
   .cs-copy {
     /* display: flex; */
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     font-size: 14px;
     font-weight: 300;
     /* justify-content: space-between; */
     margin-left: 10px;
-    gap: 10px;
+    /* gap: 10px; */
   }
   .cs-mb {
     display: block;
     margin: 10px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
   .cs-mb p {
     /* padding: 0 10px; */
     font-size: 14px;
     font-weight: 300;
-    margin-bottom: 5px;
   }
   .cs-mb span {
     color: #ff6741;
@@ -218,20 +212,16 @@
   }
   .cs-copy {
     display: flex;
-    padding: 10px 10px;
     font-size: 14px;
     font-weight: 300;
-    margin-left: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cs-copy {
     display: block;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-size: 14px;
-    /* font-weight: 550; */
-    margin-left: 10px;
   }
 }
 
@@ -240,7 +230,6 @@
     flex-direction: column;
   }
   .cs {
-    margin-bottom: 20px;
     display: flex;
     font-size: 14px;
     /* margin-left: 10px; */
@@ -250,8 +239,8 @@
     padding: 5px 10px;
   }
   .cs-sns svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -259,7 +248,6 @@
   .cs p {
     font-size: 13px;
     margin-left: 10px;
-    /* font-weight: 600; */
   }
   .cs-name p {
     font-size: 14px;
@@ -272,8 +260,8 @@
     white-space: normal;
   }
   .cs-sns svg {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     /* margin-left: 5px; */
   }
 }
