@@ -408,7 +408,7 @@
 .revwrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3열 */
-  gap: 10px; /* 아이템 간의 간격 */
+  gap: 25px; /* 아이템 간의 간격 */
   padding: 10px;
 }
 .star-icon {
