@@ -46,7 +46,7 @@
   text-align: center;
 }
 .purchase-review{
-  font-size: 12px;
+  font-size: 14px;
 }
 .purchase-recommend .inner > ul {
   display: flex;
@@ -56,12 +56,15 @@
   width: calc(33.33% - 15px);
   background-color: #eee;
   padding: 20px;
+  border-radius: 10px;
 }
 .purchase-description {
   margin-bottom: 15px;
+  font-family: "Uiyeun";
+  font-size: 28px ;
 }
 .review-name li {
-  align-content: flex-start;
+  align-content: center;
   font-size: 25px;
   font-weight: 700;
   margin-right: 20px;
@@ -76,7 +79,7 @@
   display: flex;
 }
 .review-star {
-  width: 40%;
+  width: 140px;
   margin-top: 10px;
   margin-left: -2px;
 }
@@ -185,5 +188,9 @@
 @media screen and (max-width: 480px) {
   .market-list > li {
     width: 100%;
+  }
+  .wrap h3 {
+    font-size: 30px;
+    
   }
 }
