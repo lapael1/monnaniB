@@ -789,6 +789,12 @@
 
 /* 매우 작은 화면 대응 */
 @media (max-width: 480px) {
+  .reviewking .title-wrap{
+    margin-top: 0px;
+  }
+  .reviewking .title{
+    font-size: 30px;
+  }
   .star-icon {
     max-width: 80px;
     width: 100%;
