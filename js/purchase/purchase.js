@@ -27,14 +27,14 @@ function showPurchase(){
 
         const tag =`
         <li>
-              <a href="#">
+              <a href="${item.link}">
                 <img src="images/purchase/${item.image}" alt="${item.name}" />
               </a>
               <ul class="purchase-type">
               ${monnaniButton}
               ${seasonButton}
               </ul>
-              <a href="">
+              <a href="${item.link}">
                 <p class="market-name">${item.name}</p>
               </a>
               <div class="price-container">
