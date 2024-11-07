@@ -89,7 +89,7 @@
   padding: 20px;
 }
 
-.revkingcard {
+.revkingcard, .revkingcard-tab{
   display: flex;
   flex-wrap: wrap;
   gap: 15px; /* 카드 간 간격 */
@@ -98,7 +98,7 @@
 
 .rank-badge {
   position: relative;
-  flex: 1 1 100px; /* 최소 100px 크기를 유지하며 반응형 조절 */
+  flex: 1 1 200px; /* 최소 100px 크기를 유지하며 반응형 조절 */
   max-width: 300px; /* 최대 크기 제한 */
 }
 
@@ -108,56 +108,35 @@
   display: block;
   border-radius: 8px;
 }
-
-.rank-badge .badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: gold; /* 배경 색상 */
-  color: white;
-  padding: 5px 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
+.revkingcard-tab{
+  display: none;
+  
 }
 
-/* 순위에 따른 색상 */
-.rank-badge.first .badge {
-  background-color: gold;
-}
-
-.rank-badge.second .badge {
-  background-color: silver;
-}
-
-.rank-badge.third .badge {
-  background-color: #cd7f32; /* 동색 */
-}
 
 /* 작은 화면에서 카드 정렬 */
 @media (max-width: 768px) {
   .revkingcard {
     flex-direction: column;
     align-items: center;
+    display: none;
   }
+.revkingcard-tab{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    
+}
+.rank-badge {
+  position: relative;
+  flex: 1 1 300px; /* 최소 100px 크기를 유지하며 반응형 조절 */
+  max-width: 400px; /* 최대 크기 제한 */
+}
 
-  .rank-badge .badge {
-    top: 5px;
-    left: 5px;
-    padding: 3px 8px;
-    font-size: 0.9rem;
-  }
 }
 
 /* 매우 작은 화면에서 텍스트와 배지가 더 작아짐 */
-@media (max-width: 480px) {
-  .rank-badge .badge {
-    top: 3px;
-    left: 3px;
-    padding: 2px 6px;
-    font-size: 0.8rem;
-  }
-}
+
 
 .reviewking .inner {
   width: 100%;
