@@ -1,12 +1,13 @@
 {
     "purchase": [
       {
-        "image": "apple.png",
-        "name": "홍로사과 2.5kg",
-        "discount": "14%",
-        "price": "23,000",
+        "image": "mandarin.png",
+        "name": "노지 감귤 2kg",
+        "discount": "33%",
+        "price": "15,900",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"bagitem.html"
       },
       {
         "image": "kiwi.png",
@@ -16,10 +17,10 @@
         "monnani":"못난이"
       },
       {
-        "image": "mandarin.png",
-        "name": "제주 감귤 1kg",
-        "discount": "16%",
-        "price": "9,900",
+        "image": "apple.png",
+        "name": "홍로사과 2.5kg",
+        "discount": "14%",
+        "price": "23,000",
         "season":"제철",
         "monnani":"못난이"
       },
