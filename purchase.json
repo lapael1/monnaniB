@@ -14,7 +14,8 @@
         "name": "골드키위 1팩(6입)",
         "discount": "20%",
         "price": "5,900",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "apple.png",
@@ -22,14 +23,16 @@
         "discount": "14%",
         "price": "23,000",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "pakchoi.jpg",
         "name": "친환경 청경채 1kg",
         "discount": "27%",
         "price": "7,210",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "sweetpotato.png",
@@ -37,7 +40,8 @@
         "discount": "27%",
         "price": "7,900",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "persimmon.png",
@@ -45,7 +49,8 @@
         "discount": "21%",
         "price": "7,490",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "date.png",
@@ -53,7 +58,8 @@
         "discount": "10%",
         "price": "8,900",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "pear.png",
@@ -61,7 +67,8 @@
         "discount": "30%",
         "price": "33,500",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       },
       {
         "image": "pumpkin.png",
@@ -69,7 +76,8 @@
         "discount": "12%",
         "price": "22,900",
         "season":"제철",
-        "monnani":"못난이"
+        "monnani":"못난이",
+        "link":"#"
       }
     ]
   }
